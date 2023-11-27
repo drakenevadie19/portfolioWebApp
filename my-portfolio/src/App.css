@@ -4,13 +4,17 @@
 
 /*----------------------------------------------------------------------------------------*/
 /*Nav bar*/
-nav {
+nav{
   border-bottom: 4px solid green;
-  text-align: right;
-  position: fixed;
+  display: flex;
   top: 0;
   width: 100%;
   background: black;
+}
+
+nav h2 {
+  text-align: left;
+  color: white;
 }
 
 nav ul {

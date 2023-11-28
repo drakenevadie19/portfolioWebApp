@@ -167,8 +167,27 @@ nav a:hover {
 
 /*----------------------------------------------------------------------------------------*/
 /* Education Page */
+.education {
+  display: flex;
+  justify-content: space-between;
+}
+
 .education-box h1 {
   color: white;
+}
+
+.education-image {
+  border: 2px solid lightblue
+  /* width: 22em;
+  height: 22em;
+  display: grid;
+  place-items: center; */
+}
+
+.education-image img {
+  width: 300px;
+  height: 2 00px;
+  border-radius: 15px;
 }
 
 

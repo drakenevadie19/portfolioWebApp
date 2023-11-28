@@ -9,7 +9,7 @@ const EducationPage = ({ educationList }) => (
                 {educationList.map(schools => (
                     <>
                         <h1>{schools.name}</h1>
-                        <h4>{schools.location}</h4>
+                        <h4><i>{schools.location}</i></h4>
                         <ul>
                             <li>Major: {schools.major}</li>
                             <li>Minor: {schools.minor !== "" ? schools.minor : "N/A"}</li>

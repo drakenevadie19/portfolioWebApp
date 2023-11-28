@@ -47,7 +47,8 @@ nav a:hover {
 /*----------------------------------------------------------------------------------------*/
 /*Page Body*/
 #page-body {
-  max-width: 700px;
+  /* width: 100vw; */
+  /* max-width: 700px; */
   /* margin: auto; */
   padding-top: 72px;
 
@@ -58,7 +59,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   /* margin: 5rem auto; */
   flex-direction: row;
 }
@@ -72,8 +73,8 @@ nav a:hover {
 }
 
 .blue-bg-outer {
-  width: 25em;
-  height: 25em;
+  width: 21em;
+  height: 21em;
   border-radius: 50%;
   background: #0CEB4B;
   display: grid;
@@ -81,8 +82,8 @@ nav a:hover {
 }
 
 .white-bg {
-  width: 21.875em;
-  height: 21.875em;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   background: #fff;
   display: grid;
@@ -90,20 +91,41 @@ nav a:hover {
 }
 
 .blue-bg {
-  width: 18.75em;
-  height: 18.75em;
+  width: 19em;
+  height: 19em;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: black;
 }
 
 .blue-bg img {
   position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* 
   bottom: 30px;
   right: 20px;
-  width: 100%;
+   */
   border-radius: 50%;
 }
 /*Information*/
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+
+  width: 40%;
+  
+  
+  color: #0CEB4B;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.information h1,p {
+  margin: 10px;
+  float: inline-end;
+}
 
 .animated_text h1 {
   -webkit-text-stroke: 1px #fff;
@@ -118,9 +140,25 @@ nav a:hover {
 }
 
 @keyframes backcolor {
-
   100% {
       -webkit-text-stroke: 1px #0CEB4B;
       background-position: 0 0;
   }
+}
+
+.cv-btn {
+  margin-top: 1.5rem;
+    padding: 0.7em 2.5em;
+    border-radius: 25px;
+    background-color: #0CEB4B;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: 0;
+}
+
+.cv-btn:hover {
+  background-color: #0CEB4B;
+  box-shadow: 0 0 10px #0CEB4B;
+  transition: all .3s ease-in-out;
 }

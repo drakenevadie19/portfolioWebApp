@@ -9,6 +9,7 @@ nav {
   border-bottom: 4px solid #35A29F;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   top: 0;
   width: 100%;
   /* background: black; */

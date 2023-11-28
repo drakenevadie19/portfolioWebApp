@@ -1,5 +1,4 @@
 import SchoolImage from "./schools-image";
-import imageDB from "./images-db";
 
 const EducationPage = ({ educationList }) => (
     <>

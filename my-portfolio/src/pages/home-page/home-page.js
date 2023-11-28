@@ -17,7 +17,10 @@ const HomePage = () => (
                 <div className="animated_text">
                     <h1 className="title">Front - end / Full - stack Developer</h1>
                 </div>
-                <p>I have skills relating to Website Building (HTML, CSS, JavaScript) as well as Java, Pythons, and C++. I keep upgrading my ability day by day and strengthening my problem-solving skills. </p>
+                <span>My name is William, I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
+                    I'm a beginner full stack web developer, currently I have some experience with HTML&Bootstrap, CSS&LESS, JavaScript&TypeScript NodeJS. 
+                    Now I practice in the development of web applications, and some frameworks like Angular, React, etc. 
+                    I want to learn more and utilize my skills in the field of Information Technology and to help solve real world challenges.. </span>
                 <ResumeButton />
             </div>
         </div>

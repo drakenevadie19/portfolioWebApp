@@ -73,8 +73,8 @@ nav a:hover {
 }
 
 .blue-bg-outer {
-  width: 21em;
-  height: 21em;
+  width: 22em;
+  height: 22em;
   border-radius: 50%;
   background: #0CEB4B;
   display: grid;
@@ -82,8 +82,8 @@ nav a:hover {
 }
 
 .white-bg {
-  width: 20em;
-  height: 20em;
+  width: 21em;
+  height: 21em;
   border-radius: 50%;
   background: #fff;
   display: grid;
@@ -91,8 +91,8 @@ nav a:hover {
 }
 
 .blue-bg {
-  width: 19em;
-  height: 19em;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   background: black;
 }
@@ -115,16 +115,16 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-end; 
 
-  width: 40%;
+  width: 40em;
   
   
   color: #0CEB4B;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.information h1,p {
+.information h1,span {
   margin: 10px;
-  float: inline-end;
+  text-align: right;
 }
 
 .animated_text h1 {

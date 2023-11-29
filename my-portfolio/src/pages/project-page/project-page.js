@@ -18,7 +18,7 @@ const ProjectPage = ({projects}) => {
 
                             {visibility ? (
                                 <>
-                                    <p className="card-text">{project.description.substring(0, 120)}...</p>
+                                    <p className="card-text">{project.description.substring(0, 100)}...</p>
                                     <button type="button" class="btn btn-success more" onClick={toggleVisibility}>
                                         View more 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">

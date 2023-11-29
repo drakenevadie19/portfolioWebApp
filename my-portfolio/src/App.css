@@ -322,24 +322,19 @@ nav a:hover {
 .card {
   display: inline;
   float: left;
-  width: 20rem;
-  /* height: 80vh; */
+  width: 22rem;
   margin: 1.5rem;
-
-  /* position: relative; */
-  overflow: hidden;
-  max-height: 50vh; /* Adjust this value to control the height of the preview */
-  transition: max-height 0.3s ease;
 }
 
-.card:hover {
-  max-height: none;
+.inside-card {
+  display: flex;
+  flex-direction: column;
 }
 
-/* .card .card-body a {
-  position: absolute;
-  bottom: 20px;
-} */
+.more, .less {
+  margin: 10px;
+}
+
 .card-img-top {
   aspect-ratio: 16/9;
 }

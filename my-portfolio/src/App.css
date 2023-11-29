@@ -230,7 +230,7 @@ nav a:hover {
 
 .imageWorks {
   width: 35%;
-  padding-right: 3rem;
+  padding-right: 4rem;
 
   display: flex;
   flex-direction: column;
@@ -311,4 +311,35 @@ nav a:hover {
   width: 4em;
   height: 4em;
   border-radius: 15px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Project Page */
+.projects {
+  display: inline;
+}
+
+.card {
+  display: inline;
+  float: left;
+  width: 20rem;
+  /* height: 80vh; */
+  margin: 1.5rem;
+
+  /* position: relative; */
+  overflow: hidden;
+  max-height: 50vh; /* Adjust this value to control the height of the preview */
+  transition: max-height 0.3s ease;
+}
+
+.card:hover {
+  max-height: none;
+}
+
+/* .card .card-body a {
+  position: absolute;
+  bottom: 20px;
+} */
+.card-img-top {
+  aspect-ratio: 16/9;
 }

@@ -7,9 +7,9 @@ import HomePage from './pages/home-page/home-page';
 import EducationPage from './pages/education-page/education-page';
 import ProjectPage from './pages/project-page';
 import ContactMe from './pages/contact-me';
+import WorksPage from './pages/works-page/works-page';
 
 import schoolsList from './pages/education-page/schools-list';
-import WorksPage from './pages/works-page';
 
 function App() {
   return (

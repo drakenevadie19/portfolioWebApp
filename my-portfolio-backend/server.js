@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'drakennievadje19@gmail.com', // replace with your email
+    user: 'williamdo25032003@gmail.com', // replace with your email
     pass: 'thanhnguyen14'   // replace with your email password
   }
 });
@@ -25,8 +25,8 @@ app.post('/send-email', (req, res) => {
 
   // Email content
   const mailOptions = {
-    from: 'drakennievadje19@gmail.com', // replace with your email
-    to: 'do.t.nguyen@tcu.edu',   // replace with your email
+    from: 'williamdo25032003@gmail.com', // replace with your email
+    to: 'williamdo25032003@gmail.com',   // replace with your email
     subject: 'New Contact Form Submission',
     text: `
       First Name: ${firstName}

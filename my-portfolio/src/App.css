@@ -46,6 +46,14 @@ nav a:hover {
   /* border-radius: 40px; */
 }
 
+#click {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*Page Body*/
 #page-body {
@@ -316,14 +324,21 @@ nav a:hover {
 /*----------------------------------------------------------------------------------------*/
 /* Project Page */
 .projects {
-  display: inline;
+  display: block; 
+  /* width: 100%; */
+  /* position: relative; */
 }
 
 .card {
   display: inline;
   float: left;
   width: 22rem;
-  margin: 1.5rem;
+  margin: 1rem;
+}
+
+.copyright {
+  position: static;
+  color: #97FEED;
 }
 
 .inside-card {
@@ -348,4 +363,53 @@ nav a:hover {
 
 .contact-area {
   background-color: #97FEED;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 100%;
+  }
+
+  body {
+      background: linear-gradient(180deg, rgb(255, 255, 255) 35%, #02153f 10%);
+  }
+
+  #menu {
+      display: block;
+      /* border: 2px solid #202A2E;÷\\\ */
+  }
+
+  .menu {
+      font-size: 2rem;
+      color: #02153f;
+      /* background-color: #02153f; */
+  }
+
+  header {
+      padding: 0.7rem 1rem;
+      justify-content: space-between;
+  }
+
+  nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #02153f;
+      left: -100%;
+      width: 100%;
+      top: 3rem;
+      transition: all 0.3s ease;
+  }
+
+  nav a {
+      color: #fff;
+  }
+  #click:checked~nav {
+      left: 0;
+  }
+  .Information {
+      align-items: start;
+  }
+
 }

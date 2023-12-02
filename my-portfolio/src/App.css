@@ -338,3 +338,14 @@ nav a:hover {
 .card-img-top {
   aspect-ratio: 16/9;
 }
+
+/*----------------------------------------------------------------------------------------*/
+/* Contact Page */
+.contact-label {
+  color: #21cec8;
+  font-weight: 600;
+}
+
+.contact-area {
+  background-color: #97FEED;
+}

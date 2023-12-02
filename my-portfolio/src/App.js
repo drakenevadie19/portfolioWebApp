@@ -6,7 +6,7 @@ import Navbar from './nav-bar';
 import HomePage from './pages/home-page/home-page';
 import EducationPage from './pages/education-page/education-page';
 import ProjectPage from './pages/project-page/project-page';
-import ContactMe from './pages/contact-me';
+import ContactMe from './pages/contact-page/contact-me';
 import WorksPage from './pages/works-page/works-page';
 
 import schoolsList from './pages/education-page/schools-list';

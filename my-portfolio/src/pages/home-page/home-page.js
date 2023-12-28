@@ -13,12 +13,12 @@ const HomePage = () => (
                 </div>
             </div>
             <div className="information">
-                <h1>Hi, I'm Thanh Nguyen Do</h1>
+                <h1><b>Hi, I'm Thanh Nguyen Do</b></h1>
                 <div className="animated_text">
                     <h1 className="title">Front - end / Full - stack Developer</h1>
                 </div>
                 <span>My name is Thanh Nguyen (William) Do. I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
-                    I'm a beginner full stack web developer, currently I have some experience with <b>HTML&Bootstrap, CSS&LESS, JavaScript&TypeScript, and NodeJS</b>. 
+                    I'm a beginner full stack web developer, currently I have some experiences with <b>HTML&Bootstrap, CSS&LESS, JavaScript&TypeScript, and NodeJS</b>. 
                     Now I practice in the development of web applications, and some frameworks like Angular, React, Vue etc. 
                     I want to learn more and utilize my skills in the field of Web Developing and to help solve real world challenges. </span>
 

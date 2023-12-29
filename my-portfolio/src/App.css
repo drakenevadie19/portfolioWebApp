@@ -61,7 +61,7 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
-  .topnav li:not(:last-child), .unique {
+  .topnav li:not(:last-child), .unique>h4 {
     display: none;
   }
 
@@ -80,11 +80,15 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
+  .topnav:not(.responsive) li:not(:last-child) {
+    display: none;
+  }
+
   .topnav.responsive {
     position: relative;
   }
 
-  .topnav.responsive li.icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -92,8 +96,12 @@ nav ul li:last-child {
 
   .topnav.responsive li {
     float: none;
-    display: block;
-    text-align: right;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .topnav.responsive li a {
+    color: #5800FF;
   }
 }
 

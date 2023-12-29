@@ -30,14 +30,6 @@ const Navbar = () => {
 
     return (
         <>
-            {/* <input type="checkbox" id="click" onClick={clickBar}/>
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </div>
-            </label> */}
             <nav>
                 <div class="unique">
                     <h4>Thanh Nguyen Do</h4>
@@ -51,7 +43,6 @@ const Navbar = () => {
                     </div>
                 </div>
                 
-            
                 <ul class="topnav">
                     <li>
                         <Link to="/">Home</Link>
@@ -69,14 +60,13 @@ const Navbar = () => {
                         <Link to="/contact">Contact Me</Link>
                     </li>
                     <li class="icon">
-                        <a href="javascript:void(0);" class="mainicon" id="click" onClick={clickBar}>
+                        <a class="mainicon" id="click" onClick={clickBar}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                             </svg>
                         </a>
                     </li>
                 </ul>
-                
             </nav>
         </>
     );

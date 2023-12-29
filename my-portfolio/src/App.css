@@ -556,6 +556,10 @@ nav ul li:last-child {
   background-color: #00D7FF;
 }
 
+.placeholder-Image {
+  width: 100%;
+}
+
 /* @media screen and (max-width: 768px) {
   .name-email-box {
     display: flex;

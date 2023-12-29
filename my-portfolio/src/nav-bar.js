@@ -23,9 +23,12 @@ const Navbar = () => {
         let x = document.getElementsByClassName("topnav");
         if (x.className === "topnav") {
             x.className += " responsive";
+            console.log("Open");
         } else {
             x.className = "topnav";
+            console.log("Close");
         }
+        console.log(x.className);
     }
 
     return (

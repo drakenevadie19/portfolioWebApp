@@ -61,7 +61,7 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
-  .topnav li:not(:last-child), .unique>h4 {
+  .topnav li:not(:last-child), .unique {
     display: none;
   }
 
@@ -77,20 +77,23 @@ nav ul li:last-child {
   .mainicon {
     color: #00D7FF;
   } 
+}
 
-  .topnav .responsive {
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
     position: relative;
   }
 
-  .topnav.responsive .icon {
+  .topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+
+  .topnav.responsive li {
     float: none;
     display: block;
-    text-align: left;
+    text-align: right;
   }
 }
 
@@ -157,8 +160,8 @@ nav ul li:last-child {
    */
   border-radius: 50%;
 }
-/*Information*/
 
+/*Information*/
 .information {
   display: flex;
   flex-direction: column;
@@ -267,7 +270,7 @@ nav ul li:last-child {
     width: 100%;
     height: 100%;
   } */
-  
+
   .blue-bg-outer {
     aspect-ratio: 1/1;
     width: 90%;

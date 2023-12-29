@@ -3,34 +3,6 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 const Navbar = () => {
-    // const clickBar = () => {
-    //     // var check = document.getElementById("click");
-    //     // var header = document.getElementById("header");
-    //     // var logo = document.getElementById("logo");
-    //     // var menu = document.getElementById("menu");
-
-    //     // check.addEventListener("click", () => {
-    //     //     if (check.checked) {
-    //     //         header.style.backgroundColor = "#02153f";
-    //     //         logo.style.color = "#fff";
-    //     //         menu.style.color = "#fff";
-
-    //     //     } else {
-    //     //         header.style.backgroundColor = "transparent";
-    //     //         logo.style.color = "#02153f";
-    //     //         menu.style.color = "#02153f";
-    //     //     }
-    //     // } );
-    //     let x = document.getElementsByClassName("topnav");
-    //     if (x.className === "topnav") {
-    //         x.className += " responsive";
-    //         console.log("Open");
-    //     } else {
-    //         x.className = "topnav";
-    //         console.log("Close");
-    //     }
-    //     console.log(x.className);
-    // }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const clickBar = () => {
@@ -54,7 +26,7 @@ const Navbar = () => {
                 
                 <ul className={`topnav ${isMenuOpen ? 'responsive' : ''}`}>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
                         <Link to="/education">Education</Link>

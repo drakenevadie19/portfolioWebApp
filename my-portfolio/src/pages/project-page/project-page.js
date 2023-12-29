@@ -41,7 +41,7 @@ const ProjectPage = ({projects}) => {
                                     </>
                                 )}
                                 
-                                <a href={project.link} class="btn btn-primary" target="_blank" rel="noreferrer">Go Github Repository</a>
+                                <a href={project.link} class="btn btn-primary" target="_blank" rel="noreferrer">Go to Github Repository</a>
                             </div>
                         </div>
                     ))}

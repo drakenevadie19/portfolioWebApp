@@ -12,10 +12,10 @@ import WorksPage from './pages/works-page/works-page';
 import schoolsList from './pages/education-page/schools-list';
 import projectData from './pages/project-page/project-data'
 
-function App() {
+function Main() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="Main">
         <Navbar />
         <div id="page-body">
           <Routes>
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

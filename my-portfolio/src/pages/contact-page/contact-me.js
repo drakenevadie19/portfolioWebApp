@@ -39,7 +39,8 @@ const ContactMe = () => {
     };
 
     return (
-        <> 
+      <> 
+        <div id="page-body">
           <div className="contact-page">
             <div className="placeholder-Image">
               <img src="/programmer.png" alt="Programmer"/>
@@ -66,8 +67,7 @@ const ContactMe = () => {
               </form>
             </div>
           </div>
-          
-          
+        </div>
       </>
     )
 }

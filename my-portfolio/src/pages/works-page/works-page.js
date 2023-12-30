@@ -3,30 +3,32 @@ import workdata from "./work-data";
 
 const WorksPage = () => (
     <>
-        <div className="work-page">
-            <div className="imageWorks">
-                <div className="polaroid rotate_right">
-                    <img src="/works/FPT onboards.jpg" alt="FPT welcome" className="polaroid-image"></img>
-                    <p>Since my internship is remote, this is my offer letter!</p>
-                </div>
+        <div id="page-body">
+            <div className="work-page">
+                <div className="imageWorks">
+                    <div className="polaroid rotate_right">
+                        <img src="/works/FPT onboards.jpg" alt="FPT welcome" className="polaroid-image"></img>
+                        <p>Since my internship is remote, this is my offer letter!</p>
+                    </div>
 
-                <div className="polaroid rotate_left">
-                    <img src="/works/CSTA.png" alt="CSTA" className="polaroid-image"></img>
-                    <p>Being a Computer Science TA be like...</p>
-                </div>
+                    <div className="polaroid rotate_left">
+                        <img src="/works/CSTA.png" alt="CSTA" className="polaroid-image"></img>
+                        <p>Being a Computer Science TA be like...</p>
+                    </div>
 
-                <div className="polaroid rotate_right">
-                    <img src="/works/MathClinics.jpg" alt="MC" className="polaroid-image"></img>
-                    <p>Working in Math Clinics</p>
+                    <div className="polaroid rotate_right">
+                        <img src="/works/MathClinics.jpg" alt="MC" className="polaroid-image"></img>
+                        <p>Working in Math Clinics</p>
+                    </div>
                 </div>
-            </div>
-            <div className="infoWorks">
-                <h1>Internship</h1>
-                <WorkExperience works={workdata[0]} />
-                <h1>On-campus Jobs</h1>
-                <WorkExperience works={workdata[1]} />
-                <WorkExperience works={workdata[2]} />
-                <WorkExperience works={workdata[3]} />
+                <div className="infoWorks">
+                    <h1>Internship</h1>
+                    <WorkExperience works={workdata[0]} />
+                    <h1>On-campus Jobs</h1>
+                    <WorkExperience works={workdata[1]} />
+                    <WorkExperience works={workdata[2]} />
+                    <WorkExperience works={workdata[3]} />
+                </div>
             </div>
         </div>
     </>

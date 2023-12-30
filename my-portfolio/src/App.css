@@ -1,7 +1,58 @@
 .App {
   text-align: center;
 }
+/*----------------------------------------------------------------------------------------*/
+/* Main Page */
+.main-page {
+  background-image: url("/Users/nguyendo/portfolio-web-app/portfolioWepApp/my-portfolio/public/Drake Do Good.png");
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
 
+  position: relative;
+  /* background-repeat: no-repeat; */
+}
+
+.main-page h1 {
+  color: #00D7FF;
+}
+
+.profile-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-wrapper h6, h3 {
+  color: #00D7FF;
+}
+
+.tcu {
+  color: #5800FF;
+}
+
+.copyright-drake {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  gap: 10px;
+  color: #00D7FF;
+  
+  display: flex;
+  align-items: center;
+}
 /*----------------------------------------------------------------------------------------*/
 /* Home Page */
 /*Nav bar*/
@@ -61,6 +112,10 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
+  nav a:hover {
+    background: none;
+  }
+
   .topnav li:not(:last-child), .unique>h4 {
     display: none;
   }
@@ -237,10 +292,6 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
-  #page-body {
-    margin: 0;
-    padding: 0;
-  }
   .main-home-page {
     width: 100%;
 

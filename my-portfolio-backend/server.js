@@ -1,54 +1,61 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const cors = require('cors'); // Import cors module to habdle cross-origin resource
+const cors = require('cors');
 
 const app = express();
 const port = 3001;
 
-// Body parser middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// Nodemailer configuration
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'williamdo25032003@gmail.com', // replace with your email
-    pass: 'thanhnguyen14'   // replace with your email password
-  }
-});
 
-// Route to handle form submissions
+
 app.post('/send-email', (req, res) => {
-  const { firstName, lastName, email, message } = req.body;
+  const { name, email, message } = req.body;
 
-  // Email content
+  const transporter = nodemailer.createTransport({
+    host: "smtp.mailgun.org",
+    port: 587,
+    auth: {
+      user: "postmaster@sandboxc6af68afc4ef472b99766109c53c1138.mailgun.org",
+      pass: "8cc4dbf05d971306217e81975314b264-1900dca6-009e97bf",
+    },
+  });
+
+  // Simple input validation
+  if (!name || !email || !message) {
+    return res.status(400).json({ error: 'All fields are required' });
+  }
+
+  // More robust email validation using a regular expression
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ error: 'Invalid email address' });
+  }
+
   const mailOptions = {
-    from: 'williamdo25032003@gmail.com', // replace with your email
+    from: 'postmaster@sandboxc6af68afc4ef472b99766109c53c1138.mailgun.org', // replace with your email
     to: 'williamdo25032003@gmail.com',   // replace with your email
     subject: 'New Contact Form Submission',
     text: `
-      First Name: ${firstName}
-      Last Name: ${lastName}
+      Name: ${name}
       Email: ${email}
       Message: ${message}
     `
   };
 
-  // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error(error);
-      res.status(500).json({ error: 'Internal Server Error' });
+      return res.status(500).json({ error: 'Internal Server Error', details: error.message });
     } else {
       console.log('Email sent: ' + info.response);
-      res.status(200).json({ message: 'Email sent successfully' });
+      return res.status(200).json({ message: 'Email sent successfully' });
     }
   });
 });
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

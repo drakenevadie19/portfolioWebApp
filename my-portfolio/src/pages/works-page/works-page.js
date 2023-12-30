@@ -15,12 +15,12 @@ const WorksPage = () => (
                     </div>
 
                     <div className="polaroid rotate_left">
-                        <img src="/works/CSTA.png" alt="CSTA" className="polaroid-image"></img>
+                        <img src="/inDeskCS.jpeg" alt="CSTA" className="polaroid-image"></img>
                         <p>Being a Computer Science TA be like...</p>
                     </div>
 
                     <div className="polaroid rotate_right">
-                        <img src="/works/MathClinics.jpg" alt="MC" className="polaroid-image"></img>
+                        <img src="/works/CSTA.png" alt="MC" className="polaroid-image"></img>
                         <p>Working in Math Clinics</p>
                     </div>
                 </div>

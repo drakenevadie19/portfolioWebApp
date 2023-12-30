@@ -1,5 +1,7 @@
 import ResumeButton from "./resume-button";
 
+import CopyRight from "../Routing-Pages/copyright-component";
+
 const HomePage = () => (
     <div id="page-body">
         <div className="main-home-page">
@@ -53,6 +55,8 @@ const HomePage = () => (
                 <ResumeButton />
             </div>
         </div>
+
+        <CopyRight />
     </div>
 );
 

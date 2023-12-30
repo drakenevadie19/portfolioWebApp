@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import CopyRight from "../Routing-Pages/copyright-component";
+
 const ContactMe = () => {
   const [formData, setFormData] = useState({
       firstName: '',
@@ -67,6 +69,8 @@ const ContactMe = () => {
               </form>
             </div>
           </div>
+
+          <CopyRight />
         </div>
       </>
     )

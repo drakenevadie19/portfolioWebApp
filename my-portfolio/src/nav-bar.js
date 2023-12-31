@@ -14,7 +14,7 @@ const Navbar = () => {
 
     const handleClick1 = () => {
       // Navigate back to the home page ("/home")
-      navigate('/main/home');
+      navigate('/main/aboutme');
     };
 
     const handleClick2 = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
                 
                 <ul className={`topnav ${isMenuOpen ? 'responsive' : ''}`}>
                     <li>
-                        <Link to="/main/home">Home</Link>
+                        <Link to="/main/aboutme">About Me</Link>
                     </li>
                     <li>
                         <Link to="/main/education">Education</Link>

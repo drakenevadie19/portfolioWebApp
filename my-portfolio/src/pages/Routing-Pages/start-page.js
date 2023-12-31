@@ -6,7 +6,7 @@ function StartPage() {
 
   const handleClick = () => {
     // Navigate back to the home page ("/home")
-    navigate('/main/home');
+    navigate('/main/aboutme');
   };
 
   return (

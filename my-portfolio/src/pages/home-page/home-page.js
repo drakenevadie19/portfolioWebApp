@@ -2,7 +2,7 @@ import ResumeButton from "./resume-button";
 
 import CopyRight from "../Routing-Pages/copyright-component";
 
-const HomePage = () => (
+const AboutPage = () => (
     <div id="page-body">
         <div className="main-home-page">
             <div className="images">
@@ -17,12 +17,12 @@ const HomePage = () => (
             <div className="information">
                 <h1><b>Hi, I'm Thanh Nguyen Do</b></h1>
                 <div className="animated_text">
-                    <h1 className="title">Front - end / Full - stack Developer</h1>
+                    <h1 className="title">Software Engineer</h1>
                 </div>
-                <span>My name is Thanh Nguyen (Williams) Do. I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
+                <p className="aboutme-description">My name is Thanh Nguyen (Williams) Do. I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                     I'm a beginner full stack web developer, currently I have experiences with <b>SpringBoot, NextJS, Bootstrap, CSS, LESS, JavaScript, TypeScript, and NodeJS</b>. 
                     Now I practice in the development of web applications, and some frameworks like Angular, React, Vue etc. 
-                    I want to learn more and utilize my skills in the field of Web Developing and to help solve real world challenges. </span>
+                    I want to learn more and utilize my skills in the field of Web Developing and to help solve real world challenges. </p>
 
                 <div className="otherLink">
                     <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">
@@ -51,14 +51,6 @@ const HomePage = () => (
                         </span>
                         <b>Williams Do</b>
                     </a>
-{/* 
-                    <a href="https://www.youtube.com/channel/UCs6s_xJzMbUpAuE17-hsn1w" target="_blank" rel="noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
-                        </svg>
-                    </a> */}
-
-                    
                 </div>
                 
                 <ResumeButton />
@@ -69,4 +61,4 @@ const HomePage = () => (
     </div>
 );
 
-export default HomePage;
+export default AboutPage;

@@ -115,7 +115,7 @@
 }
 
 nav {
-  border-bottom: 5px solid #00D7FF;
+  /* border-bottom: 5px solid #00D7FF; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,8 +150,8 @@ nav a {
 }
 
 nav a:hover {
-  background: #0096FF;
   color: #72FFFF;
+  border: 3px #72FFFF solid;
   border-radius: 15px;
 }
 
@@ -209,7 +209,7 @@ nav ul li:last-child {
 }
 
 /*----------------------------------------------------------------------------------------*/
-/*Page Body*/
+/*About Page*/
 #page-body {
   margin: 2rem 8rem;
   height: 80vh;
@@ -237,7 +237,7 @@ nav ul li:last-child {
   width: 28em;
   height: 28em;
   border-radius: 50%;
-  background: #5800FF ;
+  background: linear-gradient(270deg, #fff, blueviolet, #5800FF);
   display: grid;
   place-items: center;
 }
@@ -276,30 +276,37 @@ nav ul li:last-child {
   flex-direction: column;
   align-items: flex-end; 
 
-  width: 40%;
+  width: 50%;
   
   
-  color: #00D7FF;
+  color: #18134C;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .information h1,span {
   margin: 10px;
   text-align: right;
-  color: #72FFFF;
+  color: #18134C;
 }
+
+.aboutme-description {
+  font-weight: 500;
+  text-align: right;
+}
+
 
 .animated_text>h1 {
   -webkit-text-stroke: 1px #fff;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: transparent;
   background-repeat: no-repeat;
-  background-image: linear-gradient(skyblue, skyblue);
+  background-image: linear-gradient(90deg, #72FFFF, #00D7FF);
   -webkit-background-clip: text;
   background-clip: none;
   background-position: -500px 0;
-  animation: backcolor 7s linear infinite;
-  text-shadow: 0 0 8px #72FFFF;
+  animation: backcolor 5s linear infinite;
+  text-shadow: 0 0 7px #72FFFF;
 }
 
 @keyframes backcolor {
@@ -318,15 +325,18 @@ nav ul li:last-child {
 }
 
 .otherLink a {
-  color: #00D7FF;
-  border: 2px #00D7FF solid;
+  color: #18134C;
+  border: 2px #18134C solid;
   padding: 5px;
   border-radius: 20px;
   text-decoration: none;
+
+  height:fit-content;
 }
 
 .otherLink a:hover {
-  color: #72FFFF;
+  background-color: #72FFFF;
+  border: 2px #72FFFF solid;
   text-shadow: 0 0 10px #fff;
   transform: scale(1.1); 
 }
@@ -346,7 +356,7 @@ nav ul li:last-child {
   background-color: #72FFFF;
   box-shadow: 0 0 10px #72FFFF;
   transition: all .3s ease-in-out;
-  color: #0096FF;
+  color: #18134C;
 
   transform: scale(1.25); 
 }
@@ -375,18 +385,6 @@ nav ul li:last-child {
     align-items: center;
   }
 
-  /* .images  {
-    aspect-ratio: 1/1;
-    width: 90%;
-    height: 90%;
-  } */
-
-  /* .images div img {
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: 100%;
-  } */
-
   .blue-bg-outer {
     aspect-ratio: 1/1;
     width: 90%;
@@ -404,12 +402,6 @@ nav ul li:last-child {
     width: 90%;
     height: 90%;
   }
-  
-  /* .blue-bg img {
-    aspect-ratio: 1/1;
-    width: 95%;
-    height: 95%;
-  } */
 
   .information {
     width: 100%;
@@ -432,18 +424,20 @@ nav ul li:last-child {
   display: flex;
   justify-content: space-around;
 
-  color: #97FEED;
   text-align: left;
 
   margin-top: 5rem;
   gap: 5%;
 }
 
-/* .education-image img {
-  width: 300px;
-  height: 200px;
+.education-box {
+  border: 3px #18134C solid; 
   border-radius: 15px;
-} */
+  padding: 10px;
+  height:fit-content;
+
+  color: #18134C;
+}
 
 .education-box h1, h4{
   margin: 0;
@@ -463,7 +457,7 @@ nav ul li:last-child {
 #carouselExampleControls {
   width: 50%;
   height: 40%;
-  box-shadow: 5px 10px 18px #97FEED;
+  box-shadow: 5px 10px 18px #8200FF;
   border-radius: 15px;
 }
 
@@ -473,7 +467,7 @@ nav ul li:last-child {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .education {
     width: 100%;
     display: flex;
@@ -493,11 +487,12 @@ nav ul li:last-child {
 /*----------------------------------------------------------------------------------------*/
 /* Works Page */
 .work-page {
-  color: #97FEED; 
+  color: #18134C;
   display: flex;
   flex-direction: row;
 
   margin-top: 4rem;
+  font-weight: 600;
 }
 
 .imageWorks {
@@ -513,7 +508,7 @@ nav ul li:last-child {
   width: 90%;
   padding: 10px 10px 15px 10px;
   background-color: #00D7FF;
-  box-shadow: 5px 10px 18px #97FEED;
+  box-shadow: 5px 10px 18px #18134C;
   border: 1px solid #071952;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -544,6 +539,8 @@ nav ul li:last-child {
   text-align: start;
   display: flex;
   flex-direction: column;
+
+  color: #18134C;
 }
 
 .infoWorks h1 {
@@ -571,6 +568,10 @@ nav ul li:last-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.left h3 {
+  color: #18134C;
 }
 
 .right {
@@ -607,8 +608,6 @@ nav ul li:last-child {
 
 .projects {
   display: block; 
-  /* width: 100%; */
-  /* position: relative; */
 }
 
 .card {
@@ -674,10 +673,15 @@ nav ul li:last-child {
 }
 
 .contact-info p {
-  border: 2px #00D7FF solid;
+  border: 2px #18134C solid;
   padding: 5px;
   border-radius: 20px;
-  color: #00D7FF;
+  color: #18134C;
+  width: auto;
+}
+
+.contact-info p span {
+  color: #18134C;
 }
 
 .contact-info p:hover {
@@ -686,7 +690,7 @@ nav ul li:last-child {
 }
 
 .contact-label {
-  color: #00D7FF;
+  color: #18134C;
   font-weight: 600;
 }
 
@@ -698,6 +702,12 @@ nav ul li:last-child {
   width: 100%;
 }
 
+.form-manage {
+  border: 2px #18134C solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .contact-info {
     display: flex;
@@ -706,7 +716,7 @@ nav ul li:last-child {
   }
 
   .contact-info p {
-    width: 50%;
+    width: auto;
   }  
 }
 
@@ -725,5 +735,17 @@ nav ul li:last-child {
 
   #page-body {
     margin: 2rem 4rem;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #page-body {
+    margin: 2rem 4rem;
+    height: 100%;
+  }
+
+  .information {
+    width: 100%;
   }
 }

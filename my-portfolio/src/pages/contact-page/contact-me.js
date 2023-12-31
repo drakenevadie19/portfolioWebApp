@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CopyRight from "../Routing-Pages/copyright-component";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -95,8 +94,6 @@ const ContactMe = () => {
             {submitError && <div className="error-message">{submitError}</div>}
           </div>
         </div>
-
-        <CopyRight />
       </div>
     </>
   );

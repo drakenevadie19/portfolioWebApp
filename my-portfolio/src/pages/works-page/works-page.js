@@ -1,9 +1,6 @@
 import WorkExperience from "./work-experience";
 import workdata from "./work-data";
 
-import CopyRight from "../Routing-Pages/copyright-component";
-
-
 const WorksPage = () => (
     <>
         <div id="page-body">
@@ -33,8 +30,6 @@ const WorksPage = () => (
                     <WorkExperience works={workdata[3]} />
                 </div>
             </div>
-
-            <CopyRight />
         </div>
     </>
 )

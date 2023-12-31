@@ -3,6 +3,12 @@
 }
 /*----------------------------------------------------------------------------------------*/
 /* Main Page */
+.main { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .main-page {
   background-image: url('../public/Drake Do bio.png');
   background-size: 100% 100%;
@@ -10,7 +16,6 @@
   height: 100vh;
 
   position: relative;
-  /* background-repeat: no-repeat; */
 }
 
 .main-page h1 {
@@ -48,15 +53,27 @@
 }
 
 .copyright-drake {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
   gap: 10px;
-  color: #00D7FF;
-  
+  color: #18134C;
+  width: 100%;
+  height: fit-content;  
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
+}
+
+.copyright-drake-1 {
+  position: absolute;
+  bottom: 0;
+  color: #72FFFF;
+  width: 100%;
+  height: fit-content;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .svg-icon {
@@ -69,7 +86,6 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-
   }
 
   .profile-wrapper {
@@ -91,7 +107,7 @@
     /* filter: blur(8px); */
 
     left: 20%;
-    color: #00D7FF;
+    color: #18134C;
 
     /* background-color: #5800FF; */
     
@@ -144,7 +160,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #72FFFF;
   font-weight: bold;
   padding: 24px 32px;
 }
@@ -160,8 +176,12 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
+  nav a {
+    color: #5800FF;
+  }
+
   nav a:hover {
-    background: none;
+    border: 3px #5800FF solid;
   }
 
   .topnav li:not(:last-child), .unique>h4 {
@@ -212,9 +232,12 @@ nav ul li:last-child {
 /*About Page*/
 #page-body {
   margin: 2rem 8rem;
-  height: 80vh;
-
-  position: relative;
+  height: 100%;
+/* 
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center; */
 }
 
 .main-home-page {
@@ -305,8 +328,8 @@ nav ul li:last-child {
   -webkit-background-clip: text;
   background-clip: none;
   background-position: -500px 0;
-  animation: backcolor 5s linear infinite;
-  text-shadow: 0 0 7px #72FFFF;
+  animation: backcolor 7s linear infinite;
+  text-shadow: 0 0 8px #72FFFF;
 }
 
 @keyframes backcolor {
@@ -594,7 +617,7 @@ nav ul li:last-child {
 
   .infoWorks {
     width: 100%;
-    color: #00D7FF;
+    color: #18134C;
   }
 }
 
@@ -684,10 +707,10 @@ nav ul li:last-child {
   color: #18134C;
 }
 
-.contact-info p:hover {
+/* .contact-info p:hover {
   background-color: #0096FF;
   transform: scale(1.25);
-}
+} */
 
 .contact-label {
   color: #18134C;
@@ -722,20 +745,15 @@ nav ul li:last-child {
 
 /*----------------------------------------------------------------------------------------*/
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   html {
       font-size: 100%;
   }
 
   body {
     background: linear-gradient(180deg, rgb(255, 255, 255) 35%, #5800FF 65%);
-    /* background-size: 100% 100%; */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-
-  #page-body {
-    margin: 2rem 4rem;
-    height: 100%;
   }
 }
 

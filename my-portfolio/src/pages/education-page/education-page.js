@@ -1,7 +1,5 @@
 import SchoolImage from "./schools-image";
 
-import CopyRight from "../Routing-Pages/copyright-component";
-
 const EducationPage = ({ educationList }) => (
     <>
         <div id="page-body">
@@ -21,8 +19,6 @@ const EducationPage = ({ educationList }) => (
                     ))}
                 </div>
             </div>
-
-            <CopyRight />
         </div>
     </>
 );

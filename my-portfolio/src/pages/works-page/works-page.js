@@ -5,7 +5,7 @@ const WorksPage = () => (
     <>
         <div id="page-body">
             <div className="work-page">
-                <div className="imageWorks">
+                {/* <div className="imageWorks">
                     <div className="polaroid rotate_right">
                         <img src="/works/FPT onboards.jpg" alt="FPT welcome" className="polaroid-image"></img>
                         <p>Since my internship is remote, this is my offer letter!</p>
@@ -20,7 +20,7 @@ const WorksPage = () => (
                         <img src="/works/CSTA.png" alt="MC" className="polaroid-image"></img>
                         <p>Working in Math Clinics</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="infoWorks">
                     <h1>Internship</h1>
                     <WorkExperience works={workdata[0]} />

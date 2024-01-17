@@ -745,7 +745,7 @@ nav ul li:last-child {
   backdrop-filter: hue-rotate(30deg);
 }
 
-.project-name h3,h4 {
+.project-name h4 {
   color: #18134C;
 }
 

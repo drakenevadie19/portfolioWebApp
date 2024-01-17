@@ -6,9 +6,9 @@ const AboutPage = () => {
             <div id="page-body">
                 <div className="main-home-page">
                     <div className="images">
-                        <div class="blue-bg-outer">
-                            <div class="white-bg">
-                                <div class="blue-bg">
+                        <div className="blue-bg-outer">
+                            <div className="white-bg">
+                                <div className="blue-bg">
                                     <img src="/Drake.jpg" alt="Bio" />
                                 </div>
                             </div>
@@ -19,10 +19,10 @@ const AboutPage = () => {
                         <div className="animated_text">
                             <h1 className="title">Software Engineer</h1>
                         </div>
-                        <p className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
+                        <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                             I'm a beginner full-stack web developer, currently with experiences in <b className="tech-stack-animation"> MERN/MEVN Stacks, SpringBoot, Next.js, Bootstrap, CSS, LESS, JavaScript, and TypeScript</b>. 
                             Now I am practicing in the development of web applications with frameworks like Angular.js, React.js, Vue.js etc. 
-                            In the near future, I want to utilize my skills in Web Developing and take part in US industry. </p>
+                            In the near future, I want to utilize my skills in Web Developing and take part in US industry. </h5>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">

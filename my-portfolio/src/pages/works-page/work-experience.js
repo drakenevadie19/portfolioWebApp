@@ -16,8 +16,8 @@ const WorkExperience = ({works}) => (
             </div>
             
             <ul>
-                {works.description.map(des => (
-                    <li>{des}</li>
+                {works.description.map((des, index) => (
+                    <li key={index}>{des}</li>
                 ))}
             </ul>
         </div>

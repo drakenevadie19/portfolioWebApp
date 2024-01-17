@@ -3,7 +3,9 @@ const projectData = [
         name: "Blog-app", 
         link: "https://github.com/drakenevadie19/BlogApp.git",
         src: "/project-bio-image/BlogApp.jpg",
-        description: "Architectured a website blog application allowing users to save memories and articles.",
+        description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
+        workTime: "12/2023 - present",
+        techStack: "JavaScript, MongoDB, Express.js, React.js, Node.js, MongoDB Atlas, React Hooks, Axios, Firebase Auth, Google Cloud hosting Platform, RestfulAPI.",
         participants: "Drake Do",
     },
     {
@@ -11,6 +13,8 @@ const projectData = [
         link: "https://github.com/drakenevadie19/TwoTreeEcommerceApp.git",
         src: "/project-bio-image/ecommerceApp.png",
         description: "Designed an fullstack interface with MEVN-stack for shopping demands of users with fully necessary functions for a shopping page. I am still working on this page to develop more.",
+        workTime: "1/2024 - present",
+        techStack: "JavaScript, Vue.js, Node.js, Express.js, Restful API, Postman, MongoDB, Mongo Atlas Database hosting, Axios, Render web hosting",
         participants: "Drake Do",
     },
     {
@@ -18,13 +22,17 @@ const projectData = [
         link: "https://github.com/drakenevadie19/ContactInterface.git",
         src: "/project-bio-image/contactInterface.png",
         description: "Designed an fullstack interface using React and Spring Boot to store and manage contacts",
+        workTime: "11/2023 - 12/2023",
+        techStack: "Java , React.js, Materialize CSS, Bootstrap 5, Spring Boot, Restful API, Postman",
         participants: "Drake Do",
     },
     {
-        name: "Hogwart-artifact-online",
+        name: "Hogwart Artifact Online",
         link: "https://github.com/drakenevadie19/hogwart-artifact-online",
         src: "/project-bio-image/hogwart.jpg",
         description: "Developed a fully-fledged RESTful API server to manage wizard object entity and artifact object entity using SpringBoot, Spring MVC, Spring Data JPA and H2 database.",
+        workTime: "3/2023 - 4/2023",
+        techStack: "Java, Spring Boot, Spring Data, Spring JPA, JWT, Spring Security.",
         participants: "Drake Do",
     },
     {
@@ -32,22 +40,29 @@ const projectData = [
         link: "https://github.com/drakenevadie19/sudokuGame",
         src: "/project-bio-image/sudokuGame.jpg",
         description: "Inspired by traditional sudoku game, I design a web page for users to solve their maze, and also play Sudoku there. I created a responsive design website, using Angular framework, with Material UI.",
+        workTime: "7/2023 - 8/2023",
+        techStack: "TypeScripts, Angular.js, Ngrx, RxJS, Bootstrap 5, Material UI, SweetAlert.",
         participants: "Drake Do",
     },
     {
         name: "SuperFrog Scheduler",
         link: "https://github.com/drakenevadie19/SuperFrogSchedulerFrontEnd",
         src: "/project-bio-image/superFrog.jpg",
-        description: "Increased website traffic 20% by designing a responsive Vue.js-based front-end for TCU Recreational Center's customer-facing scheduling system, allowing bookings of mascot appearances.",
-        participants: "Drake Do",
+        description: "Our goal is to provide the TCU campus with superior technology and a robust infrastructure that will meet the needs of a growing student and employee population. We are dedicated to securing, supporting, and assisting users with the technology services that we provide.",
+        workTime: "4/2023 - 5/2023",
+        techStack: "JavaScript, Java, Node.js, Vue.js, Spring Boot, MySQL, Microsoft Azure",
+        participants: "Drake Do, Kien Pham, Joey Herzog, Taylor Griffin, Eric Guyette, Tommy Truong",
     },
     {
         name: "Book Manager Database",
         link: "https://github.com/drakenevadie19/BookManager",
         src: "/project-bio-image/books.jpg",
         description: "Guided Dr. Sarka in TCU, I developed a database system for managing new books coming for TCU, using Python and MySQL. This database can also handle queries such as searching a book/books, changing books' information, deleting books. For IDE, I used Pycharm for Python and Datagrip, with Docker to monitor database.",
+        workTime: "10/2023 - 11/2023",
+        techStack: "MySQL, Python, MongoDB",
         participants: "Drake Do",
     },
 ]
 
 export default projectData;
+

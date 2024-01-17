@@ -658,14 +658,111 @@ nav ul li:last-child {
 /* Project Page */
 .project-wrap {
   display: flex;
+  flex-direction: row;
+}
+
+.project-list-tab {
+  width: 30%;
+
+  padding: 5%;
+  display: flex;
   flex-direction: column;
-  align-content: space-between;
+  gap: 10px;
+  height: max-content;
+
+  /* border: 4px #0096FF solid; */
+  border-radius: 20px;
+  backdrop-filter: hue-rotate(30deg);
 }
 
-.projects {
-  display: block; 
+.project-list-tab:hover {
+  /* border: 4px #8200FF solid; */
+  /* backdrop-filter: brightness(92%); */
+  backdrop-filter: hue-rotate(30deg);
 }
 
+.project-list-tab a {
+  color: #18134C;
+  border: 2px #0096FF solid;
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+
+  height:fit-content;
+}
+
+.project-list-tab a:hover {
+  background-color: #72FFFF;
+  border: 3px #72FFFF solid;
+  text-shadow: 0 0 10px #fff;
+  transform: scale(1.1); 
+}
+
+.project-render-wrap {
+  width: 70%;
+  padding: 2% 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+
+.project-render-first-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-render-src {
+  width: 69%;
+  border-radius: 20px;
+}
+
+.project-render-src-here {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+}
+
+.project-name-and-participant {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-name, .project-participant {
+  /* background-color: #06cdff; */
+  /* border: 4px #0096FF solid; */
+  height: 48%;
+  border-radius: 20px;
+  color: #18134C;
+
+  padding: 5%;
+  backdrop-filter: hue-rotate(30deg);
+}
+
+.project-name h3,h4 {
+  color: #18134C;
+}
+
+.project-name:hover, .project-participant:hover {
+  backdrop-filter: brightness(95%);
+}
+
+.project-tech-stack, .project-description  {
+  width: 100%;
+  /* border: 4px #0096FF solid; */
+  border-radius: 20px;
+  padding: 2%;
+
+  backdrop-filter: hue-rotate(30deg);
+}
+
+/* 
 .card {
   display: inline;
   float: left;
@@ -674,7 +771,6 @@ nav ul li:last-child {
 }
 
 .copyright {
-  /* position: static; */
   color: #00D7FF;
   display: flex;
   flex-direction: row;
@@ -698,10 +794,10 @@ nav ul li:last-child {
 
 .card-img-top {
   aspect-ratio: 16/9;
-}
+} */
 
 @media screen and (max-width: 768px) {
-  .projects {
+  .project-wrap{
     width: 100%;
     display: flex;
     flex-direction: column;

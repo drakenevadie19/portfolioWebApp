@@ -6,10 +6,10 @@ const ProjectRender =({project}) => {
                     <div className="project-name-and-participant">
                         <div className="project-name">
                             <h3>{project.name}</h3>
-                            <h4>({project.workTime})</h4>
+                            {/* <h4>({project.workTime})</h4> */}
                         </div>
                         <div className="project-participant">
-                            <h3>{project.participants}</h3>
+                            <h3>{project.workTime}</h3>
                         </div>
                     </div>
 

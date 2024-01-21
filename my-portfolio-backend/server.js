@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -5,7 +7,7 @@ const cors = require('cors');
 
 const app = express();
 const port = 3001;
-
+  
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -16,10 +18,10 @@ app.post('/send-email', (req, res) => {
 
   const transporter = nodemailer.createTransport({
     host: "smtp.mailgun.org",
-    port: 587,
+    port: process.env.port,
     auth: {
-      user: "postmaster@sandboxc6af68afc4ef472b99766109c53c1138.mailgun.org",
-      pass: "8cc4dbf05d971306217e81975314b264-1900dca6-009e97bf",
+      user: process.env.UserName,
+      pass: process.env.PassWord,
     },
   });
 
@@ -35,8 +37,8 @@ app.post('/send-email', (req, res) => {
   }
 
   const mailOptions = {
-    from: 'postmaster@sandboxc6af68afc4ef472b99766109c53c1138.mailgun.org', // replace with your email
-    to: 'williamdo25032003@gmail.com',   // replace with your email
+    from: process.env.SenderEmail, // replace with your email
+    to: process.env.ReceiverEmail,   // replace with your email
     subject: 'New Contact Form Submission',
     text: `
       Name: ${name}

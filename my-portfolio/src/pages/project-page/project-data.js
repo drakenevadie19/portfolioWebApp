@@ -1,20 +1,20 @@
 const projectData = [
     {
-        name: "Blog-app", 
-        link: "https://github.com/drakenevadie19/BlogApp.git",
-        src: "/project-bio-image/BlogApp.jpg",
-        description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
-        workTime: "12/2023 - present",
-        techStack: "JavaScript, MongoDB, Express.js, React.js, Node.js, MongoDB Atlas, React Hooks, Axios, Firebase Auth, Google Cloud hosting Platform, RestfulAPI.",
-        participants: "Drake Do",
-    },
-    {
         name: "Two Tree Ecommerce App",
         link: "https://github.com/drakenevadie19/TwoTreeEcommerceApp.git",
         src: "/project-bio-image/ecommerceApp.png",
         description: "Designed an fullstack interface with MEVN-stack for shopping demands of users with fully necessary functions for a shopping page. I am still working on this page to develop more.",
         workTime: "1/2024 - present",
         techStack: "JavaScript, Vue.js, Node.js, Express.js, Restful API, Postman, MongoDB, Mongo Atlas Database hosting, Axios, Render web hosting",
+        participants: "Drake Do",
+    },
+    {
+        name: "Blog-app", 
+        link: "https://github.com/drakenevadie19/BlogApp.git",
+        src: "/project-bio-image/BlogApp.jpg",
+        description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
+        workTime: "12/2023 - present",
+        techStack: "JavaScript, MongoDB, Express.js, React.js, Node.js, MongoDB Atlas, React Hooks, Axios, Firebase Auth, Google Cloud hosting Platform, RestfulAPI.",
         participants: "Drake Do",
     },
     {

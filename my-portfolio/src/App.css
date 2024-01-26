@@ -307,14 +307,14 @@ nav ul li:last-child {
   width: 50%;
   
   
-  color: #18134C;
+  color: #51EAEA;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .information h1,span {
   margin: 10px;
   text-align: right;
-  color: #18134C;
+  color: #51EAEA;
 }
 
 .aboutme-description {
@@ -807,6 +807,23 @@ nav ul li:last-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    gap: 5%;
+  }
+
+  .project-list-tab { 
+    width: 100%;
+  }
+
+  .project-render-wrap {
+    width: 100%;
+  }
+  .project-render-first-block {
+    flex-direction: column;
+    gap: 5%;
+  }
+  .project-name-and-participant {
+    width: 100%;
   }
 }
 

@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 import StartPage from './pages/Routing-Pages/start-page';
 import MainPages from './pages/Routing-Pages/main-pages';
 
-import AboutPage from './pages/home-page/home-page';
+import AboutPage from './pages/about-page/about-page';
 import EducationPage from './pages/education-page/education-page';
 import ProjectPage from './pages/project-page/project-page';
 import ContactMe from './pages/contact-page/contact-me';

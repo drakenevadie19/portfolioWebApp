@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -6,42 +8,47 @@ const ContactMe = () => {
     email: '',
     message: ''
   });
-  const [submitError, setSubmitError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
   
-  const handleSubmit = async (e) => {
-    console.log(formData);
-    console.log('Form submitted!');
+  const form = useRef();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      console.log('Sending form data:', formData); // Log form data for debugging
+    emailjs.sendForm('service_ywpwzue', 'template_toqgu4b', form.current, '6MwmRxBHrcsbNZ9VY')
+      .then((result) => {
+          console.log(result.text);
+          setFormData({
+            name: '',
+            email: '',
+            message: ''
+          });
 
-      const response = await fetch('http://localhost:3001/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+          if (result.text === "OK") {
+            swal({
+              icon: "success",
+              title: "Thank you so much. I receive your email!",
+              timer: 2000
+            });
+          } else {
+            swal({
+              icon: "fail",
+              title: "There might be some problem here! Please try again",
+              timer: 2000
+            });
+          }
+      }, (error) => {
+          console.log(error.text);
+          swal({
+            icon: "fail",
+            title: "There might be some problem here! Please try again later. Meanwhile, you can send direct email to me.",
+            timer: 2000
+          });
       });
-
-      if (response.ok) {
-        console.log('Email sent successfully');
-        setSubmitError(null);
-        // Optionally, reset the form or show a success message to the user
-      } else {
-        const errorData = await response.json(); // Try to parse error details
-        console.error('Failed to send email:', response.status, errorData);
-        setSubmitError(errorData.message || 'Failed to send email. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setSubmitError('Network error. Please try again.'); // Set an error message for the user
-    }
   };
 
   return (
@@ -67,31 +74,31 @@ const ContactMe = () => {
                   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                 </svg>
               </span>
-              <b>do.t.nguyen@tcu.edu</b>
+              <b>thanhnguyen14.gers@gmail.com</b>
             </p>
           </div>
           <div className="form-manage">
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className="row p-4 name-email-box">
                 {/* value={formData.name}  */}
                 <div className="w-50 name">
                   <label htmlFor="name" className="form-label contact-label">Full Name</label>
-                  <input type="text" name="name" className="form-control contact-area" id="name" value={formData.name} onChange={handleChange} />
+                  <input type="text" name="name" className="form-control contact-area" id="name" value={formData.name} onChange={handleChange} required/>
                 </div>
                 <div className="w-50 email">
                   <label htmlFor="email" className="form-label contact-label">Email</label>
-                  <input type="email" name="email" className="form-control contact-area" id="email" value={formData.email} onChange={handleChange} />
+                  <input type="email" name="email" className="form-control contact-area" id="email" value={formData.email} onChange={handleChange} required />
                 </div>
               </div>
 
               <div className="w-100 p-4 box">
                 <label htmlFor="message" className="form-label contact-label">Your Message to Thanh Nguyen!!</label>
-                <textarea name="message" className="form-control contact-area" id="message" rows="3" value={formData.message} onChange={handleChange}></textarea>
+                <textarea name="message" className="form-control contact-area" id="message" rows="3" value={formData.message} onChange={handleChange} required></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary">Send</button>
+              <button type="submit" className="btn btn-info">Send</button>
             </form>
-            {submitError && <div className="error-message">{submitError}</div>}
+            {/* {submitError && <div className="error-message">{submitError}</div>} */}
           </div>
         </div>
       </div>

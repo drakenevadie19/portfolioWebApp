@@ -380,9 +380,13 @@ nav ul li:last-child {
   width: 100%;
 }
 
+.about-infor {
+  color: #00D7FF;
+}
+
 .otherLink a {
-  color: #18134C;
-  border: 2px #18134C solid;
+  color: #00D7FF;
+  border: 2px #00D7FF solid;
   padding: 5px;
   border-radius: 20px;
   text-decoration: none;

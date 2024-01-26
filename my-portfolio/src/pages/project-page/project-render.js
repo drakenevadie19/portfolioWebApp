@@ -24,7 +24,7 @@ const ProjectRender =({project}) => {
                 <div className="project-description">
                     <h5>{project.description}</h5>
                 </div>
-                <a href={project.link} class="btn btn-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>
+                <a href={project.link} class="btn btn-outline-info" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>
             </div>
         </>
     );

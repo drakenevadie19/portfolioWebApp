@@ -307,14 +307,14 @@ nav ul li:last-child {
   width: 50%;
   
   
-  color: #51EAEA;
+  color: black;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .information h1,span {
   margin: 10px;
   text-align: right;
-  color: #51EAEA;
+  color: black;
 }
 
 .aboutme-description {

@@ -7,7 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgb(255, 255, 255) 30%, #5800FF 70%);
+
+  background: linear-gradient(90deg, rgb(255, 255, 255) 20%, #5800FF 80%);
+  /* background-image: url("../public/backgroundpage.avif");
+  background-size: 100% 100%; */
 }
 
 code {

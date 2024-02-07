@@ -1,3 +1,5 @@
+import ProjectStack from './project-techStack-list';
+
 const ProjectRender =({project}) => {
     return (
         <>
@@ -19,7 +21,8 @@ const ProjectRender =({project}) => {
                 </div>
                 
                 <div className="project-tech-stack">
-                    <h5>{project.techStack}</h5>
+                    <ProjectStack techStacks={project.techStack} />
+                    {/* <h5>{project.techStack}</h5> */}
                 </div>
                 <div className="project-description">
                     <h5>{project.description}</h5>

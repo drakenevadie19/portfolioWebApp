@@ -266,8 +266,8 @@ nav ul li:last-child {
   height: 28em;
   border-radius: 50%;
   /* background: linear-gradient(270deg, #fff, blueviolet, #5800FF); */
-  /* background-color: #512B81; */
-  backdrop-filter: brightness(50%);
+  background-color: #4CB9E7;
+  /* backdrop-filter: brightness(50%); */
   display: grid;
   place-items: center;
 }

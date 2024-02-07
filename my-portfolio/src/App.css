@@ -549,7 +549,7 @@ nav ul li:last-child {
   display: flex;
   flex-direction: row;
 
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   font-weight: 600;
 }
 
@@ -866,6 +866,10 @@ nav ul li:last-child {
 
 .placeholder-Image {
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .form-manage {

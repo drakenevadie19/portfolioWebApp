@@ -20,7 +20,7 @@ const AboutPage = () => {
                             <h1 className="title">Software Engineer</h1>
                         </div>
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
-                            I'm a beginner full-stack web developer, currently with experiences in <b className="tech-stack-animation"> MERN/MEVN Stacks, SpringBoot, Next.js, Bootstrap, CSS, LESS, JavaScript, and TypeScript</b>. 
+                            I'm a beginner full-stack web developer, currently with experiences in <b className="tech-stack-animation"> MERN/MEVN Stacks, SpringBoot, Next.js, Bootstrap, CSS, Java, JavaScript, and TypeScript</b>. 
                             Now I am practicing in the development of web applications with frameworks like Angular.js, React.js, Vue.js etc. 
                             In the near future, I want to utilize my skills in Web Developing and take part in US industry. </h5>
 

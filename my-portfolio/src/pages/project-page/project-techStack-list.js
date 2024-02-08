@@ -1,9 +1,11 @@
 const ProjectStack = ({techStacks}) => {
     return (
         <>
-            {techStacks.map((tech, index) => (
-                <a key={index} className='tech-stack-element'>{tech}</a>
-            ))}
+            <div className="tech-stack-list">
+                {techStacks.map((tech, index) => (
+                    <a key={index} className='tech-stack-element'>{tech}</a>
+                ))}
+            </div>
         </>
     );
 }

@@ -661,10 +661,16 @@ nav ul li:last-child {
 .filter {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.tech-stack-list {
+  display: flex;
+  /* use flex-wrap here to auto pushing overflowed element to new line */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tech-stack-element {
@@ -673,6 +679,7 @@ nav ul li:last-child {
   padding: 10px 15px;
   color: black;
   text-decoration: none;
+  background-color: #72FFFF;
 }
 
 .project-wrap {
@@ -772,13 +779,24 @@ nav ul li:last-child {
   backdrop-filter: brightness(95%);
 }
 
-.project-tech-stack, .project-description  {
+.project-tech-stack  {
   width: 100%;
-  /* border: 4px #0096FF solid; */
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.project-description {
+  width: 100%;
   border-radius: 20px;
   padding: 2%;
 
   backdrop-filter: hue-rotate(30deg);
+}
+
+.go-Live-Buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 /* 

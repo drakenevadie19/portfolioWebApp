@@ -778,8 +778,6 @@ nav ul li:last-child {
 }
 
 .project-name, .project-participant {
-  /* background-color: #06cdff; */
-  /* border: 4px #0096FF solid; */
   height: 48%;
   border-radius: 20px;
   color: #18134C;
@@ -792,9 +790,9 @@ nav ul li:last-child {
   color: #18134C;
 }
 
-.project-name:hover, .project-participant:hover {
+/* .project-name:hover, .project-participant:hover {
   backdrop-filter: brightness(95%);
-}
+} */
 
 .project-tech-stack  {
   width: 100%;
@@ -948,12 +946,6 @@ nav ul li:last-child {
   html {
       font-size: 100%;
   }
-
-  /* body {
-    background: linear-gradient(180deg, rgb(255, 255, 255) 35%, #5800FF 65%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  } */
 }
 
 @media screen and (max-width: 1200px) {

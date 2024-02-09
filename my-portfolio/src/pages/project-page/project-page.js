@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectRender from './project-render';
 
 const ProjectPage = ({projects}) => {
     const [currentProject, setCurrentProject] = useState(projects[0]);
+    // const [filteredProjects, setFilterdProjects] = useState();
+
     const [usedFilter, setUsedFilter] = useState(false);
 
     const changeProjectToRender = (newProject) => {
@@ -15,7 +17,7 @@ const ProjectPage = ({projects}) => {
             <div id="page-body">
                 <div className='filter'>
                     {
-                        usedFilter == false
+                        usedFilter === false
                         ?  
                             <a className='tech-stack-element' onClick={() => setUsedFilter(true)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
@@ -29,11 +31,11 @@ const ProjectPage = ({projects}) => {
                                 </svg> Reset filter
                             </a>
                     }
-                    
                 </div>
+
                 <div className="project-wrap">
                     <div className="project-list-tab">
-                        <h2>Click to view Projects:</h2>
+                        <h2>Click to view projects:</h2>
                         {projects.map((project, index) => (
                             <a key={index} onClick={() => changeProjectToRender(project)}>{project.name}</a>
                         ))}

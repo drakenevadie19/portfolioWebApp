@@ -139,7 +139,7 @@ nav {
   align-items: center;
   top: 0;
   width: 100%;
-  color: #5800FF;
+  color: #0096FF;
   /* background: black; */
 }
 
@@ -162,7 +162,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #5800FF;
+  color: #0096FF;
   font-weight: bold;
 }
 
@@ -173,7 +173,9 @@ nav a {
 } */
 
 nav a:hover {
-  border-bottom: 3px #5800FF solid;
+  border-bottom: 3px #0096FF solid;
+  /* transform: scale(3); */
+  font-weight: bold;
 }
 
 nav ul li:last-child {
@@ -181,14 +183,6 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
-  /* nav a {
-    color: #5800FF;
-  }
-
-  nav a:hover {
-    border: 3px #5800FF solid;
-  } */
-
   .topnav li:not(:last-child), .unique>h4 {
     display: none;
   }
@@ -203,7 +197,7 @@ nav ul li:last-child {
   }
 
   .mainicon {
-    color: #00D7FF;
+    color: #0096FF;
   } 
 }
 
@@ -227,10 +221,6 @@ nav ul li:last-child {
     display: inline-block;
     text-align: left;
   }
-
-  /* .topnav.responsive li a {
-    color: #5800FF;
-  } */
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -266,10 +256,32 @@ nav ul li:last-child {
   height: 28em;
   border-radius: 50%;
   /* background: linear-gradient(270deg, #fff, blueviolet, #5800FF); */
-  background-color: #00D7FF;
+  /* background-color: #00D7FF; */
+  animation: frameColor 7s linear infinite;
   /* backdrop-filter: brightness(50%); */
   display: grid;
   place-items: center;
+}
+
+@keyframes frameColor {
+  0% {
+    background-color: #72FFFF;
+  }
+  20% {
+    background-color: #00D7FF;
+  }
+  40% {
+    background-color: #0096FF;
+  }
+  60% {
+    background-color: #5800FF;
+  }
+  80% {
+    background-color: #6C00FF;
+  }
+  100% {
+    background-color: #793FDF;
+  }
 }
 
 .white-bg {
@@ -350,17 +362,17 @@ nav ul li:last-child {
 }
 
 .animated_text>h1 {
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #18134C;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: transparent;
   background-repeat: no-repeat;
-  background-image: linear-gradient(90deg, #5800FF, #793FDF);
+  background-image: linear-gradient(90deg, #0096FF, #00D7FF, blue);
   -webkit-background-clip: text;
   background-clip: none;
   background-position: -500px 0;
   animation: backcolor 7s linear infinite;
-  text-shadow: 0 0 8px plum;
+  text-shadow: 0 0 8px #00D7FF;
 }
 
 @keyframes backcolor {
@@ -383,8 +395,8 @@ nav ul li:last-child {
 }
 
 .otherLink a {
-  color: #00D7FF;
-  border: 2px #00D7FF solid;
+  color: #0096FF;
+  border: 2px #0096FF solid;
   padding: 5px;
   border-radius: 20px;
   text-decoration: none;
@@ -393,6 +405,7 @@ nav ul li:last-child {
 }
 
 .otherLink a:hover {
+  color: #18134C;
   background-color: #72FFFF;
   border: 2px #72FFFF solid;
   text-shadow: 0 0 10px #fff;
@@ -495,6 +508,10 @@ nav ul li:last-child {
   height:fit-content;
 
   color: #18134C;
+}
+
+.education-box>h4 {
+  color: #0096FF;
 }
 
 .education-box h1, h4{

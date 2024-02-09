@@ -28,8 +28,8 @@ const ProjectRender =({project}) => {
                     <h5>{project.description}</h5>
                 </div>
                 <div className='go-Live-Buttons'>
-                    {project.liveDemo[0] === "yes" && <a href={project.liveDemo[1]} class="btn btn-outline-info" target="_blank" rel="noreferrer">Live Demo</a>}
-                    <a href={project.link} class="btn btn-outline-info" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>
+                    {project.liveDemo[0] === "yes" && <a href={project.liveDemo[1]} class="btn btn-outline-danger" target="_blank" rel="noreferrer">Live Demo</a>}
+                    <a href={project.link} class="btn btn-outline-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>
                 </div>
             </div>
         </>

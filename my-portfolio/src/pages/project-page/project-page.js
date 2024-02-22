@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ProjectRender from './project-render';
 
 const ProjectPage = ({projects}) => {
     const [currentProject, setCurrentProject] = useState(projects[0]);
     // const [filteredProjects, setFilterdProjects] = useState();
 
-    const [usedFilter, setUsedFilter] = useState(false);
+    // const [usedFilter, setUsedFilter] = useState(false);
 
     const changeProjectToRender = (newProject) => {
         setCurrentProject(newProject);

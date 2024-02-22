@@ -15,7 +15,7 @@ const ProjectPage = ({projects}) => {
     return (
         <> 
             <div id="page-body">
-                <div className='filter'>
+                {/* <div className='filter'>
                     {
                         usedFilter === false
                         ?  
@@ -31,7 +31,7 @@ const ProjectPage = ({projects}) => {
                                 </svg> Reset filter
                             </a>
                     }
-                </div>
+                </div> */}
 
                 <div className="project-wrap">
                     <div className="project-list-tab">

@@ -891,9 +891,10 @@ nav ul li:last-child {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 32px;
 }
 
-.contact-info p {
+.contact-info a {
   border: 2px #18134C solid;
   padding: 5px;
   border-radius: 20px;
@@ -901,7 +902,7 @@ nav ul li:last-child {
   width: auto;
 }
 
-.contact-info p span {
+.contact-info a span {
   color: #18134C;
 }
 

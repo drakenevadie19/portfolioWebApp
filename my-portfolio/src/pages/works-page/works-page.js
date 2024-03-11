@@ -22,15 +22,16 @@ const WorksPage = () => (
                     </div>
                 </div> */}
                 <div className="infoWorks">
-                    <h1>Internship</h1>
                     <div className="placeholder-Image">
                         <img src="/internship.png" alt="Programmer"/>
                     </div>
+                    <h1>Internship</h1>
                     <WorkExperience works={workdata[0]} />
                     <h1>On-campus Jobs</h1>
                     <WorkExperience works={workdata[1]} />
                     <WorkExperience works={workdata[2]} />
                     <WorkExperience works={workdata[3]} />
+                    <WorkExperience works={workdata[4]} />
                 </div>
             </div>
         </div>

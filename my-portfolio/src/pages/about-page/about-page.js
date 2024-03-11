@@ -1,5 +1,7 @@
 import ResumeButton from "./resume-button"; 
 
+const imageBio = ["/bio-image/Drake.jpg"];
+
 const AboutPage = () => {
     return (
         <>
@@ -9,7 +11,7 @@ const AboutPage = () => {
                         <div className="blue-bg-outer">
                             <div className="white-bg">
                                 <div className="blue-bg">
-                                    <img src="/Drake.jpg" alt="Bio" />
+                                    <img src="/bio-image/Drake.jpg" alt="Bio" />  
                                 </div>
                             </div>
                         </div>

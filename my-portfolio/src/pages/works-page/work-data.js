@@ -1,7 +1,7 @@
 const workdata = [
     {
         imageLink: "/works/FPT.jpeg",
-        alt: "FPT",
+        alt: "FPT Software",
         role: "Software Engineer Internship",
         company: "FPT Software",
         time: "June 2023-August 2023",

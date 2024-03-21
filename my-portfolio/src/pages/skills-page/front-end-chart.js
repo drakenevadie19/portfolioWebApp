@@ -28,7 +28,7 @@ const FrontEndChart = () => {
         labels: labels,
         datasets: [{
             label: 'Front-end Development',
-            data: [9, 8, 8, 8, 8, 7], 
+            data: [9, 8, 8.5, 8, 8, 7], 
             backgroundColor: 'rgba(183, 39, 245, 0.4)', //
             borderColor: 'rgba(183, 39, 245, 0.8)',
             pointRadius: 5,

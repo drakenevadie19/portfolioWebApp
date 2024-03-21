@@ -1,4 +1,3 @@
-import FrontEndChart from "../skills-page/front-end-chart";
 import ResumeButton from "./resume-button"; 
 
 const imageBio = ["/bio-image/Drake.jpg"];
@@ -57,6 +56,15 @@ const AboutPage = () => {
                         </div>
                         
                         <ResumeButton />
+                    </div>
+                </div>
+
+                <div className="main-home-page-dm">
+                    <div className="main-home-page-dm-tell">
+                        <p>Click to DM me</p>
+                    </div>
+                    <div className="main-home-page-dm-frame">
+                        <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen"><img src="/dm.png" alt="DM-image" /></a>
                     </div>
                 </div>
             </div>

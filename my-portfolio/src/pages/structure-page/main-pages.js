@@ -5,10 +5,8 @@ function MainPages() {
   return (
     <>
       <div className='main'>
-        <div>
           <Navbar />
           <Outlet />
-        </div>
       </div>
     </>
     

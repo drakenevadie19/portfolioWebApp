@@ -1,40 +1,47 @@
 import React from 'react';
-import Chart from 'chart.js/auto';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    RadialLinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+    TimeScale
+    } from 'chart.js';
+import { Radar } from 'react-chartjs-2';
 
 const FrontEndChart = () => {
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const labels = ['Functionality', 'Usability', 'Responsiveness', 'Performance', 'Maintainability'];
+    ChartJS.register(
+        CategoryScale,
+        RadialLinearScale,
+        PointElement,
+        LineElement,
+        TimeScale,
+        Title,
+        Tooltip,
+        Legend
+       );
+    const labels = ['HTML & CSS', 'Programming Languages', 'UI/UX Design', 'Responsiveness', 'Performance Optimization', 'Front-End Testing'];
     const data = {
         labels: labels,
         datasets: [{
             label: 'Front-end Development',
-            data: [4.5, 4.5, 4.5, 4.5, 4.5], // Replace with your project's scores (1-5)
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            data: [9, 8, 8, 8, 8, 7], 
+            backgroundColor: 'rgba(183, 39, 245, 0.4)', //
+            borderColor: 'rgba(183, 39, 245, 0.8)',
             pointRadius: 5,
             pointHitRadius: 10,
-            pointBackgroundColor: 'rgba(255, 99, 132, 1)',
-            pointBorderColor: 'rgba(255, 99, 132, 1)',
+            pointBackgroundColor: 'rgba(183, 39, 245, 0.8)',
+            pointBorderColor: 'rgba(183, 39, 245, 0.8)',
         }]
     };
-
-    const config = {
-        type: 'radar',
-        data: data,
-        options: {
-            responsive: true,
-            scale: {
-                pointLabels: {
-                    fontSize: 14,
-                }
-            }
-        }
-    };
-
-    const myChart = new Chart(ctx, config);
     
     return (
-        <canvas id="myChart"></canvas>
+        <>
+            <Radar data={data} />
+        </>
     );
 }
 

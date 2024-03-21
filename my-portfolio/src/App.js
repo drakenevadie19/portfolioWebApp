@@ -2,8 +2,8 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 
-import StartPage from './pages/Routing-Pages/start-page';
-import MainPages from './pages/Routing-Pages/main-pages';
+import StartPage from './pages/structure-page/start-page';
+import MainPages from './pages/structure-page/main-pages';
 
 import AboutPage from './pages/about-page/about-page';
 import EducationPage from './pages/education-page/education-page';

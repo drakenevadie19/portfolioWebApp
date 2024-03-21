@@ -560,6 +560,37 @@ nav ul li:last-child {
 }
 
 /*----------------------------------------------------------------------------------------*/
+/* Skills Page */
+.chartOfSkills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: max-content;
+}
+
+.chart-of-skills-frame {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 768px) {
+  .chartOfSkills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chart-of-skills-frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*----------------------------------------------------------------------------------------*/
 /* Works Page */
 .work-page {
   color: #18134C;
@@ -716,6 +747,12 @@ nav ul li:last-child {
   /* border: 4px #0096FF solid; */
   border-radius: 20px;
   backdrop-filter: hue-rotate(30deg);
+}
+
+.project-list-tab-header {
+  color: #0096FF;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .project-list-tab:hover {

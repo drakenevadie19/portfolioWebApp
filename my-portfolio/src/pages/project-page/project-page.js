@@ -35,7 +35,7 @@ const ProjectPage = ({projects}) => {
 
                 <div className="project-wrap">
                     <div className="project-list-tab">
-                        <h2>Click to view projects:</h2>
+                        <h3 className="project-list-tab-header">My Projects:</h3>
                         {projects.map((project, index) => (
                             <a key={index} onClick={() => changeProjectToRender(project)}>{project.name}</a>
                         ))}

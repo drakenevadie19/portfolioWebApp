@@ -15,11 +15,13 @@ const WorkExperience = ({works}) => (
                 </div>
             </div>
             
-            <ul>
-                {works.description.map((des, index) => (
-                    <li key={index}>{des}</li>
-                ))}
-            </ul>
+            <div className="experience-description">
+                <ul>
+                    {works.description.map((des, index) => (
+                        <li key={index}>{des}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
         
     </>

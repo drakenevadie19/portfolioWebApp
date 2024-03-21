@@ -687,6 +687,12 @@ nav ul li:last-child {
   align-items: flex-end;
 }
 
+.experience-description {
+  border: 1px solid #18134C;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
 .bio-box {
   width: 4em;
   height: 4em;
@@ -694,6 +700,17 @@ nav ul li:last-child {
 }
 
 @media screen and (max-width: 768px) {
+  .company-position {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .imageWorks {
     display: none;
   }

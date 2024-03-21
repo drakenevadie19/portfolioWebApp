@@ -13,6 +13,7 @@ import WorksPage from './pages/works-page/works-page';
 
 import schoolsList from './pages/education-page/schools-list';
 import projectData from './pages/project-page/project-data'
+import SkillPage from './pages/skills-page/skill-page';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/main' element={<MainPages />}>
               <Route path="aboutme" element={<AboutPage />} />
               <Route path="education" element={<EducationPage educationList={schoolsList} />} />
+              <Route path="skills" element={<SkillPage />} />
               <Route path="works" element={<WorksPage />} />
               <Route path="projects" element={<ProjectPage projects={projectData} />} />
               <Route path="contact" element={<ContactMe />} />

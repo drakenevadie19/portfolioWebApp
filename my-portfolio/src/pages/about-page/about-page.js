@@ -1,4 +1,4 @@
-import FrontEndChart from "./front-end-chart";
+import FrontEndChart from "../skills-page/front-end-chart";
 import ResumeButton from "./resume-button"; 
 
 const imageBio = ["/bio-image/Drake.jpg"];
@@ -58,10 +58,6 @@ const AboutPage = () => {
                         
                         <ResumeButton />
                     </div>
-                </div>
-
-                <div className="chartOfSkills">
-                    <FrontEndChart />
                 </div>
             </div>
         </>

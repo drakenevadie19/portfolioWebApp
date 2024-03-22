@@ -242,7 +242,7 @@ nav ul li:last-child {
   margin-top: 5rem;
 }
 
-.main-home-page-dm {
+.dm-or-scrolldown {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -268,9 +268,11 @@ nav ul li:last-child {
   /* 100% { bottom: 15px;} */
 }
 
-.main-home-page-dm-frame {
+.dm-or-scrolldown-frame {
   width: 64px;
   height: 64px;
+
+  color: #8200FF;
 }
 
 .main-home-page-dm-tell {
@@ -286,7 +288,7 @@ nav ul li:last-child {
   margin: 0;
 }
 
-.main-home-page-dm:hover {
+.dm-or-scrolldown:hover {
   .main-home-page-dm-tell {
     display: block;
   }  
@@ -623,6 +625,22 @@ nav ul li:last-child {
   display: flex;
   justify-content: center;
   aspect-ratio: 1/1;
+}
+
+.skills-set-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills-set-component-h2 {
+  color: #8200FF;
+}
+
+.individual-skill-set {
+  border: 1px solid #8200FF;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,6 +1,5 @@
 import ResumeButton from "./resume-button"; 
-
-const imageBio = ["/bio-image/Drake.jpg"];
+// const imageBio = ["/bio-image/Drake.jpg"];
 
 const AboutPage = () => {
     return (
@@ -59,12 +58,12 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-                <div className="main-home-page-dm">
+                <div className="dm-or-scrolldown">
                     <div className="main-home-page-dm-tell">
                         <p>Click to DM me</p>
                     </div>
-                    <div className="main-home-page-dm-frame">
-                        <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen"><img src="/dm.png" alt="DM-image" /></a>
+                    <div className="dm-or-scrolldown-frame">
+                        <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen"><img src="/dm.png" alt="DM" /></a>
                     </div>
                 </div>
             </div>

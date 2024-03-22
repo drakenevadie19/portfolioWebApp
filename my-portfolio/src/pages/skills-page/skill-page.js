@@ -24,9 +24,9 @@ const SkillPage = () => {
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <SkillsSetComponent />
-                </div>
+                </div> */}
             </div>
         </>
     );

@@ -632,15 +632,25 @@ nav ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
   gap: 10px;
 }
 
 .skills-set-component-h2 {
+  font-style: italic;
   color: #8200FF;
 }
 
 .individual-skill-set {
-  border: 1px solid #8200FF;
+  width: 100%;
+}
+
+.skill-stack-list {
+  display: flex;
+  /* use flex-wrap here to auto pushing overflowed element to new line */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {

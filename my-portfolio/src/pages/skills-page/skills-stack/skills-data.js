@@ -1,12 +1,32 @@
 const skillsData = [
     {
         name: "Front-end",
-        skills: ["HTML", "CSS", "React.js", "Angular.js", "Vue.js", "MaterialUI", "ElementUI"]
+        skills: ["html", "css", "react", "angular", "vue", "vite", "materialui", "reactivex", "figma"]
     }, 
     {
-        name: "Back-end",
-        skills: ["Node.js", "Django", "GraphQL", "Apollo Client", "RESTful API", "SpringBoot", "Express.js", "MySQL", "H2 Database Engine"]
+        name: "Back-end && API",
+        skills: ["nodejs", "django", "graphql", "apollo", "firebase", "git", "github", "spring", "express", "npm"]
     }, 
+    {
+        name: "Database",
+        skills: ["mongodb", "mysql"]
+    },
+    {
+        name: "Programming Languages",
+        skills: ["js", "java", "linux", "ts", "py"]
+    }, 
+    {
+        name: "Programming Tools",
+        skills: ["anaconda", "eclipse", "vscode", "idea", "pycharm", "visualstudio"]
+    }, 
+    {
+        name: "Web hosting",
+        skills: ["gcp", "vercel"]
+    }, 
+    {
+        name: "Containing",
+        skills: ["docker"]
+    }
 ]
 
 export default skillsData;

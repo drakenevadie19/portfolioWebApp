@@ -1,12 +1,16 @@
 const skillsData = [
     {
         name: "Front-end",
-        skills: ["html", "css", "react", "angular", "vue", "vite", "bootstrap", "materialui", "reactivex", "figma"]
+        skills: ["html", "css", "react", "redux", "angular", "vue", "vite", "bootstrap", "materialui", "reactivex", "figma"]
     }, 
     {
         name: "Back-end && API",
-        skills: ["nodejs", "django", "graphql", "apollo", "postman", "firebase", "git", "github", "spring", "express", "npm"]
+        skills: ["nodejs", "django", "apollo", "firebase", "git", "github", "spring", "express", "npm"]
     }, 
+    {
+        name: "API",
+        skills: ["graphql", "postman"]
+    },
     {
         name: "Database",
         skills: ["mongodb", "mysql"]
@@ -17,7 +21,7 @@ const skillsData = [
     }, 
     {
         name: "Programming Tools",
-        skills: ["anaconda", "eclipse", "vscode", "idea", "pycharm", "visualstudio"]
+        skills: ["anaconda", "eclipse", "vscode", "idea", "pycharm", "visualstudio", "phpstorm"]
     }, 
     {
         name: "Web hosting",

@@ -6,9 +6,11 @@ const SkillsSetComponent = () => {
         <>
             <div className="skills-set-component">
                 <h2 className="skills-set-component-h2">Tech stacks</h2>
-                {skillsData.map((setOfskills) => (
-                    <SkillsSet skillsset={setOfskills} />
-                ))}
+                <div className="skills-block">
+                    {skillsData.map((setOfskills) => (
+                        <SkillsSet skillsset={setOfskills} />
+                    ))}
+                </div>
             </div>
         </>
     );

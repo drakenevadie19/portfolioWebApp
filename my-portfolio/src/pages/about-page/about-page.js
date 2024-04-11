@@ -1,10 +1,18 @@
+// import SchoolImage from "../education-page/schools-image";
 import ResumeButton from "./resume-button"; 
-// const imageBio = ["/bio-image/Drake.jpg"];
+import schoolsList from '../../pages/education-page/schools-list';
+import EducationPage from "../education-page/education-page";
+import SkillPage from "../skills-page/skill-page";
+import WorksPage from "../works-page/works-page";
+import projectData from '../../pages/project-page/project-data'
+import ProjectPage from "../project-page/project-page";
+import ContactMe from "../contact-page/contact-me";
+import Footer from "../structure-page/footer";
 
 const AboutPage = () => {
     return (
         <>
-            <div id="page-body">
+            <div className="page-body" id="about-block">
                 <div className="main-home-page">
                     <div className="images">
                         <div className="blue-bg-outer">
@@ -67,6 +75,28 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="page-body" id="edu-block">
+                <EducationPage educationList={schoolsList} />
+            </div>
+
+            <div className="page-body" id="skill-block">
+                <SkillPage />
+            </div>
+
+            <div className="page-body" id="work-block">
+                <WorksPage />
+            </div>
+
+            <div className="page-body" id="project-block">
+                <ProjectPage projects={projectData} />
+            </div>
+
+            <div className="page-body" id="contact-block">
+                <ContactMe />
+            </div>
+
+            <Footer />
         </>
     );
 }

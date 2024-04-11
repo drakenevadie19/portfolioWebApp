@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectRender from './project-render';
+import Footer from "../structure-page/footer";
 
 const ProjectPage = ({projects}) => {
     const [currentProject, setCurrentProject] = useState(projects[0]);
@@ -42,6 +43,8 @@ const ProjectPage = ({projects}) => {
                     </div>
                     <ProjectRender project = {currentProject} />
                 </div>
+
+                {/* <Footer /> */}
             </div>
         </>
     )

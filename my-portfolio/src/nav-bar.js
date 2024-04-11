@@ -1,5 +1,5 @@
 //Navbar 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,25 +40,31 @@ const Navbar = () => {
                 
                 <ul className={`topnav ${isMenuOpen ? 'responsive' : ''}`}>
                     <li>
-                        <Link to="/main/aboutme">About Me</Link>
+                        {/* <Link to="/main/aboutme">About Me</Link> */}
+                        <a href="#about-block">About Me</a>
                     </li>
                     <li>
-                        <Link to="/main/education">Education</Link>
+                        {/* <Link to="/main/education">Education</Link> */}
+                        <a href="#edu-block">Education</a>
                     </li>
                     <li>
-                        <Link to="/main/skills">Skills</Link>
+                        {/* <Link to="/main/skills">Skills</Link> */}
+                        <a href="#skill-block">Skills</a>
                     </li>
                     <li>
-                        <Link to="/main/works">Works</Link>
+                        {/* <Link to="/main/works">Works</Link> */}
+                        <a href="#work-block">Works</a>
                     </li>
                     <li>
-                        <Link to="/main/projects">Projects</Link>
+                        {/* <Link to="/main/projects">Projects</Link> */}
+                        <a href="#project-block">Projects</a>
                     </li>
                     <li>
-                        <Link to="/main/contact">Contact Me</Link>
+                        {/* <Link to="/main/contact">Contact Me</Link> */}
+                        <a href="#contact-block">Contact Me</a>
                     </li>
                     <li className="icon">
-                        <a className="mainicon" id="click" onClick={clickBar}>
+                        <a className="mainicon" id="click" onClick={clickBar} href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                             </svg>

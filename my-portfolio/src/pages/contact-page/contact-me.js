@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
+import Footer from "../structure-page/footer";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -101,6 +102,7 @@ const ContactMe = () => {
             </form>
             {/* {submitError && <div className="error-message">{submitError}</div>} */}
           </div>
+          <Footer />
         </div>
       </div>
     </>

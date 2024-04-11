@@ -7,7 +7,6 @@ import WorksPage from "../works-page/works-page";
 import projectData from '../../pages/project-page/project-data'
 import ProjectPage from "../project-page/project-page";
 import ContactMe from "../contact-page/contact-me";
-import Footer from "../structure-page/footer";
 
 const AboutPage = () => {
     return (
@@ -95,8 +94,6 @@ const AboutPage = () => {
             <div className="page-body" id="contact-block">
                 <ContactMe />
             </div>
-
-            <Footer />
         </>
     );
 }

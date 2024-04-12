@@ -1,5 +1,5 @@
 //Navbar 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,28 +40,28 @@ const Navbar = () => {
                 
                 <ul className={`topnav ${isMenuOpen ? 'responsive' : ''}`}>
                     <li>
-                        {/* <Link to="/main/aboutme">About Me</Link> */}
-                        <a href="#about-block">About Me</a>
+                        <Link to="/main/aboutme">About Me</Link>
+                        {/* <a href="#about-block">About Me</a> */}
                     </li>
                     <li>
-                        {/* <Link to="/main/education">Education</Link> */}
-                        <a href="#edu-block">Education</a>
+                        <Link to="/main/education">Education</Link>
+                        {/* <a href="#edu-block">Education</a> */}
                     </li>
                     <li>
-                        {/* <Link to="/main/skills">Skills</Link> */}
-                        <a href="#skill-block">Skills</a>
+                        <Link to="/main/skills">Skills</Link>
+                        {/* <a href="#skill-block">Skills</a> */}
                     </li>
                     <li>
-                        {/* <Link to="/main/works">Works</Link> */}
-                        <a href="#work-block">Works</a>
+                        <Link to="/main/works">Works</Link>
+                        {/* <a href="#work-block">Works</a> */}
                     </li>
                     <li>
-                        {/* <Link to="/main/projects">Projects</Link> */}
-                        <a href="#project-block">Projects</a>
+                        <Link to="/main/projects">Projects</Link>
+                        {/* <a href="#project-block">Projects</a> */}
                     </li>
                     <li>
-                        {/* <Link to="/main/contact">Contact Me</Link> */}
-                        <a href="#contact-block">Contact Me</a>
+                        <Link to="/main/contact">Contact Me</Link>
+                        {/* <a href="#contact-block">Contact Me</a> */}
                     </li>
                     <li className="icon">
                         <a className="mainicon" id="click" onClick={clickBar} href="#">

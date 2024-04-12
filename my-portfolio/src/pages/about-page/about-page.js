@@ -1,7 +1,6 @@
 // import SchoolImage from "../education-page/schools-image";
 import ResumeButton from "./resume-button"; 
 import schoolsList from '../../pages/education-page/schools-list';
-import EducationPage from "../education-page/education-page";
 import SkillPage from "../skills-page/skill-page";
 import WorksPage from "../works-page/works-page";
 import projectData from '../../pages/project-page/project-data'
@@ -76,24 +75,29 @@ const AboutPage = () => {
             </div>
 
             <div className="page-body" id="edu-block">
-                <EducationPage educationList={schoolsList} />
+                <div id="edu-block-inf">
+                    <h1>My life is so lucky that I have a friendly studying environment.</h1>
+                </div>
+                <div>
+                    <img src="/edu block image.jpeg" alt="Education"/>
+                </div>
             </div>
 
-            <div className="page-body" id="skill-block">
+            {/* <div className="page-body" id="skill-block">
                 <SkillPage />
-            </div>
+            </div> */}
 
-            <div className="page-body" id="work-block">
+            {/* <div className="page-body" id="work-block">
                 <WorksPage />
-            </div>
+            </div> */}
 
-            <div className="page-body" id="project-block">
+            {/* <div className="page-body" id="project-block">
                 <ProjectPage projects={projectData} />
-            </div>
+            </div> */}
 
-            <div className="page-body" id="contact-block">
+            {/* <div className="page-body" id="contact-block">
                 <ContactMe />
-            </div>
+            </div> */}
         </>
     );
 }

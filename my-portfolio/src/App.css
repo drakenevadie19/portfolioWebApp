@@ -142,7 +142,7 @@ nav {
   width: 100%;
   color: #0096FF;
   background: #d0eefd;
-  position: fixed;
+  /* position: fixed; */
 }
 
 nav h4 {
@@ -228,18 +228,17 @@ nav ul li:last-child {
 /*----------------------------------------------------------------------------------------*/
 /*About Page*/ 
 #page-body {
-  /* padding: 2rem 8rem; */
-  /* margin: 2rem 0; */
-  height: 100%;
+  padding: 2rem 8rem;
+  height: 100vh;
   width: 100%;
 }
 
 .page-body {
-  padding: 4rem 8rem;
-  height: max-content;
+  padding: 2rem 8rem;
+  height: 100vh;
   width: 100%;
 
-  margin-top: 85px;
+  /* margin-top: 85px; */
 }
 
 .main-home-page {
@@ -829,8 +828,11 @@ nav ul li:last-child {
   display: flex;
   flex-direction: row;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  gap: 10px;
+  overflow: scroll;
 }
 
 .tech-stack-list {
@@ -847,6 +849,9 @@ nav ul li:last-child {
   color: black;
   text-decoration: none;
   background-color: #72FFFF;
+
+  /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
+  white-space: nowrap;
 }
 
 .project-wrap {

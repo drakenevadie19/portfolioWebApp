@@ -842,6 +842,16 @@ nav ul li:last-child {
   gap: 10px;
 }
 
+.tech-stack-element-filter-button {
+  /* border-radius: 20px; */
+  /* padding: 10px 15px;
+  color: black;
+  text-decoration: none; */
+
+  /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
+  white-space: nowrap;
+}
+
 .tech-stack-element {
   border: 2px solid #0096FF;
   border-radius: 20px;

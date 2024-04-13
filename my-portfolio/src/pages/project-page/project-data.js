@@ -16,7 +16,7 @@ const projectData = [
         src: "/project-bio-image/BlogApp.jpg",
         description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
         workTime: "12/2023 - present",
-        techStack: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "MongoDB Atlas", "React Hooks", "Axios", "Firebase Auth", "Google Cloud hosting Platform", "RestfulAPI"],
+        techStack: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "Restful API", "Postman", "MongoDB Atlas", "React Hooks", "Axios", "Firebase Auth", "Google Cloud hosting Platform", "RestfulAPI"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
         liveDemo: ['no'],
         participants: "Drake Do",

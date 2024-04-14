@@ -74,14 +74,14 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="page-body" id="edu-block">
+            {/* <div className="page-body" id="edu-block">
                 <div id="edu-block-inf">
                     <h1>My life is so lucky that I have a friendly studying environment.</h1>
                 </div>
                 <div>
                     <img src="/edu block image.jpeg" alt="Education"/>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className="page-body" id="skill-block">
                 <SkillPage />

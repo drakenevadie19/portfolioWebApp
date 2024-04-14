@@ -852,13 +852,20 @@ nav ul li:last-child {
   white-space: nowrap;
 }
 
+.tech-stack-element-not-clicked {
+  background-color: #72FFFF;
+}
+
+.tech-stack-element-clicked {
+  background-color: gray;
+}
+
 .tech-stack-element {
   border: 2px solid #0096FF;
   border-radius: 20px;
   padding: 10px 15px;
   color: black;
   text-decoration: none;
-  background-color: #72FFFF;
 
   /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
   white-space: nowrap;

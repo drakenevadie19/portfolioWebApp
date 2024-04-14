@@ -5,6 +5,7 @@ const ProjectPage = ({projects}) => {
     const [usingFilter, setUsingFilter] = useState(false);
     // Number of to-render projects
     const [numberOfToRenderProjects, setNumberOfToRenderProjects] = useState(projects.length);
+
     // Hold all project displaying in the project list tab
     const [toRenderProjects, setToRenderProjects] = useState(projects) 
 
@@ -17,9 +18,13 @@ const ProjectPage = ({projects}) => {
 
     // List of picked technologies by users
     const [pickedTechnologies, setPickedTechnologies] = useState([]);
+
     // Corresponding projects
     const [filteredProjects, setFilteredProjects] = useState([]);
-    // const [colorOfClickedTechToFilter, setColorOfClickedTechToFilter] = useState("#72FFFF");
+    
+    // Array to hold states of each button
+    const [buttonStates, setButtonStates] = useState(new Array(100).fill(false)); // Change 3 to the number of buttons
+
 
     const changeProjectToRender = (newProject) => {
         setCurrentProject(newProject);
@@ -36,28 +41,40 @@ const ProjectPage = ({projects}) => {
                 }
             })
         ));
+
+        console.log(buttonStates.length);
         // console.log(techInProject);
     }, []);
-
-    const chooseTech = (event) => {
+    
+    // use index as parameter to manage the status of corresponding techStack in techInProject
+    const chooseTech = (event, index) => {
         setUsingFilter(true);
         const clickedTech = event.target.textContent;
         // console.log(clickedTech + `${typeof(choseTech)}`);
         if (!pickedTechnologies.includes(clickedTech)) {
-            // console.log(`${clickedTech} is clicked to add`);
-            // setColorOfClickedTechToFilter("gray");
+            // This is to change the status of the current button (clicked or not)
+            // Create a copy of the button states array
+            const newButtonStates = [...buttonStates];
+            // Toggle the state of the clicked button
+            newButtonStates[index] = !newButtonStates[index];
+            // Update the state with the new array
+            setButtonStates(newButtonStates);
+
             pickedTechnologies.push(clickedTech);
         } else {
-            // console.log(`${clickedTech} is clicked to remove`);
-            // setColorOfClickedTechToFilter("#72FFFF");
+            // This is to change the status of the current button (clicked or not)
+            // Create a copy of the button states array
+            const newButtonStates = [...buttonStates];
+            // Toggle the state of the clicked button
+            newButtonStates[index] = !newButtonStates[index];
+            // Update the state with the new array
+            setButtonStates(newButtonStates);
+
             pickedTechnologies.pop(clickedTech);
         }
         console.log(pickedTechnologies);
     }
 
-    // const clickedAndChangeBackgroundColor = {
-    //     backgroundColor: colorOfClickedTechToFilter
-    // }
     const resetFilter = () => {
         setUsingFilter(false);
         setToRenderProjects(projects);
@@ -100,9 +117,9 @@ const ProjectPage = ({projects}) => {
                     }
                     {/* Rendering list of technologies to filter */}
                     {
-                        techInProject.map(techIn => {
+                        techInProject.map((techIn, index) => {
                             return (
-                                <a className='tech-stack-element' onClick={chooseTech} href='#'>
+                                <a className={`tech-stack-element ${buttonStates[index] ? "tech-stack-element-clicked" : "tech-stack-element-not-clicked "}`} onClick={(event) => chooseTech(event, index)} href='#'>
                                     {techIn}
                                 </a>
                             )

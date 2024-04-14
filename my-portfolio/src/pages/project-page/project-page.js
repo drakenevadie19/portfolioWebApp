@@ -71,6 +71,9 @@ const ProjectPage = ({projects}) => {
             setButtonStates(newButtonStates);
 
             pickedTechnologies.pop(clickedTech);
+            if (pickedTechnologies.length === 0) {
+                setUsingFilter(false);
+            }
         }
         console.log(pickedTechnologies);
     }

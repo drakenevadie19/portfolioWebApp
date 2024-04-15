@@ -23,7 +23,7 @@ const ProjectPage = ({projects}) => {
     const [filteredProjects, setFilteredProjects] = useState([]);
     
     // Array to hold states of each button
-    const [buttonStates, setButtonStates] = useState(new Array(100).fill(false)); // Change 3 to the number of buttons
+    const [buttonStates, setButtonStates] = useState(new Array(100).fill(false));
 
 
     const changeProjectToRender = (newProject) => {
@@ -34,17 +34,16 @@ const ProjectPage = ({projects}) => {
     useEffect(() => {
         // Filtering list of technologies from projects
         //  Only filering when the project is loaded
-        projects.map((element) => (
-            element.techStack.map((tech) => {
-                if (!techInProject.includes(tech)) {
-                    techInProject.push(tech);
-                }
-            })
-        ));
-
-        console.log(buttonStates.length);
-        // console.log(techInProject);
-    }, []);
+        const allTechs = new Set(); // Use Set for efficient tech collection
+    
+        projects.forEach((project) => {
+          project.techStack.forEach((tech) => {
+            allTechs.add(tech); // Add unique techs to the Set
+          });
+        });
+    
+        setTechInProject(Array.from(allTechs)); // Convert Set to an array for rendering
+      }, [projects]); // Re-run on project changes
     
     // use index as parameter to manage the status of corresponding techStack in techInProject
     const chooseTech = (event, index) => {
@@ -85,15 +84,22 @@ const ProjectPage = ({projects}) => {
         setCurrentProject(projects[0]);
         setFilteredProjects([]);
         setNumberOfToRenderProjects(projects.length);
+
+        // Restore the background color of the technologies button if it was chosen
+        buttonStates.map((element, index) => {
+            if (buttonStates[index]) buttonStates[index]=false; 
+        });
+
+        console.log(techInProject);
     }
 
     const searchNow = () => {
         console.log(pickedTechnologies);
-        pickedTechnologies.map((pickedtech) => {
+        pickedTechnologies.map((pickedtech) => (
             projects.map((project) => {
                 if (project.techStack.includes(pickedtech) && !filteredProjects.includes(project)) filteredProjects.push(project);
             })
-        })
+        ))
         setToRenderProjects(filteredProjects);
         setNumberOfToRenderProjects(filteredProjects.length);
     }

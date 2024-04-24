@@ -1,13 +1,17 @@
 // import SchoolImage from "../education-page/schools-image";
 import ResumeButton from "./resume-button"; 
-import schoolsList from '../../pages/education-page/schools-list';
-import SkillPage from "../skills-page/skill-page";
-import WorksPage from "../works-page/works-page";
-import projectData from '../../pages/project-page/project-data'
-import ProjectPage from "../project-page/project-page";
-import ContactMe from "../contact-page/contact-me";
+// import schoolsList from '../../pages/education-page/schools-list';
+// import SkillPage from "../skills-page/skill-page";
+// import WorksPage from "../works-page/works-page";
+// import projectData from '../../pages/project-page/project-data'
+// import ProjectPage from "../project-page/project-page";
+// import ContactMe from "../contact-page/contact-me";
+
+import { useNavigate } from 'react-router-dom';
 
 const AboutPage = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="page-body" id="about-block">
@@ -74,14 +78,15 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            {/* <div className="page-body" id="edu-block">
+            <div className="page-body" id="edu-block">
                 <div id="edu-block-inf">
-                    <h1>My life is so lucky that I have a friendly studying environment.</h1>
+                    <h5>My life is so lucky that I have a friendly studying environment.</h5>
+                    <button type="button" class="btn btn-primary" onClick={() => navigate('/main/education')}>View my education</button>
                 </div>
-                <div>
-                    <img src="/edu block image.jpeg" alt="Education"/>
+                <div id="edu-block-img-frame">
+                    <img className="edu-block-image" src="/edu block image.jpeg" alt="Education"/>
                 </div>
-            </div> */}
+            </div>
 
             {/* <div className="page-body" id="skill-block">
                 <SkillPage />

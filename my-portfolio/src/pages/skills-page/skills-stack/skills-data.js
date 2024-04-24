@@ -5,7 +5,7 @@ const skillsData = [
     }, 
     {
         name: "Front-end",
-        skills: ["html", "css", "react", "redux", "angular", "vue", "vite", "bootstrap", "materialui", "reactivex", "figma"]
+        skills: ["html", "css", "nextjs", "react", "redux", "angular", "vue", "vite", "bootstrap", "materialui", "reactivex", "figma"]
     }, 
     {
         name: "Back-end",
@@ -17,7 +17,7 @@ const skillsData = [
     },
     {
         name: "Database",
-        skills: ["mongodb", "mysql"]
+        skills: ["postgres", "mongodb", "mysql"]
     },
     {
         name: "Containing",
@@ -37,7 +37,7 @@ const skillsData = [
     },
     {
         name: "Still Learning skills...",
-        skills: ["postgres", "nextjs", "aws", "azure", "dynamodb", "fastapi", "heroku", "kafka", "kubernetes", "php", "redis", "scala", "tailwind"]
+        skills: ["aws", "azure", "dynamodb", "fastapi", "heroku", "kafka", "kubernetes", "php", "redis", "scala", "tailwind"]
     }
 ]
 

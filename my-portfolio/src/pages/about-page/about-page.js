@@ -1,4 +1,3 @@
-// import SchoolImage from "../education-page/schools-image";
 import ResumeButton from "./resume-button"; 
 // import schoolsList from '../../pages/education-page/schools-list';
 // import SkillPage from "../skills-page/skill-page";
@@ -31,9 +30,9 @@ const AboutPage = () => {
                             <h1 className="title">Software Engineer</h1>
                         </div>
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
-                            I'm a beginner full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
-                            Now I am practicing in the development of web applications with frameworks like Angular.js, React.js, Vue.js etc. 
-                            In the near future, I want to utilize my skills in Web Developing and take part in US industry. </h5>
+                            I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
+                            Now I am sharpening my skills with Front-end frameworks like Angular.js, React.js, Vue.js, ..., and also Back-end development with Spring Boot and Node.js. 
+                            In the near future, I want to be a full-time Fullstack Engineer. </h5>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">

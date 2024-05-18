@@ -32,7 +32,7 @@ const AboutPage = () => {
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                             I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
                             Now I am sharpening my skills with Front-end frameworks like Angular.js, React.js, Vue.js, ..., and also Back-end development with Spring Boot and Node.js. 
-                            In the near future, I want to be a full-time Fullstack Engineer. </h5>
+                            In the near future, I want to be a full-time Software Engineer. </h5>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">
@@ -77,7 +77,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="page-body" id="edu-block">
+            {/* <div className="page-body" id="edu-block">
                 <div id="edu-block-inf">
                     <h5>My life is so lucky that I have a friendly studying environment.</h5>
                     <button type="button" class="btn btn-primary" onClick={() => navigate('/main/education')}>View my education</button>
@@ -85,7 +85,7 @@ const AboutPage = () => {
                 <div id="edu-block-img-frame">
                     <img className="edu-block-image" src="/edu block image.jpeg" alt="Education"/>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className="page-body" id="skill-block">
                 <SkillPage />

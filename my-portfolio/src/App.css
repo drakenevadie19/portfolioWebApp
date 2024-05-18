@@ -141,7 +141,7 @@ nav {
   top: 0;
   width: 100%;
   color: #0096FF;
-  background: #d0eefd;
+  background: #F3F8FF;
   /* position: fixed; */
 }
 
@@ -165,7 +165,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: #0096FF;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* .nav-name:hover {
@@ -175,9 +175,10 @@ nav a {
 } */
 
 nav a:hover {
-  border-bottom: 3px #0096FF solid;
+  border-bottom: 3px #8200FF solid;
   /* transform: scale(3); */
-  font-weight: bold;
+  font-weight: 700;
+  color: #8200FF;
 }
 
 nav ul li:last-child {
@@ -340,7 +341,7 @@ nav ul li:last-child {
   width: 26em;
   height: 26em;
   border-radius: 50%;
-  background: #CAEDFF;
+  background: #F3F8FF;
   display: grid;
   place-items: center;
 }
@@ -739,50 +740,13 @@ nav ul li:last-child {
   font-weight: 600;
 }
 
-/* .imageWorks {
-  width: 35%;
-  padding-right: 4rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.polaroid {
-  width: 90%;
-  padding: 10px 10px 15px 10px;
-  background-color: #00D7FF;
-  box-shadow: 5px 10px 18px #18134C;
-  border: 1px solid #071952;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-}
-
-.polaroid-image {
-  aspect-ratio: 3/2;
-  width: 100%;
-}
-
-.polaroid p {
-  color: #071952;
-  font-weight: 600;
-}
-
-.rotate_right {
-  float: left;
-  transform: rotate(7deg);
-}
-
-.rotate_left {
-  float: left;
-  transform: rotate(-10deg);
-} */
-
 .infoWorks {
   width: 100%;
   text-align: start;
   display: flex;
   flex-direction: column;
+
+  align-items: center;
 
   color: #18134C;
 }
@@ -837,6 +801,55 @@ nav ul li:last-child {
   height: 4em;
   border-radius: 15px;
 }
+
+/* Timeline ---------------*/
+.timeline li {
+  display: flex;
+}
+
+.timeline .w-e-time {
+  position: relative;
+  padding: 0 1.5em;
+  width: 400px;
+}
+
+.timeline .w-e-time h4 {
+  color: #18134C;
+}
+
+.timeline .w-e-time::after {
+  content: "";
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    border-radius: 50%;
+    background: #fff;
+    border: 1px #ccc solid;
+    width: .8em;
+    height: .8em;
+}
+
+.timeline .w-e-job {
+  padding: 0 1.5em 1.5em 1.5em;
+  position: relative;
+}
+
+.timeline .w-e-job::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 100%;
+  border-left: 1px #ccc solid;
+}
+
+.timeline { margin: 1em; }
+.timeline, 
+.timeline *::before, 
+.timeline *::after { box-sizing: border-box; font-family: arial; }
+/*-------------------------*/
 
 @media screen and (max-width: 768px) {
   .company-position {

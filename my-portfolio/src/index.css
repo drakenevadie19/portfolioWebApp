@@ -11,7 +11,10 @@ body {
   /* background: linear-gradient(90deg, rgb(255, 255, 255) 20%, #5800FF 80%); */
   /* background-image: url("../public/backgroundpage.avif");
   background-size: 100% 100%; */
-  background-color: #d0eefd;
+  background-color: #F3F8FF;
+
+  /* background-image: url(../public/backgroundImage.jpg);
+  background-size: cover; */
 }
 
 code {

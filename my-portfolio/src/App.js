@@ -14,18 +14,20 @@ import WorksPage from './pages/works-page/works-page';
 import schoolsList from './pages/education-page/schools-list';
 import projectData from './pages/project-page/project-data'
 import SkillPage from './pages/skills-page/skill-page';
+import WorkExperienceDetailPage from './pages/works-page/work-experience-detail-page';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
           <Routes>
-            <Route path="/" element={<StartPage />} />
+            <Route path="" element={<StartPage />} />
             <Route path='/main' element={<MainPages />}>
               <Route path="aboutme" element={<AboutPage />} />
               <Route path="education" element={<EducationPage educationList={schoolsList} />} />
               <Route path="skills" element={<SkillPage />} />
               <Route path="works" element={<WorksPage />} />
+              <Route path="works/:id" element={<WorkExperienceDetailPage/> }/>
               <Route path="projects" element={<ProjectPage projects={projectData} />} />
               <Route path="contact" element={<ContactMe />} />
             </Route>

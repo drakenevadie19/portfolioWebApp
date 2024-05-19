@@ -42,7 +42,7 @@ function StartPage() {
           Aspiring Software Engineer 
         </h4>
         
-        <button type="button" class="btn btn-outline-info view-more-btn" onClick={handleClick}>
+        <button type="button" class="btn btn-info view-more-btn" onClick={handleClick}>
           View more about me
         </button>
       </div>

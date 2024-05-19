@@ -6,11 +6,7 @@ import ResumeButton from "./resume-button";
 // import ProjectPage from "../project-page/project-page";
 // import ContactMe from "../contact-page/contact-me";
 
-import { useNavigate } from 'react-router-dom';
-
 const AboutPage = () => {
-    const navigate = useNavigate();
-
     return (
         <>
             <div className="page-body" id="about-block">
@@ -31,7 +27,7 @@ const AboutPage = () => {
                         </div>
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                             I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
-                            Now I am sharpening my skills with Front-end frameworks like Angular.js, React.js, Vue.js, ..., and also Back-end development with Spring Boot and Node.js. 
+                            Now I am sharpening my skills with Front-end frameworks and libraries such as <strong>Next.js, Angular.js, React.js, Vue.js</strong>, and also Back-end development with <strong>Spring Boot, Express.js and Node.js</strong>. 
                             In the near future, I want to be a full-time Software Engineer. </h5>
 
                         <div className="otherLink">

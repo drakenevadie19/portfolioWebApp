@@ -175,11 +175,15 @@ nav a {
 } */
 
 nav a:hover {
-  border-bottom: 3px #8200FF solid;
-  /* transform: scale(3); */
-  font-weight: 700;
+  /* border-bottom: 3px #18134C solid; */
+  transform: scale(3);
+  font-weight: 600;
   color: #8200FF;
 }
+
+/* nav a:visited {
+  color: #8200FF;
+} */
 
 nav ul li:last-child {
   display: none;
@@ -837,6 +841,11 @@ nav ul li:last-child {
   position: relative;
 }
 
+.timeline .w-e-job:hover {
+  border: 1px #0096FF dotted;
+  border-radius: 10px;
+}
+
 .timeline .w-e-job::before {
   content: "";
   position: absolute;
@@ -873,6 +882,65 @@ nav ul li:last-child {
     color: #18134C;
   }
 }
+
+/*----------------------------------------------------------------------------------------*/
+/* Work Details Page */
+.work-detail-main-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.back-to-work-button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.w-d-job-details {
+  width: 100%;
+  margin-top: 20px;
+
+  padding: 1em 10em;
+}
+
+.w-d-job-details-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  margin-bottom: 3em;
+}
+
+.w-d-job-details-heading .w-d-job-details-role {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.w-d-job-details-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  padding: 2em;
+}
+
+.w-d-job-details-description-bulletpoint ul,
+.w-d-job-details-description-bulletpoint h3  {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .w-d-job-details {
+    padding: 0;
+  }
+
+  .w-d-job-details-description {
+    padding: 0;
+  }
+}
+
+/*----------------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------------------*/
 /* Project Page */

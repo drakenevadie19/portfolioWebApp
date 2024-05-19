@@ -2,7 +2,7 @@
 My Portfolio Website, describes all my finished courses, projects, and other information.
 Here is the link to the website: https://thanh-nguyen-do-portfolio.vercel.app/
 
-![image](https://github.com/drakenevadie19/portfolioWebApp/assets/111625547/adf18c9b-f5fc-4169-b15e-7ffe3e555b66)
+![image](https://github.com/drakenevadie19/portfolioWebApp/assets/111625547/23b9be13-91e8-4fc0-a301-58488b413c65)
 
 
 - Techstack:

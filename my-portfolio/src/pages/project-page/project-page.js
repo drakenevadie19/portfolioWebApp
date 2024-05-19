@@ -3,6 +3,8 @@ import ProjectRender from './project-render';
 
 const ProjectPage = ({projects}) => {
     const [usingFilter, setUsingFilter] = useState(false);
+    const [currentIndexOfProjectDisplaying, setCurrentIndexOfProjectDisplaying] = useState(0);
+
     // Number of to-render projects
     const [numberOfToRenderProjects, setNumberOfToRenderProjects] = useState(projects.length);
 
@@ -26,9 +28,10 @@ const ProjectPage = ({projects}) => {
     const [buttonStates, setButtonStates] = useState(new Array(100).fill(false));
 
 
-    const changeProjectToRender = (newProject) => {
+    const changeProjectToRender = (newProject, index) => {
         setCurrentProject(newProject);
         // console.log(newProject);
+        setCurrentIndexOfProjectDisplaying(index);
     }
 
     useEffect(() => {
@@ -143,7 +146,8 @@ const ProjectPage = ({projects}) => {
                     <div className="project-list-tab">
                         <h3 className="project-list-tab-header">My Projects ({numberOfToRenderProjects}):</h3>
                         {toRenderProjects.map((project, index) => (
-                            <a key={index} onClick={() => changeProjectToRender(project)}>{project.name}</a>
+                            // Adding a class so that when that project is rendering, its background in project is being rendered
+                            <a key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying && "project-clicked"}>{project.name}</a>
                         ))}
                     </div>
                     <ProjectRender project = {currentProject} />

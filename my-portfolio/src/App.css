@@ -1011,6 +1011,10 @@ nav ul li:last-child {
   backdrop-filter: hue-rotate(30deg);
 }
 
+.project-clicked {
+  background-color: #00D7FF;
+}
+
 .project-list-tab-header {
   color: #0096FF;
   font-weight: 700;

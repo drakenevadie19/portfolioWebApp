@@ -811,6 +811,7 @@ nav ul li:last-child {
   position: relative;
   padding: 0 1.5em;
   width: 400px;
+  text-align: end;
 }
 
 .timeline .w-e-time h4 {

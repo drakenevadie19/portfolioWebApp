@@ -34,7 +34,7 @@ const workdata = [
         alt: "TCU",
         role: "Undergraduate Computer Science Teacher Assistant",
         company: "Texas Christian University",
-        time: "August 2023-Present         ",
+        time: "August 2023-Present",
         location: "Fort Worth, Texas",
         description: [
             "Assist over 50 students with lab projects in Computer Science courses: Data Structures, Techniques in Programming, Python for Data Analytics, and Introduction to Programming.",
@@ -59,7 +59,7 @@ const workdata = [
         alt: "FPT Software",
         role: "Software Engineer Internship",
         company: "FPT Software",
-        time: "June 2023-August 2023   ",
+        time: "June 2023-August 2023",
         location: "Hai Phong, Vietnam",
         description: [
             "Build a CRM website with Angular for over 100,000 users to manage the rental housing and apartment industry.",
@@ -77,7 +77,7 @@ const workdata = [
         alt: "TCU",
         role: "Information Common Desk Assistant",
         company: "Texas Christian University",
-        time: "September 2022-Present      ",
+        time: "September 2022-Present",
         location: "Fort Worth, Texas",
         description: [
             "Deals with the students' demands of studying devices."

@@ -1,7 +1,7 @@
 const skillsData = [
     {
         name: "Programming Languages",
-        skills: ["js", "java", "ts", "py"]
+        skills: ["js", "ts", "py", "java", "scala"]
     }, 
     {
         name: "Front-end",
@@ -25,7 +25,7 @@ const skillsData = [
     }, 
     {
         name: "Web hosting",
-        skills: ["gcp", "vercel"]
+        skills: ["heroku", "gcp", "vercel"]
     }, 
     {
         name: "Programming Tools",
@@ -37,7 +37,7 @@ const skillsData = [
     },
     {
         name: "Still Learning skills...",
-        skills: ["aws", "azure", "dynamodb", "fastapi", "heroku", "kafka", "kubernetes", "php", "redis", "scala", "tailwind"]
+        skills: ["aws", "azure", "dynamodb", "fastapi", "kafka", "kubernetes", "php", "redis", "tailwind"]
     }
 ]
 

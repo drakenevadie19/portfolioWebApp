@@ -5,9 +5,9 @@ const projectData = [
         src: "/project-bio-image/BlogApp.jpg",
         description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
         workTime: "12/2023 - 4/2024",
-        techStack: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "RESTful API", "Postman", "MongoDB Atlas", "React Hooks", "Axios", "Firebase Auth", "Google Cloud hosting Platform"],
+        techStack: ["JavaScript", "MongoDB", "Express.js", "React.js", "React Hooks", "Node.js", "RESTful API", "Postman", "MongoDB Atlas", "Axios", "Firebase Auth", "Heroku"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
-        liveDemo: ['no'],
+        liveDemo: ["yes", "https://drakedo-blog-app-7c34e913c768.herokuapp.com/"],
         participants: "Drake Do",
     },
     {

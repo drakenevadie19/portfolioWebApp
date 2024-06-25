@@ -34,7 +34,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
   gap: 20px;
 }
@@ -442,7 +442,7 @@ nav ul li:last-child {
 .otherLink {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 10px;
   width: 100%;
 }
@@ -683,7 +683,7 @@ nav ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -914,13 +914,13 @@ nav ul li:last-child {
 .w-d-job-details-heading .w-d-job-details-role {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .w-d-job-details-description {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 
   padding: 2em;
 }
@@ -944,16 +944,28 @@ nav ul li:last-child {
 
 /*----------------------------------------------------------------------------------------*/
 /* Project Page */
+/* Filter */
 .filter {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  /* gap: 10px;
+  overflow: scroll; */
 
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  gap: 10px;
-  overflow: scroll;
+  position: relative;
+  display: none;
 }
+
+.filter-area-show {
+  display: block;
+  background-color: ;
+}
+
+/* .filter-button {
+  top: 10px;
+  right: 10px;;
+} */
 
 .tech-stack-list {
   display: flex;
@@ -990,6 +1002,8 @@ nav ul li:last-child {
   /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
   white-space: nowrap;
 }
+
+/* End of filter area */
 
 .project-wrap {
   display: flex;

@@ -22,7 +22,7 @@ const projectData = [
         participants: "Drake Do",
     },
     {
-        name: "daily Diary app", 
+        name: "Daily Diary app", 
         link: "https://github.com/drakenevadie19/dailyDiaryApp.git",
         src: "/project-bio-image/diaryapp.jpeg",
         description: "Developed a fullstack website diary application with MERN-stack allowing users to save daily diary for healing after a long day.",

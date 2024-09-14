@@ -6,9 +6,13 @@ const workdata = [
         company: "ThankUPet",
         time: "May 2024-Present",
         location: "Hai Phong, Vietnam",
-        description: [],
+        description: [
+            "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 
+            "Generated thorough documentation for 21 APIs supporting a robust back-end solution in the pet-caring management system, resulting in increased user engagement and improved operational efficiency for the scheduling process.",
+            "Applied Express and Node.js to implement efficient routing and middleware handling solutions, ensuring seamless API integration and responsiveness, and enhancing performance and reliability."
+        ],
         skills: [
-            "Next.js", "React.js", "RestAPI", "Suprabase", "Node.js", "Express.js"
+            "Next.js", "TypeScript", "PlanetScale", "Supabase", "Node.js", "Express.js"
         ]
     }, 
     {

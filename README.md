@@ -1,5 +1,5 @@
 # portfolioWepApp
-My Portfolio Website, describes all my finished courses, projects, and other information.
+My Portfolio Website, describes all my finished courses, capstone projects, and other information.
 Here is the link to the website: https://thanh-nguyen-do-portfolio.vercel.app/
 
 ![image](https://github.com/drakenevadie19/portfolioWebApp/assets/111625547/23b9be13-91e8-4fc0-a301-58488b413c65)

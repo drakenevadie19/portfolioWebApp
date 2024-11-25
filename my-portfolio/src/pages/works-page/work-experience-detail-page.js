@@ -12,7 +12,7 @@ const WorkExperienceDetailPage = () => {
           <div className="back-to-work-button">
             <button
               type="button"
-              class="btn btn-info"
+              className="btn btn-info"
               onClick={() => navigate("/main/works")}
             >
               <svg
@@ -20,7 +20,7 @@ const WorkExperienceDetailPage = () => {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-arrow-left"
+                className="bi bi-arrow-left"
                 viewBox="0 0 16 16"
               >
                 <path

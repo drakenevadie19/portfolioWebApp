@@ -1,0 +1,135 @@
+/*----------------------------------------------------------------------------------------*/
+/* Main Page */
+.main { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 100vh;
+
+    padding: 0 2%
+  }
+  
+.main-page-image {
+    background-image: url('../../../public/Drake Do bio.png');
+    background-size: 100% 100%;
+    border: 1px #18134C dotted;
+    height: 70%; 
+    width: 23%;
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.main-page h2 {
+    color: #00D7FF;
+}
+  
+.profile-wrapper {
+    /* position: absolute;
+    top: 30%;
+    left: 15%; */
+  
+    width: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 20px;
+}
+  
+  .profile-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-wrapper h3, h5 {
+    color: #18134C;
+  }
+
+  .unique-icon-start {
+    color: #18134C;
+  }
+  
+  .tcu {
+    color: #5800FF;
+  }
+  
+  .view-more-btn:hover {
+    transform: scale(1.25);
+  }
+  
+  .copyright-drake {
+    gap: 10px;
+    color: #18134C;
+    width: 100%;
+    height: fit-content;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .copyright-drake-1 {
+    position: absolute;
+    bottom: 0;
+    color: #72FFFF;
+    width: 100%;
+    height: fit-content;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .svg-icon {
+    color: #0096FF;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-page {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .profile-wrapper {
+      top: 30%;
+      left: 5px;
+  
+      display: flex;
+      text-align: start;
+    }
+  
+  
+    .copyright-drake {
+      /* position: static;
+      bottom: 0;
+      left: 20%;
+      gap: 10px; */
+  
+      /* filter: blur(8px); */
+  
+      left: 20%;
+      color: #18134C;
+  
+      /* background-color: #5800FF; */
+      
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  }

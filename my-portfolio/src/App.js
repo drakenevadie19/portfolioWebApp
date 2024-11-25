@@ -2,10 +2,10 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 
-import StartPage from './pages/structure-page/start-page';
 import MainPages from './pages/structure-page/main-pages';
 
-import AboutPage from './pages/about-page/about-page';
+import StartPage from './pages/1-start-page/start-page';
+import AboutPage from './pages/2-about-page/about-page';
 import EducationPage from './pages/education-page/education-page';
 import ProjectPage from './pages/project-page/project-page';
 import ContactMe from './pages/contact-page/contact-me';
@@ -21,15 +21,15 @@ function App() {
     <BrowserRouter>
       <div className="App">
           <Routes>
-            <Route path="" element={<StartPage />} />
-            <Route path='/main' element={<MainPages />}>
-              <Route path="aboutme" element={<AboutPage />} />
-              <Route path="education" element={<EducationPage educationList={schoolsList} />} />
-              <Route path="skills" element={<SkillPage />} />
-              <Route path="works" element={<WorksPage />} />
-              <Route path="works/:id" element={<WorkExperienceDetailPage/> }/>
-              <Route path="projects" element={<ProjectPage projects={projectData} />} />
-              <Route path="contact" element={<ContactMe />} />
+            <Route path='/' element={<MainPages />}>
+              <Route path="" element={<StartPage />} />
+              <Route path="/main/aboutme" element={<AboutPage />} />
+              <Route path="/main/education" element={<EducationPage educationList={schoolsList} />} />
+              <Route path="/main/skills" element={<SkillPage />} />
+              <Route path="/main/works" element={<WorksPage />} />
+              <Route path="/main/works/:id" element={<WorkExperienceDetailPage/> }/>
+              <Route path="/main/projects" element={<ProjectPage projects={projectData} />} />
+              <Route path="/main/contact" element={<ContactMe />} />
             </Route>
           </Routes>
       </div>

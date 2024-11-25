@@ -6,6 +6,8 @@ import ResumeButton from "./resume-button";
 // import ProjectPage from "../project-page/project-page";
 // import ContactMe from "../contact-page/contact-me";
 
+import "./about-page.css";
+
 const AboutPage = () => {
     return (
         <>
@@ -28,7 +30,7 @@ const AboutPage = () => {
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                             I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
                             Now I am sharpening my skills with Front-end frameworks and libraries such as <strong>Next.js, Angular.js, React.js, Vue.js</strong>, and also Back-end development with <strong>Spring Boot, Express.js and Node.js</strong>. 
-                            In the near future, I want to be a full-time Software Engineer. </h5>
+                            My goal is to be a full-time Software Engineer. </h5>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">
@@ -55,7 +57,7 @@ const AboutPage = () => {
                                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
                                     </svg>
                                 </span>
-                                <b>Williams Do</b>
+                                <b>Drake Do</b>
                             </a>
                         </div>
                         
@@ -63,14 +65,14 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-                <div className="dm-or-scrolldown">
+                {/* <div className="dm-or-scrolldown">
                     <div className="main-home-page-dm-tell">
                         <p>Click to DM me</p>
                     </div>
                     <div className="dm-or-scrolldown-frame">
                         <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen"><img src="/dm.png" alt="DM" /></a>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* <div className="page-body" id="edu-block">

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import "./nav-bar.css"
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,7 +28,7 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <div className="unique">
+                <div className={`${isMenuOpen ? '' : "unique"}`}>
                     <h4 onClick={handleClick1}>Thanh Nguyen Do</h4>
                     <div onClick={handleClick2}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-battery-charging unique-icon" viewBox="0 0 16 16">
@@ -64,11 +66,11 @@ const Navbar = () => {
                         {/* <a href="#contact-block">Contact Me</a> */}
                     </li>
                     <li className="icon">
-                        <a className="mainicon" id="click" onClick={clickBar} href="#">
+                        <div className="mainicon" id="click" onClick={clickBar}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                             </svg>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </nav>

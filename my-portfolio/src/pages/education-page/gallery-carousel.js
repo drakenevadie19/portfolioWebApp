@@ -1,19 +1,17 @@
-import imageDB from "./images-db";
 
-const SchoolImage = () =>  (
-    // <div className="education-image">
-    //     <img id="bio" src={srcName} alt="MyImageatSchools"></img>
-    // </div>
+const GalleryCarousel = ({ imagesDB }) =>  (
     <>
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div className="carousel-inner">
-                <>
-                    {imageDB.map((image, index) => (
+                
+                {(imagesDB && imagesDB.length !== 0) &&
+                    imagesDB.map((image, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                             <img key={index} src={image.src} className="d-block w-100" alt={image.alt} id="presentative-image" />
                         </div>
-                    ))}
-                </>
+                    ))
+                }
+                
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -27,4 +25,4 @@ const SchoolImage = () =>  (
     </>
 )
 
-export default SchoolImage;
+export default GalleryCarousel;

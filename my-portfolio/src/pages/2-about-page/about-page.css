@@ -87,7 +87,7 @@
     }
 
     /* Dm jumping button */
-    .dm-or-scrolldown {
+    /* .dm-or-scrolldown {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -116,7 +116,7 @@
 
     .main-home-page-dm-tell {
         display: none;
-        /* border: 1px solid #0096FF; */
+        border: 1px solid #0096FF;
         background-color: #0096FF;
         height: max-content;
         border-radius: 20px;
@@ -131,7 +131,7 @@
         .main-home-page-dm-tell {
             display: block;
         }  
-    }
+    } */
 
     /*Information*/
     .information {

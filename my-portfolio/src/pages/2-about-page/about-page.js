@@ -29,7 +29,7 @@ const AboutPage = () => {
                             <h1 className="title">Software Engineer</h1>
                         </div>
                         <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
-                            I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN && MEAN && MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, Element UI, GraphQL, Apollo Client, Firebase</b>. 
+                            I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN  & MEAN  & MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, GraphQL, Apollo Client, Firebase</b>. 
                             Now I am sharpening my skills with Front-end frameworks and libraries such as <strong>Next.js, Angular.js, React.js, Vue.js</strong>, and also Back-end development with <strong>Spring Boot, Express.js and Node.js</strong>. 
                             My goal is to be a full-time Software Engineer. </h5>
 

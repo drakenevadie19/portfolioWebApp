@@ -16,24 +16,28 @@ import projectData from './pages/project-page/project-data'
 import SkillPage from './pages/skills-page/skill-page';
 import WorkExperienceDetailPage from './pages/works-page/work-experience-detail-page';
 
+import { ThemeProvider } from './ThemeContext';
+
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-          <Routes>
-            <Route path='/' element={<MainPages />}>
-              <Route path="" element={<StartPage />} />
-              <Route path="/main/aboutme" element={<AboutPage />} />
-              <Route path="/main/education" element={<EducationPage educationList={schoolsList} />} />
-              <Route path="/main/skills" element={<SkillPage />} />
-              <Route path="/main/works" element={<WorksPage />} />
-              <Route path="/main/works/:id" element={<WorkExperienceDetailPage/> }/>
-              <Route path="/main/projects" element={<ProjectPage projects={projectData} />} />
-              <Route path="/main/contact" element={<ContactMe />} />
-            </Route>
-          </Routes>
-      </div>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className="App">
+            <Routes>
+              <Route path='/' element={<MainPages />}>
+                <Route path="" element={<StartPage />} />
+                <Route path="/main/aboutme" element={<AboutPage />} />
+                <Route path="/main/education" element={<EducationPage educationList={schoolsList} />} />
+                <Route path="/main/skills" element={<SkillPage />} />
+                <Route path="/main/works" element={<WorksPage />} />
+                <Route path="/main/works/:id" element={<WorkExperienceDetailPage/> }/>
+                <Route path="/main/projects" element={<ProjectPage projects={projectData} />} />
+                <Route path="/main/contact" element={<ContactMe />} />
+              </Route>
+            </Routes>
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

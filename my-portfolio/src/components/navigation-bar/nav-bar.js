@@ -1,55 +1,66 @@
 //Navbar
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useContext } from 'react';
+// import { ThemeContext } from '../ThemeContext';
+import { ThemeContext } from "../../ThemeContext";
+
+// import { useNavigate } from "react-router-dom";
 
 import "./nav-bar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [changedTheme, setChangedTheme] = useState(true);
 
   const clickBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navigate = useNavigate();
+  const changeBackground = () => {
+    toggleTheme();
+    console.log(theme);
+    setChangedTheme(!changedTheme);
+  }
 
-  const handleClick1 = () => {
-    // Navigate back to the home page ("/home")
-    navigate("/main/aboutme");
-  };
+  // const navigate = useNavigate();
 
-  const handleClick2 = () => {
-    // Navigate back to the home page ("/home")
-    navigate("/");
-  };
+  // const handleClick1 = () => {
+  //   // Navigate back to the home page ("/home")
+  //   navigate("/main/aboutme");
+  // };
+
+  // const handleClick2 = () => {
+  //   // Navigate back to the home page ("/home")
+  //   navigate("/");
+  // };
 
   return (
     <>
       <nav>
         <ul className={`topnav ${isMenuOpen ? "responsive" : ""}`}>
           <li>
-            <Link to="/main/aboutme">About Me</Link>
+            <Link to="/main/aboutme" className="nav-bar-text">About Me</Link>
             {/* <a href="#about-block">About Me</a> */}
           </li>
           <li>
-            <Link to="/main/education">Education</Link>
+            <Link to="/main/education" className="nav-bar-text">Education</Link>
             {/* <a href="#edu-block">Education</a> */}
           </li>
           <li>
-            <Link to="/main/skills">Skills</Link>
+            <Link to="/main/skills" className="nav-bar-text">Skills</Link>
             {/* <a href="#skill-block">Skills</a> */}
           </li>
           <li>
-            <Link to="/main/works">Works</Link>
+            <Link to="/main/works" className="nav-bar-text">Works</Link>
             {/* <a href="#work-block">Works</a> */}
           </li>
           <li>
-            <Link to="/main/projects">Projects</Link>
+            <Link to="/main/projects" className="nav-bar-text">Projects</Link>
             {/* <a href="#project-block">Projects</a> */}
           </li>
           <li>
-            <Link to="/main/contact">Contact Me</Link>
+            <Link to="/main/contact" className="nav-bar-text">Contact Me</Link>
             {/* <a href="#contact-block">Contact Me</a> */}
           </li>
           <li className="icon">
@@ -82,18 +93,20 @@ const Navbar = () => {
                         </svg>
                     </div> */}
           <input
-            type="checkbox"
-            checked
-            data-toggle="toggle"
+            type="checkbox" 
+            onChange={changeBackground}
+            checked={changedTheme}
+            // data-toggle="toggle" 
+            data-onstyle="info"
             data-onlabel='
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+            Light Mode <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb-fill" viewBox="0 0 16 16">
                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
             </svg>'
             data-offlabel='
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb" viewBox="0 0 16 16">
+            Dark Mode <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb" viewBox="0 0 16 16">
                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
             </svg>'
-          ></input>
+          />
         </div>
       </nav>
     </>

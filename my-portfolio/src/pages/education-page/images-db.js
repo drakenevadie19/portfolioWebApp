@@ -1,40 +1,40 @@
-const imageDB = [
+const schoolImageDB = [
     {
-        src: "/images/tpc.jpg",
+        src: "/school-images/tpc.jpg",
         alt: "TPC"
     },
     {
-        src: "/images/tpc2.jpg",
+        src: "/school-images/tpc2.jpg",
         alt: "TPC"
     },
     {
-        src: "/images/tpc3.jpg",
+        src: "/school-images/tpc3.jpg",
         alt: "TPC"
     },
     {
-        src: "/images/tcu.jpg",
+        src: "/school-images/tcu.jpg",
         alt: "TCU"
     },
     {
-        src: "/images/tcu2.jpg",
+        src: "/school-images/tcu2.jpg",
         alt: "TCU"
     },
     {
-        src: "/images/tcu3.jpg",
+        src: "/school-images/tcu3.jpg",
         alt: "TCU"
     },
     {
-        src: "/images/tcu4.jpg",
+        src: "/school-images/tcu4.jpg",
         alt: "TCU"
     },
     {
-        src: "/images/tcu5.jpg",
+        src: "/school-images/tcu5.jpg",
         alt: "TCU"
     },
     {
-        src: "/images/tcu6.jpg",
+        src: "/school-images/tcu6.jpg",
         alt: "TCU"
     },
 ]
 
-export default imageDB;
+export default schoolImageDB;

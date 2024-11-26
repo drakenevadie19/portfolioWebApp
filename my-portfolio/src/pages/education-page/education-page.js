@@ -1,10 +1,11 @@
-import SchoolImage from "./schools-image";
+import GalleryCarousel from "./gallery-carousel";
+import schoolImageDB from "./images-db";
 
 const EducationPage = ({ educationList }) => (
     <>
         <div id="page-body">
             <div className="education">
-                <SchoolImage id="imageHere" />
+                <GalleryCarousel id="imageHere" imagesDB={schoolImageDB} />
                 <div className="education-box">
                     {educationList.map(schools => (
                         <>

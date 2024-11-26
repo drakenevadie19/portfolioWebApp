@@ -11,13 +11,13 @@
     padding: 0 2%
 }
   
-.main-page-image {
+/* .main-page-image {
     background-image: url('../../../public/Drake Do bio.png');
     background-size: 100% 100%;
     border: 1px #18134C dotted;
     height: 70%; 
     width: 23%;
-}
+} */
 
 .main-page {
     width: 100%;
@@ -26,18 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 5%;
 }
-  
-.main-page h2 {
-    color: #00D7FF;
-}
-  
+
 .profile-wrapper {
-    /* position: absolute;
-    top: 30%;
-    left: 15%; */
-  
-    width: 50%;
+    width: 45%;
   
     display: flex;
     flex-direction: column;
@@ -46,119 +40,164 @@
     gap: 20px;
 }
   
-  .profile-name {
+.profile-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-wrapper h3, h5 {
+  color: var(--text-color);
+}
+
+.start-page-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+}
+
+.unique-icon-start {
+  color: var(--text-color-highlight);
+}
+
+.view-more-btn:hover {
+  transform: scale(1.25);
+}
+
+/* My image carousel */
+.main-page-image {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#carouselExampleControls {
+  width: 100%;
+  height: 75%;
+  box-shadow: 10px 12px 30px var(--text-color);
+  border-radius: 15px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 3/4; */
+  border-radius: 15px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#presentative-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.copyright-drake {
+  gap: 10px;
+  color: #18134C;
+  width: 100%;
+  height: fit-content;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.copyright-drake-1 {
+  position: absolute;
+  bottom: 0;
+  color: #72FFFF;
+  width: 100%;
+  height: fit-content;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* .svg-icon {
+  color: #0096FF;
+} */
+
+.start-cv-btn {
+  margin-top: 1.5rem;
+  padding: 0.7em 2.5em;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 0;
+
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+.start-cv-btn:hover {
+  /* background-color: #72FFFF; */
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
+  box-shadow: 0 0 10px #72FFFF;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  transform: scale(1.25); 
+}
+
+@media screen and (max-width: 768px) {
+  .main-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
-    gap: 10px;
-  }
-  
-  .profile-wrapper h3, h5 {
-    color: var(--text-color);
   }
 
-  .start-page-info {
+  .profile-wrapper {
+    top: 30%;
+    left: 5px;
+
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2%;
-    width: 100%;
+    text-align: start;
   }
 
-  .unique-icon-start {
-    color: var(--text-color-highlight);
-  }
-  
-  .tcu {
-    color: #5800FF;
-  }
-  
-  .view-more-btn:hover {
-    transform: scale(1.25);
-  }
-  
+
   .copyright-drake {
-    gap: 10px;
-    color: #18134C;
-    width: 100%;
-    height: fit-content;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .copyright-drake-1 {
-    position: absolute;
+    /* position: static;
     bottom: 0;
-    color: #72FFFF;
-    width: 100%;
-    height: fit-content;  
+    left: 20%;
+    gap: 10px; */
+
+    /* filter: blur(8px); */
+
+    left: 20%;
+    color: #18134C;
+
+    /* background-color: #5800FF; */
+    
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
-    gap: 10px;
   }
-  
-  .svg-icon {
-    color: #0096FF;
-  }
+}
 
-  .start-cv-btn {
-    margin-top: 1.5rem;
-    padding: 0.7em 2.5em;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 400;
-    border: 0;
+@media screen and (max-width: 1100px) {
+  /* .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  } */
 
-    background-color: var(--button-color);
-    color: var(--button-text-color);
+  #carouselExampleControls {
+    width: 80%;
+    height: 40%;
   }
-
-  .start-cv-btn:hover {
-    /* background-color: #72FFFF; */
-    background-color: var(--button-color-hover);
-    color: var(--button-text-color-hover);
-    box-shadow: 0 0 10px #72FFFF;
-    transition: all .3s ease-in-out;
-    font-weight: 600;
-    transform: scale(1.25); 
-  }
-  
-  @media screen and (max-width: 768px) {
-    .main-page {
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-      align-items: center;
-    }
-  
-    .profile-wrapper {
-      top: 30%;
-      left: 5px;
-  
-      display: flex;
-      text-align: start;
-    }
-  
-  
-    .copyright-drake {
-      /* position: static;
-      bottom: 0;
-      left: 20%;
-      gap: 10px; */
-  
-      /* filter: blur(8px); */
-  
-      left: 20%;
-      color: #18134C;
-  
-      /* background-color: #5800FF; */
-      
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-    }
-  }
+}

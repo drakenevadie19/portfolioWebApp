@@ -1,3 +1,32 @@
+
+:root {
+  --background-color: #CDE8E5;
+  --text-color: #4D869C;
+  --button-color: #007bff;
+  --button-text-color: #ffffff;
+}
+
+.dark-theme {
+  --background-color: #232D3F;
+  --text-color: #32E0C4;
+  --text-color-on-hover: #008170;
+  --button-color: #ffffff;
+  --button-text-color: #005B41;
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,10 +40,14 @@ body {
   /* background: linear-gradient(90deg, rgb(255, 255, 255) 20%, #5800FF 80%); */
   /* background-image: url("../public/backgroundpage.avif");
   background-size: 100% 100%; */
-  background-color: #F3F8FF;
+  /* background-color: #F3F8FF; */
 
   /* background-image: url(../public/backgroundImage.jpg);
   background-size: cover; */
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 code {

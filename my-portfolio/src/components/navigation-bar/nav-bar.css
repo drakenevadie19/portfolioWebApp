@@ -1,24 +1,6 @@
 /*----------------------------------------------------------------------------------------*/
 /*Nav bar*/
 
-/* .light-theme {
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --button-color: #007bff;
-  --button-text-color: #ffffff;
-
-  color: var(--text-color);
-}
-
-.dark-theme {
-  --background-color: #232D3F;
-  --text-color: #008170;
-  --button-color: #ffffff;
-  --button-text-color: #005B41;
-
-  color: var(--text-color); 
-} */
-
 .unique {
   display: flex;
   flex-direction: row;

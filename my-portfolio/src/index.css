@@ -1,17 +1,30 @@
 
 :root {
-  --background-color: #CDE8E5;
+  --background-color: #EEF7FF;
+
   --text-color: #4D869C;
-  --button-color: #007bff;
-  --button-text-color: #ffffff;
+  --text-color-highlight: #00D1FF;
+  --text-color-on-hover: #3D6CB9;
+
+  --button-color: #4D869C;
+  --button-text-color: white;
+  --button-color-hover: #00FFF0;
+  --button-text-color-hover: black;
+  --button-text-color-hover-shadow: yellow;
 }
 
 .dark-theme {
   --background-color: #232D3F;
+
   --text-color: #32E0C4;
+  --text-color-highlight: orange;
   --text-color-on-hover: #008170;
-  --button-color: #ffffff;
-  --button-text-color: #005B41;
+
+  --button-color: #0D7377;
+  --button-text-color: #EEEEEE;
+  --button-color-hover: #32E0C4;
+  --button-text-color-hover: #212121;
+  --button-text-color-hover-shadow: lime;
 }
 
 button {

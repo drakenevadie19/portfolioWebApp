@@ -25,25 +25,28 @@ function StartPage() {
           </div>
         </div>  
 
-        <h5>
+        <div className='start-page-info'>
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-briefcase unique-icon-start" viewBox="0 0 16 16">
               <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
             </svg>
           </span>
-          Rising Junior at Texas Christian University
-        </h5>
-        <h5>
+          <h5>Rising Junior at Texas Christian University</h5>
+        </div>
+        <div className='start-page-info'>
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-person-workspace unique-icon-start" viewBox="0 0 16 16">
               <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
               <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
             </svg>
           </span>
-          Aspiring Software Engineer 
-        </h5>
+          <h5>Aspiring Software Engineer </h5>
+        </div>
         
-        <button type="button" className="btn btn-info view-more-btn" onClick={handleClick}>
+        {/* <button type="button" className="btn btn-info view-more-btn" onClick={handleClick}>
+          View more about me
+        </button> */}
+        <button className="start-cv-btn" onClick={handleClick}>
           View more about me
         </button>
       </div>

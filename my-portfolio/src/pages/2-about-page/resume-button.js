@@ -11,7 +11,7 @@ const ResumeButton = () => {
 
   return (
     <div>
-      <button onClick={openResume} className="cv-btn">Review Resume</button>
+      <button onClick={openResume} className="start-cv-btn">Review Resume</button>
     </div>
   );
 };

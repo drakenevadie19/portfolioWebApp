@@ -16,10 +16,6 @@ const schoolImageDB = [
         alt: "TCU"
     },
     {
-        src: "/school-images/tcu2.jpg",
-        alt: "TCU"
-    },
-    {
         src: "/school-images/tcu3.jpg",
         alt: "TCU"
     },

@@ -3,7 +3,7 @@ import workdata from "./work-data";
 
 const WorksPage = () => (
     <>
-        <div id="page-body">
+        <div className="page-body-works" id="work-block">
             <div className="work-page">
                 <div className="infoWorks">
                     <div className="placeholder-Image">

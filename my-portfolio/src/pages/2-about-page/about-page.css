@@ -31,13 +31,16 @@
 .images {
     /* width: 30em; */
     /* height: 30em; */
-    width: 30%;
+    width: 35%;
     border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .blue-bg-outer {
-    width: 26em;
-    height: 26em;
+    /* width: 28em; */
+    height: 28em;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     /* animation: frameColor 7s linear infinite; */
     /* backdrop-filter: brightness(50%); */
@@ -65,8 +68,9 @@
 }
 
 .white-bg {
-    width: 25em;
-    height: 25em;
+    /* width: 27em; */
+    height: 27em;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     background: var(--background-color);
     display: grid;
@@ -74,8 +78,9 @@
 }
 
 .blue-bg {
-    width: 24em;
-    height: 24em;
+    /* width: 26em; */
+    height: 26em;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     background: black;
 }
@@ -146,7 +151,6 @@
 }
 
 .information .information-name,span {
-    /* margin-right: 10px; */
     text-align: right;
     color: var(--text-color);
 }
@@ -181,7 +185,7 @@
 .animated_text>h1 {
     -webkit-text-stroke: 1px #18134C;
     font-family: "Fira Code", monospace;
-    font-weight: 600;
+    font-weight: bold;
     color: transparent;
     background-repeat: no-repeat;
     background-image: linear-gradient(90deg, red, orange, yellow);
@@ -189,12 +193,13 @@
     background-clip: none;
     background-position: -500px 0;
     animation: backcolor 7s linear infinite;
+    font-size: 3.5rem;
     /* text-shadow: 0 0 8px #00D7FF; */
 }
 
 @keyframes backcolor {
     100% {
-        -webkit-text-stroke: 1.5px lime;
+        /* -webkit-text-stroke: 1.5px lime; */
         background-position: 0 0;
     }
 }

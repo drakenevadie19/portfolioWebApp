@@ -69,10 +69,6 @@ const AboutPage = () => {
                 </div> */}
             </div>
 
-            {/* <div className="page-body" id="skill-block">
-                <SkillPage />
-            </div> */}
-
             {/* <div className="page-body" id="work-block">
                 <WorksPage />
             </div> */}

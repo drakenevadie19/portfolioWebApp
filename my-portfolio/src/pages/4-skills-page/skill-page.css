@@ -1,56 +1,102 @@
-/*----------------------------------------------------------------------------------------*/
-/* Skills Page */
-.chartOfSkills {
+
+:root {
+    --background-color: #EEF7FF;
+  
+    --text-color: #4D869C;
+    --text-color-highlight: #00D1FF;
+    --text-color-on-hover: #3D6CB9;
+  
+    --button-color: #4D869C;
+    --button-text-color: white;
+    --button-color-hover: #00D1FF;
+    --button-text-color-hover: black;
+    --button-text-color-hover-shadow: yellow;
+    
+}
+  
+.dark-theme {
+    --background-color: #232D3F;
+  
+    --text-color: #32E0C4;
+    --text-color-highlight: orange;
+    --text-color-on-hover: #008170;
+  
+    --button-color: #0D7377;
+    --button-text-color: #EEEEEE;
+    --button-color-hover: #32E0C4;
+    --button-text-color-hover: #212121;
+    --button-text-color-hover-shadow: lime;
+}
+
+.page-body {
+    padding: 25vh 4% 8% 4%;
+    /* height: 90vh; */
+    height: 100%;
     width: 100%;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: max-content;
-  }
+    justify-content: center;
+    gap: 5%;
+    /* align-items: center; */
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Skills Page */
   
-  .chart-of-skills-frame {
-    width: 49%;
+.chart-of-skills-frame {
+    width: 45%;
     display: flex;
     justify-content: center;
     aspect-ratio: 1/1;
-  }
+}
+
+.skill-set-components {
+    width: 50%;
+}
   
-  .skills-set-component {
+.skills-set-component {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
-    gap: 10px;
-  }
+
+}
   
-  .skills-block {
+.skills-block {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 20px;
-  }
+    grid-template-columns: 48% 48%;
+    gap: 2%;
+}
   
-  .skills-set-component-h2 {
+.skills-set-component-h2 {
     font-style: italic;
-    color: #8200FF;
-  }
+    color: var(--text-color);
+    font-weight: 600;
+}
   
-  .individual-skill-set {
+.individual-skill-set {
     width: 100%;
-    border: 1px dotted #8200FF;
+    border: 2px var(--text-color) solid;
     border-radius: 20px;
     padding: 10px;
-  }
+    font-weight: 500;
+}
+
+.individual-skill-set:hover {
+    background-color: var(--button-color);
+}
   
-  .skill-stack-list {
+.skill-stack-list {
     display: flex;
     /* use flex-wrap here to auto pushing overflowed element to new line */
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .chartOfSkills {
       display: flex;
       flex-direction: column;
@@ -68,5 +114,5 @@
       grid-template-columns: 100%;
       gap: 20px;
     }
-  }
+}
   

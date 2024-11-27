@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -11,8 +11,14 @@ import {
     TimeScale
     } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
+import "./skill-page.css";
+import { ThemeContext } from "../../ThemeContext";
 
 const FrontEndChart = () => {
+
+    
+  const { theme } = useContext(ThemeContext);
+
     ChartJS.register(
         CategoryScale,
         RadialLinearScale,
@@ -23,24 +29,58 @@ const FrontEndChart = () => {
         Tooltip,
         Legend
        );
-    const labels = ['HTML & CSS', 'Programming Languages', 'UI/UX Design', 'Responsiveness', 'Performance Optimization', 'Front-End Testing'];
+    const labels = ['Frontend Development', 'Backend Development', 'Database Management', 'API Development and Integration', 'DevOps and Deployment', 'Version Control and Collaboration'];
     const data = {
         labels: labels,
         datasets: [{
-            label: 'Front-end Development',
-            data: [9, 8, 8.5, 8, 8, 7], 
-            backgroundColor: 'rgba(183, 39, 245, 0.4)', //
-            borderColor: 'rgba(183, 39, 245, 0.8)',
+            label: 'Fullstack Development',
+            data: [9, 8.5, 8.5, 8.5, 8, 8.5], 
+            backgroundColor: theme === "light-theme" ? "#4D869C" : "#32E0C4",
+            borderColor: theme === "light-theme" ? "#4D869C" : "#32E0C4",
             pointRadius: 5,
             pointHitRadius: 10,
-            pointBackgroundColor: 'rgba(183, 39, 245, 0.8)',
-            pointBorderColor: 'rgba(183, 39, 245, 0.8)',
+            pointBackgroundColor: theme === "light-theme" ? "#00D1FF" : "orange",
+            pointBorderColor: theme === "light-theme" ? "#4D869C" : "#32E0C4",
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(255, 99, 132)'
         }]
+    };
+
+    const options = {
+        scales: {
+          r: {
+            beginAtZero: true,
+            ticks: {
+              color: "#4D869C", // Label color for the values
+            },
+            pointLabels: {
+              color: theme === "light-theme" ? "#4D869C" : "#32E0C4", // Label color for the axis labels
+              font: {
+                size: 14, // Optional: Adjust font size
+              },
+            },
+            grid: {
+              color: theme === 'light-theme' ? '#4D869C' : '#0D7377', // Optional: Change grid line color
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+            labels: {
+              color: theme === 'light-theme' ? '#000' : '#FFF', // Legend text color
+            },
+          },
+          tooltip: {
+            enabled: true,
+          },
+        },
     };
     
     return (
         <>
-            <Radar data={data} />
+            <Radar data={data} options={options} />
         </>
     );
 }

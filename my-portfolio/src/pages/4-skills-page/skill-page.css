@@ -1,0 +1,72 @@
+/*----------------------------------------------------------------------------------------*/
+/* Skills Page */
+.chartOfSkills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+  }
+  
+  .chart-of-skills-frame {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1/1;
+  }
+  
+  .skills-set-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .skills-block {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+  }
+  
+  .skills-set-component-h2 {
+    font-style: italic;
+    color: #8200FF;
+  }
+  
+  .individual-skill-set {
+    width: 100%;
+    border: 1px dotted #8200FF;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .skill-stack-list {
+    display: flex;
+    /* use flex-wrap here to auto pushing overflowed element to new line */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chartOfSkills {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .chart-of-skills-frame {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .skills-block {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 20px;
+    }
+  }
+  

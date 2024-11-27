@@ -2,6 +2,8 @@ import BackEndChart from "./back-end-chart";
 import FrontEndChart from "./front-end-chart";
 import SkillsSetComponent from "./skills-stack/skills-set-component";
 
+import "./skill-page.css";
+
 const SkillPage = () => {
     return (
         <>

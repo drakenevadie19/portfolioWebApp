@@ -8,12 +8,14 @@ import StartPage from './pages/1-start-page/start-page';
 import AboutPage from './pages/2-about-page/about-page';
 import EducationPage from './pages/3-education-page/education-page';
 import schoolsList from './pages/3-education-page/schools-list';
+
+import SkillPage from './pages/4-skills-page/skill-page';
+
 import ProjectPage from './pages/project-page/project-page';
 import ContactMe from './pages/contact-page/contact-me';
 import WorksPage from './pages/works-page/works-page';
 
 import projectData from './pages/project-page/project-data'
-import SkillPage from './pages/skills-page/skill-page';
 import WorkExperienceDetailPage from './pages/works-page/work-experience-detail-page';
 
 import { ThemeProvider } from './ThemeContext';

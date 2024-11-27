@@ -1,0 +1,114 @@
+#page-body {
+    /* padding: 2rem 8rem; */
+    height: 100vh;
+    /* width: 100%; */
+}
+
+.page-body {
+    padding: 10% 4% 8% 4%;
+    /* height: 90vh; */
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* School image carousel */
+.main-page-image {
+    width: 47%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+#carouselExampleControls {
+    width: 90%;
+    height: 100%;
+    box-shadow: 10px 12px 30px var(--text-color);
+    border-radius: 15px;
+}
+  
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 3/4; */
+    border-radius: 15px;
+}
+  
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+  
+#presentative-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Education Page */
+.education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.education-box {
+    width: 47%;
+    border: 3px var(--text-color) solid; 
+    border-radius: 15px;
+    padding: 15px;
+    height: max-content;
+    text-align: left;
+}
+  
+.education-box h1, h4{
+    margin: 0;
+}
+
+.school-name, .edu-details {
+    color: var(--text-color-highlight);
+    font-weight: 700;
+}
+
+.school-location {
+    color: var(--text-color);
+    font-weight: 600;
+}
+  
+.education-box ul{
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+    .education {
+      width: 100%;
+      display: flex;
+  
+      flex-direction: column;
+      gap: 5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .carousel-inner, .carousel-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    } */
+
+    #carouselExampleControls {
+        width: 80%;
+        height: 40%;
+    }
+}

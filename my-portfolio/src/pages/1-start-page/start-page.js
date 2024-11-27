@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./start-page.css"
-import GalleryCarousel from '../education-page/gallery-carousel';
+import GalleryCarousel from '../structure-page/gallery-carousel';
 import startGalleryDB from './start-image-db';
 
 function StartPage() {
@@ -9,7 +9,7 @@ function StartPage() {
 
   const handleClick = () => {
     // Navigate back to the home page ("/home")
-    navigate('/main/aboutme');
+    navigate('#about-block');
   };
 
   return (

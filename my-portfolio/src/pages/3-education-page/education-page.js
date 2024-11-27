@@ -10,8 +10,8 @@ const EducationPage = ({ educationList }) => (
                     <GalleryCarousel id="imageHere" imagesDB={schoolImageDB} />
                 </div>
                 <div className="education-box">
-                    {educationList.map(schools => (
-                        <>
+                    {educationList.map((schools, index) => (
+                        <div key={index}>
                             <h1 className="school-name">{schools.name}</h1>
                             <h4 className="school-location"><i>{schools.location}</i></h4>
                             <ul>
@@ -21,7 +21,7 @@ const EducationPage = ({ educationList }) => (
                                 <li><span className="edu-details">GPA:</span> {schools.gpa}</li>
                                 { schools.honor !== "N/A" && <li><span className="edu-details">Honor Society && Organizations:</span> <b><i>{schools.honor}</i></b></li> }
                             </ul>
-                        </>
+                        </div>
                     ))}
                 </div>
             </div>

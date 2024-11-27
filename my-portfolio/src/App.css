@@ -168,7 +168,6 @@
 .timeline .w-e-time::after {
   content: "";
     position: absolute;
-    z-index: 2;
     right: 0;
     top: 0;
     transform: translateX(50%);
@@ -192,7 +191,6 @@
 .timeline .w-e-job::before {
   content: "";
   position: absolute;
-  z-index: 1;
   left: 0;
   height: 100%;
   border-left: 1px #ccc solid;

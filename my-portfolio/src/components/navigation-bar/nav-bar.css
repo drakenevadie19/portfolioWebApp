@@ -1,36 +1,28 @@
 /*----------------------------------------------------------------------------------------*/
 /*Nav bar*/
-
 .unique {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-/* 
-.unique-icon {
-  color: #5800FF;
-} */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* background: #F3F8FF; */
   height: 10vh;
   position: fixed;
   padding: 0 3%;
-  z-index: 1;
 }
 
 nav h4 {
   align-items: flex-start;
-  /* color: #0096FF; */
   padding-left: 20px;
 }
 
 nav ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: 0;
   padding-left: 0;
   /* padding-right: 20px; */
@@ -46,19 +38,15 @@ nav li {
   color: var(--text-color);
   font-weight: 600;
   text-decoration: none;
-
 }
 
-nav a:hover {
+.nav-bar-text:hover {
   border-bottom: 3px var(--text-color-on-hover) solid;
   transform: scale(3);
   font-weight: bold;
   color: var(--text-color-on-hover);
+  cursor: pointer;
 }
-
-/* nav a:visited {
-  color: #8200FF;
-} */
 
 nav ul li:last-child {
   display: none;
@@ -90,7 +78,6 @@ nav ul li:last-child {
 
   .topnav.responsive {
     position: relative;
-    z-index: 1;
   }
 
   .topnav.responsive .icon {

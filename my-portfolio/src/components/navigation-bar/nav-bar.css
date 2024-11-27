@@ -20,6 +20,7 @@ nav {
   height: 10vh;
   position: fixed;
   padding: 0 3%;
+  z-index: 1;
 }
 
 nav h4 {

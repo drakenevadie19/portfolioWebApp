@@ -1,27 +1,15 @@
 const skillsData = [
     {
         name: "Programming Languages",
-        skills: ["js", "ts", "py", "java", "scala"]
+        skills: ["java", "js", "ts", "py", "scala"]
     }, 
     {
         name: "Front-end",
-        skills: ["html", "css", "nextjs", "react", "redux", "angular", "vue", "vite", "bootstrap", "materialui", "reactivex", "figma"]
+        skills: ["html", "css", "react", "nextjs", "redux", "angular", "vue", "vite", "apollo", "bootstrap", "materialui", "reactivex", "figma"]
     }, 
     {
         name: "Back-end",
-        skills: ["nodejs", "django", "apollo", "firebase", "git", "github", "spring", "express", "npm"]
-    }, 
-    {
-        name: "API",
-        skills: ["graphql", "postman"]
-    },
-    {
-        name: "Database",
-        skills: ["postgres", "mongodb", "mysql"]
-    },
-    {
-        name: "Containing",
-        skills: ["docker"]
+        skills: ["spring", "express",  "nodejs", "postgres", "mongodb", "mysql", "git", "github", "graphql", "postman", "firebase", "docker", "linux", "npm"]
     }, 
     {
         name: "Web hosting",
@@ -29,14 +17,10 @@ const skillsData = [
     }, 
     {
         name: "Programming Tools",
-        skills: ["anaconda", "eclipse", "vscode", "idea", "pycharm", "visualstudio", "phpstorm", "webstorm"]
+        skills: ["idea", "vscode", "pycharm", "phpstorm", "webstorm", "anaconda", "eclipse", "visualstudio"]
     },
     {
-        name: "Operating Systems",
-        skills: ["linux", "windows"]
-    },
-    {
-        name: "Still Learning skills...",
+        name: "Incoming...",
         skills: ["aws", "azure", "dynamodb", "fastapi", "kafka", "kubernetes", "php", "redis", "tailwind"]
     }
 ]

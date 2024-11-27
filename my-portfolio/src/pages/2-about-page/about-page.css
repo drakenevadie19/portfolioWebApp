@@ -7,7 +7,7 @@
 }
 
 .page-body {
-    padding: 10% 4% 5% 4%;
+    padding: 10% 4% 8% 4%;
     /* height: 90vh; */
     height: 100%;
     width: 100%;
@@ -151,14 +151,14 @@
 }
 
 .information-name {
-    font-size: 3rem;
+    font-size: 2.9rem;
 }
 
 .aboutme-description {
     font-weight: 600;
     text-align: right;
     color: var(--text-color);
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .tech-stack-animation {
@@ -228,10 +228,6 @@
     gap: 10px;
     width: 100%;
 }
-
-/* .about-infor {
-    color: #00D7FF;
-} */
 
 .otherLink>a {
     color: var(--text-color);

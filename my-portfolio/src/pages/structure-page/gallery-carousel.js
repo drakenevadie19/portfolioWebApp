@@ -1,3 +1,4 @@
+import "./gallery-carousel.css";
 
 const GalleryCarousel = ({ imagesDB }) =>  (
     <>

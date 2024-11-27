@@ -4,8 +4,7 @@
     /* width: 100%; */
 }
 
-.page-body {
-    padding: 25vh 4% 8% 4%;
+.page-body-edu {
     /* height: 90vh; */
     height: 100%;
     width: 100%;
@@ -13,6 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15vh 4% 8% 4%;
+    /* background-color: red; */
 }
 
 .education {
@@ -20,24 +21,23 @@
     flex-direction: row;
     justify-content: space-between;
 
-
-    height: 100%;
+    height: max-content;
     width: 100%;
+
 }
 
 /*----------------------------------------------------------------------------------------*/
 /* School image carousel */
 .main-page-image {
     width: 47%;
-    height: 90%;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
   
-
 #carouselExampleControls {
-    width: 100%;
+    width: 90%;
     height: 100%;
     box-shadow: 10px 12px 30px var(--text-color);
     border-radius: 15px;

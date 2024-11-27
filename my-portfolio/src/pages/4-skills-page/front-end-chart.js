@@ -29,7 +29,7 @@ const FrontEndChart = () => {
         Tooltip,
         Legend
        );
-    const labels = ['Frontend Development', 'Backend Development', 'Database Management', 'API Development and Integration', 'DevOps and Deployment', 'Version Control and Collaboration'];
+    const labels = ['Frontend Development', 'Backend Development', 'Database Management', 'API Development and Integration', 'DevOps and Deployment', 'Version Control/Colab'];
     const data = {
         labels: labels,
         datasets: [{
@@ -56,7 +56,7 @@ const FrontEndChart = () => {
             pointLabels: {
               color: theme === "light-theme" ? "#4D869C" : "#32E0C4", // Label color for the axis labels
               font: {
-                size: 14, // Optional: Adjust font size
+                size: "11.5em", // Optional: Adjust font size
               },
             },
             grid: {

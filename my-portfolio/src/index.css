@@ -6,14 +6,14 @@
   --background-color: #EEF7FF;
 
   --text-color: #4D869C;
-  --text-color-highlight: #00D1FF;
-  --text-color-on-hover: #3D6CB9;
+  --text-color-highlight: #3D6CB9;
+  --text-color-on-hover: #008170;
 
   --button-color: #4D869C;
   --button-text-color: white;
   --button-color-hover: #00D1FF;
   --button-text-color-hover: black;
-  --button-text-color-hover-shadow: yellow;
+  --button-text-color-hover-shadow: rgb(140, 140, 115);
   
 }
 
@@ -22,7 +22,7 @@
 
   --text-color: #32E0C4;
   --text-color-highlight: orange;
-  --text-color-on-hover: #008170;
+  --text-color-on-hover: #00D1FF;
 
   --button-color: #0D7377;
   --button-text-color: #EEEEEE;

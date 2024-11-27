@@ -4,6 +4,17 @@
   width: 100%;
 }
 
+.main { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  width: 100%;
+  height: 100%;
+
+  padding: 0 2%;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /* Works Page */
 .work-page {

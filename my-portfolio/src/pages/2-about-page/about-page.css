@@ -6,7 +6,7 @@
     /* width: 100%; */
 }
 
-.page-body {
+.page-body-about {
     padding: 10% 4% 8% 4%;
     /* height: 90vh; */
     height: 100vh;
@@ -15,6 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* background-color: yellow; */
 }
 
 .main-home-page {

@@ -6,18 +6,10 @@
     justify-content: space-between;
     
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     padding: 0 2%;
 }
-  
-/* .main-page-image {
-    background-image: url('../../../public/Drake Do bio.png');
-    background-size: 100% 100%;
-    border: 1px #18134C dotted;
-    height: 70%; 
-    width: 23%;
-} */
 
 .main-page {
     width: 100%;
@@ -29,7 +21,7 @@
     align-items: center;
 
     /* padding: 0 5%; */
-    padding: 10% 4% 0 4%;
+    padding: 15vh 4% 5% 4%;
 }
 
 .profile-wrapper {
@@ -80,11 +72,12 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #carouselExampleControls {
-  width: 100%;
-  height: 75%;
+  width: 90%;
+  height: 100%;
   box-shadow: 10px 12px 30px var(--text-color);
   border-radius: 15px;
 }
@@ -100,7 +93,6 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: cover;
 }
 
 #presentative-image {
@@ -110,7 +102,7 @@
   border-radius: 15px;
 }
 
-.copyright-drake {
+/* .copyright-drake {
   gap: 10px;
   color: #18134C;
   width: 100%;
@@ -132,7 +124,7 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-}
+} */
 
 /* .svg-icon {
   color: #0096FF;

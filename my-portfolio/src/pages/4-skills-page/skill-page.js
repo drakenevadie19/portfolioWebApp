@@ -5,7 +5,7 @@ import "./skill-page.css";
 const SkillPage = () => {
     return (
         <>
-            <div className="page-body" id="skill-block">
+            <div className="page-body-skills" id="skill-block">
                 <div className="chart-of-skills-frame">
                     <FrontEndChart />
                 </div>

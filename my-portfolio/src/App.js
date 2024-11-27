@@ -11,12 +11,13 @@ import schoolsList from './pages/3-education-page/schools-list';
 
 import SkillPage from './pages/4-skills-page/skill-page';
 
+import WorksPage from './pages/5-works-page/works-page';
+import WorkExperienceDetailPage from './pages/5-works-page/work-experience-detail-page';
+
 import ProjectPage from './pages/project-page/project-page';
 import ContactMe from './pages/contact-page/contact-me';
-import WorksPage from './pages/works-page/works-page';
 
-import projectData from './pages/project-page/project-data'
-import WorkExperienceDetailPage from './pages/works-page/work-experience-detail-page';
+import projectData from './pages/project-page/project-data';
 
 import { ThemeProvider } from './ThemeContext';
 import HomePage from './pages/structure-page/home-page';

@@ -1,0 +1,219 @@
+.page-body-works {
+    /* height: 90vh; */
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15vh 4% 8% 4%;
+    /* background-color: red; */
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+/* Works Page */
+.work-page {
+    color: #18134C;
+    display: flex;
+    flex-direction: row;
+  
+    /* margin-top: 4rem; */
+    font-weight: 600;
+  }
+  
+  .infoWorks {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  
+    color: #18134C;
+  }
+  
+  .infoWorks h1 {
+    margin-bottom: 2rem;
+  }
+  
+  .internship {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .company-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding-left: 10px;
+  
+    width: 95%;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .left h3 {
+    color: #18134C;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .experience-description {
+    border: 1px solid #18134C;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .bio-box {
+    width: 4em;
+    height: 4em;
+    border-radius: 15px;
+  }
+  
+  /* Timeline ---------------*/
+  .timeline li {
+    display: flex;
+  }
+  
+  .timeline .w-e-time {
+    position: relative;
+    padding: 0 1.5em;
+    width: 400px;
+    text-align: right;
+  }
+  
+  .timeline .w-e-time h4 {
+    color: #18134C;
+  }
+  
+  .timeline .w-e-time::after {
+    content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateX(50%);
+      border-radius: 50%;
+      background: #fff;
+      border: 1px #ccc solid;
+      width: .8em;
+      height: .8em;
+  }
+  
+  .timeline .w-e-job {
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+  }
+  
+  .timeline .w-e-job:hover {
+    border: 1px #0096FF dotted;
+    border-radius: 10px;
+  }
+  
+  .timeline .w-e-job::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 1px #ccc solid;
+  }
+  
+  .timeline { margin: 1em; }
+  .timeline, 
+  .timeline *::before, 
+  .timeline *::after { box-sizing: border-box; font-family: arial; }
+  /*-------------------------*/
+  
+  @media screen and (max-width: 768px) {
+    .company-position {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .imageWorks {
+      display: none;
+    }
+  
+    .infoWorks {
+      width: 100%;
+      color: #18134C;
+    }
+  }
+  
+  /*----------------------------------------------------------------------------------------*/
+  /* Work Details Page */
+  .work-detail-main-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .back-to-work-button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .w-d-job-details {
+    width: 100%;
+    margin-top: 20px;
+  
+    padding: 1em 10em;
+  }
+  
+  .w-d-job-details-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-bottom: 3em;
+  }
+  
+  .w-d-job-details-heading .w-d-job-details-role {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .w-d-job-details-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    padding: 2em;
+  }
+  
+  .w-d-job-details-description-bulletpoint ul,
+  .w-d-job-details-description-bulletpoint h3  {
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .w-d-job-details {
+      padding: 0;
+    }
+  
+    .w-d-job-details-description {
+      padding: 0;
+    }
+  }
+  
+  /*----------------------------------------------------------------------------------------*/

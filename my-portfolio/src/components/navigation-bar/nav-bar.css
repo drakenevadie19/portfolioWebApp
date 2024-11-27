@@ -18,8 +18,8 @@ nav {
   width: 100%;
   /* background: #F3F8FF; */
   height: 10vh;
-  /* position: fixed; */
-  /* padding: 0 3%; */
+  position: fixed;
+  padding: 0 3%;
 }
 
 nav h4 {

@@ -40,28 +40,28 @@ const Navbar = () => {
       <nav>
         <ul className={`topnav ${isMenuOpen ? "responsive" : ""}`}>
           <li>
-            <Link to="/main/aboutme" className="nav-bar-text">About Me</Link>
-            {/* <a href="#about-block">About Me</a> */}
+            {/* <Link to="/main/aboutme" className="nav-bar-text">About Me</Link> */}
+            <a href="#about-block" className="nav-bar-text">About Me</a>
           </li>
           <li>
             <Link to="/main/education" className="nav-bar-text">Education</Link>
-            {/* <a href="#edu-block">Education</a> */}
+            {/* <a href="#edu-block" className="nav-bar-text">Education</a> */}
           </li>
           <li>
             <Link to="/main/skills" className="nav-bar-text">Skills</Link>
-            {/* <a href="#skill-block">Skills</a> */}
+            {/* <a href="#skill-block" className="nav-bar-text">Skills</a> */}
           </li>
           <li>
             <Link to="/main/works" className="nav-bar-text">Works</Link>
-            {/* <a href="#work-block">Works</a> */}
+            {/* <a href="#work-block" className="nav-bar-text">Works</a> */}
           </li>
           <li>
             <Link to="/main/projects" className="nav-bar-text">Projects</Link>
-            {/* <a href="#project-block">Projects</a> */}
+            {/* <a href="#project-block" className="nav-bar-text">Projects</a> */}
           </li>
           <li>
             <Link to="/main/contact" className="nav-bar-text">Contact Me</Link>
-            {/* <a href="#contact-block">Contact Me</a> */}
+            {/* <a href="#contact-block" className="nav-bar-text">Contact Me</a> */}
           </li>
           <li className="icon">
             <div className="mainicon" id="click" onClick={clickBar}>

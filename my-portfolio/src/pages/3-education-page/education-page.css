@@ -5,11 +5,10 @@
 }
 
 .page-body {
-    padding: 10% 4% 8% 4%;
+    padding: 25vh 4% 8% 4%;
     /* height: 90vh; */
     height: 100%;
     width: 100%;
-    z-index: 2;
 
     display: flex;
     justify-content: center;

@@ -1,15 +1,18 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import "./start-page.css"
 import GalleryCarousel from '../structure-page/gallery-carousel';
 import startGalleryDB from './start-image-db';
 
 function StartPage() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    // Navigate back to the home page ("/home")
-    navigate('#about-block');
+  const handleLinkClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // Scroll to the section smoothly
+      window.history.replaceState(null, "", window.location.pathname); // Clear the # from the URL
+    }
   };
 
   return (
@@ -45,10 +48,7 @@ function StartPage() {
           <h5>Aspiring Software Engineer </h5>
         </div>
         
-        {/* <button type="button" className="btn btn-info view-more-btn" onClick={handleClick}>
-          View more about me
-        </button> */}
-        <button className="start-cv-btn" onClick={handleClick}>
+        <button className="start-cv-btn" onClick={() => handleLinkClick("about-block")}>
           View more about me
         </button>
       </div>

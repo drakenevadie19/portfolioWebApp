@@ -1,16 +1,12 @@
 //Navbar
-import { Link } from "react-router-dom";
-import React, { useState, useContext } from 'react';
-// import { ThemeContext } from '../ThemeContext';
+// import { Link } from "react-router-dom";
+import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
-
-// import { useNavigate } from "react-router-dom";
-
 import "./nav-bar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(ThemeContext);
   const [changedTheme, setChangedTheme] = useState(true);
 
   const clickBar = () => {
@@ -19,21 +15,17 @@ const Navbar = () => {
 
   const changeBackground = () => {
     toggleTheme();
-    console.log(theme);
+    // console.log(theme);
     setChangedTheme(!changedTheme);
-  }
+  };
 
-  // const navigate = useNavigate();
-
-  // const handleClick1 = () => {
-  //   // Navigate back to the home page ("/home")
-  //   navigate("/main/aboutme");
-  // };
-
-  // const handleClick2 = () => {
-  //   // Navigate back to the home page ("/home")
-  //   navigate("/");
-  // };
+  const handleLinkClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // Scroll to the section smoothly
+      window.history.replaceState(null, "", window.location.pathname); // Clear the # from the URL
+    }
+  };
 
   return (
     <>
@@ -41,27 +33,63 @@ const Navbar = () => {
         <ul className={`topnav ${isMenuOpen ? "responsive" : ""}`}>
           <li>
             {/* <Link to="/main/aboutme" className="nav-bar-text">About Me</Link> */}
-            <a href="#about-block" className="nav-bar-text">About Me</a>
+            <a
+              href="#about-block"
+              onClick={() => handleLinkClick("about-block")}
+              className="nav-bar-text"
+            >
+              About Me
+            </a>
           </li>
           <li>
             {/* <Link to="/main/education" className="nav-bar-text">Education</Link> */}
-            <a href="#edu-block" className="nav-bar-text">Education</a>
+            <a
+              href="#edu-block"
+              onClick={() => handleLinkClick("edu-block")}
+              className="nav-bar-text"
+            >
+              Education
+            </a>
           </li>
           <li>
-            <Link to="/main/skills" className="nav-bar-text">Skills</Link>
-            {/* <a href="#skill-block" className="nav-bar-text">Skills</a> */}
+            {/* <Link to="/main/skills" className="nav-bar-text">Skills</Link> */}
+            <a
+              href="#skill-block"
+              onClick={() => handleLinkClick("skill-block")}
+              className="nav-bar-text"
+            >
+              Skills
+            </a>
           </li>
           <li>
-            <Link to="/main/works" className="nav-bar-text">Works</Link>
-            {/* <a href="#work-block" className="nav-bar-text">Works</a> */}
+            {/* <Link to="/main/works" className="nav-bar-text">Works</Link> */}
+            <a
+              href="#work-block"
+              onClick={() => handleLinkClick("work-block")}
+              className="nav-bar-text"
+            >
+              Works
+            </a>
           </li>
           <li>
-            <Link to="/main/projects" className="nav-bar-text">Projects</Link>
-            {/* <a href="#project-block" className="nav-bar-text">Projects</a> */}
+            {/* <Link to="/main/projects" className="nav-bar-text">Projects</Link> */}
+            <a
+              href="#project-block"
+              onClick={() => handleLinkClick("projet-block")}
+              className="nav-bar-text"
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <Link to="/main/contact" className="nav-bar-text">Contact Me</Link>
-            {/* <a href="#contact-block" className="nav-bar-text">Contact Me</a> */}
+            {/* <Link to="/main/contact" className="nav-bar-text">Contact Me</Link> */}
+            <a
+              href="#contact-block"
+              onClick={() => handleLinkClick("contact-block")}
+              className="nav-bar-text"
+            >
+              Contact Me
+            </a>
           </li>
           <li className="icon">
             <div className="mainicon" id="click" onClick={clickBar}>
@@ -84,10 +112,10 @@ const Navbar = () => {
 
         <div className={`${isMenuOpen ? "" : "unique"}`}>
           <input
-            type="checkbox" 
+            type="checkbox"
             onChange={changeBackground}
             checked={changedTheme}
-            // data-toggle="toggle" 
+            // data-toggle="toggle"
             data-onstyle="info"
             data-onlabel='
             Light Mode <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb-fill" viewBox="0 0 16 16">

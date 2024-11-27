@@ -1,16 +1,14 @@
 import ResumeButton from "./resume-button"; 
-// import schoolsList from '../../pages/education-page/schools-list';
-// import SkillPage from "../skills-page/skill-page";
-// import WorksPage from "../works-page/works-page";
-// import projectData from '../../pages/project-page/project-data'
-// import ProjectPage from "../project-page/project-page";
-// import ContactMe from "../contact-page/contact-me";
 
 import "./about-page.css";
+import "../1-start-page/start-page.css";
+import StartPage from "../1-start-page/start-page";
 
 const AboutPage = () => {
     return (
         <>
+            <StartPage />
+            
             <div className="page-body" id="about-block">
                 <div className="main-home-page">
                     <div className="images">
@@ -28,10 +26,10 @@ const AboutPage = () => {
                         <div className="animated_text">
                             <h1 className="title">Software Engineer</h1>
                         </div>
-                        <h5 className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
+                        <p className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
                             I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN  & MEAN  & MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, GraphQL, Apollo Client, Firebase</b>. 
                             Now I am sharpening my skills with Front-end frameworks and libraries such as <strong>Next.js, Angular.js, React.js, Vue.js</strong>, and also Back-end development with <strong>Spring Boot, Express.js and Node.js</strong>. 
-                            My goal is to be a full-time Software Engineer. </h5>
+                            My goal is to be a full-time Software Engineer. </p>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">

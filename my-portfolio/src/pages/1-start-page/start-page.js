@@ -16,7 +16,7 @@ function StartPage() {
     <div className='main-page'>
       <div className='profile-wrapper'>
         <div className='profile-name'>
-          <h3>Thanh Nguyen Do</h3>
+          <h4><b>Thanh Nguyen Do</b></h4>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-battery-charging unique-icon-start" viewBox="0 0 16 16">
                 <path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"/>
@@ -33,7 +33,7 @@ function StartPage() {
               <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
             </svg>
           </span>
-          <h4>Rising Junior at Texas Christian University</h4>
+          <h5>Senior at <b>Texas Christian University</b></h5>
         </div>
         <div className='start-page-info'>
           <span>
@@ -42,7 +42,7 @@ function StartPage() {
               <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
             </svg>
           </span>
-          <h4>Aspiring Software Engineer </h4>
+          <h5>Aspiring Software Engineer </h5>
         </div>
         
         {/* <button type="button" className="btn btn-info view-more-btn" onClick={handleClick}>

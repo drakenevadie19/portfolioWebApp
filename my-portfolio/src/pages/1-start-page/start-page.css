@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
 
-    padding: 0 2%
+    padding: 0 2%;
 }
   
 /* .main-page-image {
@@ -22,17 +22,19 @@
 .main-page {
     width: 100%;
     height: 90vh;
+    /* height: 90%; */
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 0 5%;
+    /* padding: 0 5%; */
+    padding: 10% 4% 0 4%;
 }
 
 .profile-wrapper {
-    width: 45%;
-  
+    /* width: 45%; */
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,6 +60,10 @@
   gap: 2%;
   width: 100%;
 }
+/* 
+.start-page-info h5 {
+  font-weight: 600;
+} */
 
 .unique-icon-start {
   color: var(--text-color-highlight);
@@ -69,7 +75,8 @@
 
 /* My image carousel */
 .main-page-image {
-  width: 45%;
+  /* width: 45%; */
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;

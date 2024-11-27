@@ -4,7 +4,7 @@ import "./education-page.css";
 
 const EducationPage = ({ educationList }) => (
     <>
-        <div className="page-body" id="edu-block">
+        <div className="page-body-edu" id="edu-block">
             <div className="education">
                 <div className='main-page-image'>
                     <GalleryCarousel id="imageHere" imagesDB={schoolImageDB} />

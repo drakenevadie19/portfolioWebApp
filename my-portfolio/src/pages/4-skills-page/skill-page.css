@@ -1,35 +1,6 @@
 
-:root {
-    --background-color: #EEF7FF;
-  
-    --text-color: #4D869C;
-    --text-color-highlight: #00D1FF;
-    --text-color-on-hover: #3D6CB9;
-  
-    --button-color: #4D869C;
-    --button-text-color: white;
-    --button-color-hover: #00D1FF;
-    --button-text-color-hover: black;
-    --button-text-color-hover-shadow: yellow;
-    
-}
-  
-.dark-theme {
-    --background-color: #232D3F;
-  
-    --text-color: #32E0C4;
-    --text-color-highlight: orange;
-    --text-color-on-hover: #008170;
-  
-    --button-color: #0D7377;
-    --button-text-color: #EEEEEE;
-    --button-color-hover: #32E0C4;
-    --button-text-color-hover: #212121;
-    --button-text-color-hover-shadow: lime;
-}
-
 .page-body {
-    padding: 25vh 4% 8% 4%;
+    padding: 15vh 4% 8% 4%;
     /* height: 90vh; */
     height: 100%;
     width: 100%;
@@ -37,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5%;
+    gap: 1%;
     /* align-items: center; */
 }
 
@@ -45,7 +16,7 @@
 /* Skills Page */
   
 .chart-of-skills-frame {
-    width: 45%;
+    width: 49%;
     display: flex;
     justify-content: center;
     aspect-ratio: 1/1;

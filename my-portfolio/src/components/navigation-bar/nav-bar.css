@@ -14,6 +14,13 @@ nav {
   height: 10vh;
   position: fixed;
   padding: 0 3%;
+
+  z-index: 1000;
+
+  /* Transparent background */
+  /* background-color: rgba(255, 255, 255, 0.6);  */
+  backdrop-filter: blur(10px); /* Blurs the content behind the navbar */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
 
 nav h4 {
@@ -41,10 +48,10 @@ nav li {
 }
 
 .nav-bar-text:hover {
+  color: var(--text-color-on-hover);
   border-bottom: 3px var(--text-color-on-hover) solid;
   transform: scale(3);
   font-weight: bold;
-  color: var(--text-color-on-hover);
   cursor: pointer;
 }
 

@@ -1,0 +1,27 @@
+
+#carouselExampleControls {
+    width: 90%;
+    height: 100%;
+    box-shadow: 10px 12px 30px var(--text-color);
+    border-radius: 15px;
+}
+  
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 3/4; */
+    border-radius: 15px;
+}
+  
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+  
+#presentative-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}

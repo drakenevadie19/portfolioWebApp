@@ -4,7 +4,7 @@ import "./about-page.css";
 const AboutPage = () => {
     return (
         <>
-            <div className="page-body" id="about-block">
+            <div className="page-body-about" id="about-block">
                 <div className="main-home-page">
                     <div className="images">
                         <div className="blue-bg-outer">

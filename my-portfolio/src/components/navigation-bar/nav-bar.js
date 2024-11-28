@@ -11,7 +11,7 @@ import ThemeSwitch from "./ThemeSwitch";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const [changedTheme, setChangedTheme] = useState(true);
+  const [changedTheme, setChangedTheme] = useState(false);
 
   const clickBar = () => {
     setIsMenuOpen(!isMenuOpen);

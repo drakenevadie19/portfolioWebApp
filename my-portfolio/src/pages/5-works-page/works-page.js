@@ -1,18 +1,33 @@
 import WorkExperience from "./work-experience";
 import workdata from "./work-data";
 import "./works-page.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import WorkExperienceDetailPage from "./work-experience-detail-page";
 
 const WorksPage = () => {
 
     const [displayingWorkBox, setDisplayingWorkBox] = useState(false);
-    const [currentBoxToOpen, setCurrentBoxToOpen] = useState(0);
+    const [currentBoxToOpen, setCurrentBoxToOpen] = useState(0);    
+    const [scrollY, setScrollY] = useState(0); // Store current scroll position
 
     const openBox = (id) => {
+        setScrollY(window.scrollY); // Capture current scroll position
         setCurrentBoxToOpen(id);
         setDisplayingWorkBox(true);
     }
+
+    // Lock the page's scroll position when the popup is displayed
+    useEffect(() => {
+        if (displayingWorkBox) {
+            document.body.style.position = "fixed";
+            // document.body.style.top = `-${scrollY}px`; // Keep the view locked
+            window.scrollTo(0, 0); // Restore scroll position
+        } else {
+            document.body.style.position = "";
+            document.body.style.top = ""; // Reset styles
+            window.scrollTo(0, scrollY); // Restore scroll position
+        }
+    }, [displayingWorkBox, scrollY]);
 
     return (
         <>

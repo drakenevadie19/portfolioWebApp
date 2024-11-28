@@ -1,5 +1,6 @@
 import WorkExperience from "./work-experience";
 import workdata from "./work-data";
+import "./works-page.css"
 
 const WorksPage = () => (
     <>
@@ -7,7 +8,8 @@ const WorksPage = () => (
             <div className="work-page">
                 <div className="infoWorks">
                     <div className="placeholder-Image">
-                        <img src="/internship.png" alt="Programmer"/>
+                        {/* <img src="/internship.png" alt="Programmer"/> */}
+                        <h1><b>Professional Experiences</b></h1>
                     </div>
 
                     <div className="work-experience-timeline">

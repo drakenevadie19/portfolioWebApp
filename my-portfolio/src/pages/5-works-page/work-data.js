@@ -4,7 +4,7 @@ const workdata = [
         alt: "ThankUPet",
         role: "Full-stack Developer Internship",
         company: "ThankUPet",
-        time: "May 2024-Present",
+        time: "May 2024-August 2024",
         location: "Hai Phong, Vietnam",
         description: [
             "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 

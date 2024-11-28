@@ -1,15 +1,12 @@
-import { useNavigate, useParams } from "react-router-dom";
 import workdata from "./work-data";
 
-const WorkExperienceDetailPage = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
+const WorkExperienceDetailPage = ({ id }) => {
+  // const { id } = useParams();
 
   return (
     <>
-      <div className="page-body">
         <div className="work-detail-main-page">
-          <div className="back-to-work-button">
+          {/* <div className="back-to-work-button">
             <button
               type="button"
               className="btn btn-info"
@@ -30,7 +27,7 @@ const WorkExperienceDetailPage = () => {
               </svg>{" "}
               Back
             </button>
-          </div>
+          </div> */}
 
           <div className="w-d-job-details">
             <div className="w-d-job-details-heading">
@@ -78,7 +75,6 @@ const WorkExperienceDetailPage = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };

@@ -1,21 +1,5 @@
 const workdata = [
     {
-        imageLink: "/works/ThankUPet.jpeg",
-        alt: "ThankUPet",
-        role: "Full-stack Developer Internship",
-        company: "ThankUPet",
-        time: "May 2024-August 2024",
-        location: "Hai Phong, Vietnam",
-        description: [
-            "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 
-            "Generated thorough documentation for 21 APIs supporting a robust back-end solution in the pet-caring management system, resulting in increased user engagement and improved operational efficiency for the scheduling process.",
-            "Applied Express and Node.js to implement efficient routing and middleware handling solutions, ensuring seamless API integration and responsiveness, and enhancing performance and reliability."
-        ],
-        skills: [
-            "Next.js", "TypeScript", "PlanetScale", "Supabase", "Node.js", "Express.js"
-        ]
-    }, 
-    {
         imageLink: "/works/texaschristianuniversity.png",
         alt: "TCU",
         role: "Mathematics Teaching Assistant",
@@ -46,6 +30,22 @@ const workdata = [
             "Java, Java Swing", "Data Structure && Algorithms",
         ]
     },
+    {
+        imageLink: "/works/ThankUPet.jpeg",
+        alt: "ThankUPet",
+        role: "Full-stack Developer Internship",
+        company: "ThankUPet",
+        time: "May 2024-August 2024",
+        location: "Hai Phong, Vietnam",
+        description: [
+            "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 
+            "Generated thorough documentation for 21 APIs supporting a robust back-end solution in the pet-caring management system, resulting in increased user engagement and improved operational efficiency for the scheduling process.",
+            "Applied Express and Node.js to implement efficient routing and middleware handling solutions, ensuring seamless API integration and responsiveness, and enhancing performance and reliability."
+        ],
+        skills: [
+            "Next.js", "TypeScript", "PlanetScale", "Supabase", "Node.js", "Express.js"
+        ]
+    }, 
     {
         imageLink: "/works/texaschristianuniversity.png",
         alt: "TCU",

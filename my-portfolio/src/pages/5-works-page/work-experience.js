@@ -1,13 +1,14 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const WorkExperience = ({works, index}) => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
         <>
             <div>
-                <div className="internship" onClick={() => navigate(`/main/works/${index}`)}>
+            {/* onClick={() => navigate(`/main/works/${index}`)} */}
+                <div className="internship">
                     <img src={works.imageLink} className="bio-box" alt={works.alt} />
                     <div className="company-position">
                         <div className="left">

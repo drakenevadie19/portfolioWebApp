@@ -43,8 +43,8 @@ const WorkExperienceDetailPage = ({ id }) => {
                   </b>
                 </h3>
                 <ul>
-                  {workdata[id].description.map((description) => (
-                    <li>{description}</li>
+                  {workdata[id].description.map((description, index) => (
+                    <li key={index}>{description}</li>
                   ))}
                 </ul>
               </div>
@@ -58,8 +58,8 @@ const WorkExperienceDetailPage = ({ id }) => {
                   </b>
                 </h3>
                 <ul>
-                  {workdata[id].skills.map((skill) => (
-                    <li>{skill}</li>
+                  {workdata[id].skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
                   ))}
                 </ul>
               </div>

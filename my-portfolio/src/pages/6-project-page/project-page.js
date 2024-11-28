@@ -118,9 +118,9 @@ const ProjectPage = ({projects}) => {
                         {
                             techInProject.map((techIn, index) => {
                                 return (
-                                    <a className={`tech-stack-element ${buttonStates[index] ? "tech-stack-element-clicked" : "tech-stack-element-not-clicked "}`} onClick={(event) => chooseTech(event, index)} href='#'>
+                                    <p key={index} className={`${buttonStates[index]} ? "tech-stack-element tech-stack-element-clicked" : "tech-stack-element tech-stack-element-not-clicked "`} onClick={(event) => chooseTech(event, index)}>
                                         {techIn}
-                                    </a>
+                                    </p>
                                 )
                             })
                         }
@@ -153,7 +153,7 @@ const ProjectPage = ({projects}) => {
                         <h3 className="project-list-tab-header">My Projects ({numberOfToRenderProjects}):</h3>
                         {toRenderProjects.map((project, index) => (
                             // Adding a class so that when that project is rendering, its background in project is being rendered
-                            <a key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying && "project-clicked"}>{project.name}</a>
+                            <p key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying ? "project-clicked" : ""}>{project.name}</p>
                         ))}
                     </div>
                     <ProjectRender project = {currentProject} />

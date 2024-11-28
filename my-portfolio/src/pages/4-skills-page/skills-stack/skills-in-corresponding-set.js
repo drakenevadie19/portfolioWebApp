@@ -6,8 +6,8 @@ const SkillsSet = ({skillsset}) => {
             <div className="individual-skill-set">
                 <h3>{skillsset.name}</h3>
                 <div className="skill-stack-list">
-                    {skillsset.skills.map((skill) => (
-                        <div>
+                    {skillsset.skills.map((skill, index) => (
+                        <div key={index}>
                             <img src={`https://skillicons.dev/icons?i=${skill}`} alt={skill} />
                         </div>
                     ))}

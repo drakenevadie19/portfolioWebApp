@@ -120,7 +120,6 @@ const Navbar = () => {
               control={
               <ThemeSwitch 
                 sx={{ m: 1 }} 
-                defaultChecked 
                 onChange={changeBackground}
                 checked={changedTheme} 
               />}

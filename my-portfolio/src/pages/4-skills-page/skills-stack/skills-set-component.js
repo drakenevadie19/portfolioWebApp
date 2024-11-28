@@ -8,8 +8,8 @@ const SkillsSetComponent = () => {
             <div className="skills-set-component">
                 <h2 className="skills-set-component-h2">Technologies</h2>
                 <div className="skills-block">
-                    {skillsData.map((setOfskills) => (
-                        <SkillsSet skillsset={setOfskills} />
+                    {skillsData.map((setOfskills, index) => (
+                        <SkillsSet skillsset={setOfskills} key={index} />
                     ))}
                 </div>
             </div>

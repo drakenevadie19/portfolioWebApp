@@ -14,10 +14,10 @@ import SkillPage from './pages/4-skills-page/skill-page';
 import WorksPage from './pages/5-works-page/works-page';
 import WorkExperienceDetailPage from './pages/5-works-page/work-experience-detail-page';
 
-import ProjectPage from './pages/project-page/project-page';
-import ContactMe from './pages/contact-page/contact-me';
+import ProjectPage from './pages/6-project-page/project-page';
+import projectData from './pages/6-project-page/project-data';
 
-import projectData from './pages/project-page/project-data';
+import ContactMe from './pages/contact-page/contact-me';
 
 import { ThemeProvider } from './ThemeContext';
 import HomePage from './pages/structure-page/home-page';

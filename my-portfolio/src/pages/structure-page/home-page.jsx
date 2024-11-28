@@ -14,6 +14,10 @@ import "../4-skills-page/skill-page.css";
 import WorksPage from "../5-works-page/works-page";
 import "../5-works-page/works-page.css";
 
+import ProjectPage from "../6-project-page/project-page";
+import projectData from "../6-project-page/project-data";
+import "../6-project-page/project-page.css"
+
 const HomePage = () => {
 
     return (
@@ -23,6 +27,7 @@ const HomePage = () => {
             <EducationPage educationList={schoolsList} />
             <SkillPage />
             <WorksPage />
+            <ProjectPage projects={projectData} />
         </>
     )
 }

@@ -91,6 +91,7 @@ const ProjectPage = ({projects}) => {
         // Restore the background color of the technologies button if it was chosen
         buttonStates.map((element, index) => {
             if (buttonStates[index]) buttonStates[index]=false; 
+            return 0;
         });
 
         console.log(techInProject);
@@ -101,6 +102,7 @@ const ProjectPage = ({projects}) => {
         pickedTechnologies.map((pickedtech) => (
             projects.map((project) => {
                 if (project.techStack.includes(pickedtech) && !filteredProjects.includes(project)) filteredProjects.push(project);
+                return 0;
             })
         ))
         setToRenderProjects(filteredProjects);

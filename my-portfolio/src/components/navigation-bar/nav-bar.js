@@ -4,9 +4,13 @@ import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "./nav-bar.css";
 
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import ThemeSwitch from "./ThemeSwitch";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [changedTheme, setChangedTheme] = useState(true);
 
   const clickBar = () => {
@@ -15,7 +19,7 @@ const Navbar = () => {
 
   const changeBackground = () => {
     toggleTheme();
-    // console.log(theme);
+    // console.log("changed theme");
     setChangedTheme(!changedTheme);
   };
 
@@ -111,21 +115,18 @@ const Navbar = () => {
         </ul>
 
         <div className={`${isMenuOpen ? "" : "unique"}`}>
-          <input
-            type="checkbox"
-            onChange={changeBackground}
-            checked={changedTheme}
-            // data-toggle="toggle"
-            data-onstyle="info"
-            data-onlabel='
-            Light Mode <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
-            </svg>'
-            data-offlabel='
-            Dark Mode <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lightbulb" viewBox="0 0 16 16">
-                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-            </svg>'
-          />
+           <FormGroup>
+            <FormControlLabel
+              control={
+              <ThemeSwitch 
+                sx={{ m: 1 }} 
+                defaultChecked 
+                onChange={changeBackground}
+                checked={changedTheme} 
+              />}
+              label={theme === "light-theme" ? "Light mode" : "Dark mode"}
+            />
+        </FormGroup>
         </div>
       </nav>
     </>

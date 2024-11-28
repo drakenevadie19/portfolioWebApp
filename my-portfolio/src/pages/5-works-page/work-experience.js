@@ -1,8 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const WorkExperience = ({works, index}) => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
         <>

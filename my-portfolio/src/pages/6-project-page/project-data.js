@@ -79,7 +79,7 @@ const projectData = [
         src: "/project-bio-image/diaryapp.jpeg",
         description: "Developed a fullstack website diary application with MERN-stack allowing users to save daily diary for healing after a long day.",
         workTime: "5/2023 - Present",
-        techStack: ["JavaScript", "MongoDB", "Next.js", "React.js", "Node.js", "RESTful API", "Postman", "MongoDB Atlas"],
+        techStack: ["Next.js", "JavaScript", "MongoDB", "Node.js", "RESTful API", "Postman", "MongoDB Atlas"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
         liveDemo: ['no'],
         participants: "Drake Do",

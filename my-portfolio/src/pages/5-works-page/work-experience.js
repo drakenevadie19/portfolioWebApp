@@ -7,7 +7,8 @@ const WorkExperience = ({works, index}) => {
     return (
         <>
             <div>
-                <div className="internship" onClick={() => navigate(`/main/works/${index}`)}>
+            {/* onClick={() => navigate(`/main/works/${index}`)} */}
+                <div className="internship">
                     <img src={works.imageLink} className="bio-box" alt={works.alt} />
                     <div className="company-position">
                         <div className="left">

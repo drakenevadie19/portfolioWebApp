@@ -110,11 +110,13 @@ const ProjectPage = ({projects}) => {
     }
     return (
         <> 
-            <div id="page-body">
+            <div className="page-body-projects" id="project-block">
+                <div>
+                    <h1 className='projects-portion-title'>Capstone projects</h1>
+                </div>
                 <div className="project-wrap">
-
+                {/* Rendering list of technologies to filter */}
                     <div className='filter'>
-                        {/* Rendering list of technologies to filter */}
                         {
                             techInProject.map((techIn, index) => {
                                 return (
@@ -150,7 +152,7 @@ const ProjectPage = ({projects}) => {
                             }
                         </div>
 
-                        <h3 className="project-list-tab-header">My Projects ({numberOfToRenderProjects}):</h3>
+                        <h3 className="project-list-tab-header">My projects ({numberOfToRenderProjects}):</h3>
                         {toRenderProjects.map((project, index) => (
                             // Adding a class so that when that project is rendering, its background in project is being rendered
                             <p key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying ? "project-clicked" : ""}>{project.name}</p>

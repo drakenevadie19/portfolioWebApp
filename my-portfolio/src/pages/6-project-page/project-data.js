@@ -1,10 +1,21 @@
 const projectData = [
     {
+        name: "BOOKEZ", 
+        link: "https://github.com/Web103-BookEZ/web103_finalproject.git",
+        src: "/project-bio-image/Bookez.png",
+        description: "My final capstone project for WEB 103 of Codepath. This is a website for users to book appointment with favourite hairdresser and manicurists in their favourite salon.",
+        workTime: "11/2024 - Present",
+        techStack: ["React.js", "JavaScript", "PostgreSQL", "Express.js", "Node.kjs", "Railway", "Material UI", "Postman", "SweetAlert 2"],
+        // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
+        liveDemo: ["no"],
+        participants: "Drake Do",
+    },
+    {
         name: "idraiske restaurant app", 
         link: "https://github.com/drakenevadie19/idraiske-delivery-application.git",
         src: "/project-bio-image/mobile-app-for-restaurant.jpg",
         description: "Architectured a fullstack restaurant web application with Angular and SpringBoot allowing users to view restaurants details and order foods.",
-        workTime: "7/2023 - Present",
+        workTime: "7/2024 - Present",
         techStack: ["Angular", "TypeScipts", "MongoDB", "SpringBoot", "Netflix Eureka", "MySQL", "RESTful API", "Postman", "MongoDB Atlas", "MongoDB Compass"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
         liveDemo: ["no"],

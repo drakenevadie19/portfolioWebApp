@@ -1,0 +1,220 @@
+/*----------------------------------------------------------------------------------------*/
+/* Project Page */
+/* Filter */
+.filter {
+    /* display: flex;
+    flex-direction: row; */
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    /* gap: 10px;
+    overflow: scroll; */
+  
+    position: relative;
+    display: none;
+  }
+  
+  .filter-area-show {
+    display: block;
+    /* background-color: ; */
+  }
+  
+  /* .filter-button {
+    top: 10px;
+    right: 10px;;
+  } */
+  
+  .tech-stack-list {
+    display: flex;
+    /* use flex-wrap here to auto pushing overflowed element to new line */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tech-stack-element-filter-button {
+    /* border-radius: 20px; */
+    /* padding: 10px 15px;
+    color: black;
+    text-decoration: none; */
+  
+    /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
+    white-space: nowrap;
+  }
+  
+  .tech-stack-element-not-clicked {
+    background-color: #72FFFF;
+  }
+  
+  .tech-stack-element-clicked {
+    background-color: gray;
+  }
+  
+  .tech-stack-element {
+    border: 2px solid #0096FF;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+  
+    /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
+    white-space: nowrap;
+  }
+  
+  /* End of filter area */
+  
+  .project-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project-list-tab {
+    width: 30%;
+  
+    padding: 5%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: max-content;
+  
+    /* border: 4px #0096FF solid; */
+    border-radius: 20px;
+    backdrop-filter: hue-rotate(30deg);
+  }
+  
+  .project-clicked {
+    background-color: #00D7FF;
+  }
+  
+  .project-list-tab-header {
+    color: #0096FF;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .project-list-tab:hover {
+    /* border: 4px #8200FF solid; */
+    /* backdrop-filter: brightness(92%); */
+    backdrop-filter: hue-rotate(30deg);
+  }
+  
+  .project-list-tab a {
+    color: #18134C;
+    border: 2px #0096FF solid;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+  
+    height:fit-content;
+  }
+  
+  .project-list-tab a:hover {
+    background-color: #72FFFF;
+    border: 3px #72FFFF solid;
+    text-shadow: 0 0 10px #fff;
+    transform: scale(1.1); 
+  }
+  
+  .project-render-wrap {
+    width: 70%;
+    padding: 2% 5%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+  }
+  
+  .project-render-first-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .project-render-src {
+    width: 69%;
+    border-radius: 20px;
+  }
+  
+  .project-render-src-here {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+  }
+  
+  .project-name-and-participant {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-name, .project-participant {
+    height: 48%;
+    border-radius: 20px;
+    color: #18134C;
+  
+    padding: 5%;
+    backdrop-filter: hue-rotate(30deg);
+  }
+  
+  .project-name h4 {
+    color: #18134C;
+  }
+  
+  /* .project-name:hover, .project-participant:hover {
+    backdrop-filter: brightness(95%);
+  } */
+  
+  .project-tech-stack  {
+    width: 100%;
+    border-radius: 20px;
+    padding: 2%;
+  }
+  
+  .project-description {
+    width: 100%;
+    border-radius: 20px;
+    padding: 2%;
+  
+    backdrop-filter: hue-rotate(30deg);
+  }
+  
+  .go-Live-Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-wrap{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      gap: 5%;
+    }
+  
+    .project-list-tab { 
+      width: 100%;
+    }
+  
+    .project-render-wrap {
+      width: 100%;
+    }
+    .project-render-first-block {
+      flex-direction: column-reverse;
+      gap: 5%;
+    }
+    .project-name-and-participant {
+      width: 100%;
+    }
+  
+    .project-render-src {
+      width: 100%;
+    }
+  }
+  

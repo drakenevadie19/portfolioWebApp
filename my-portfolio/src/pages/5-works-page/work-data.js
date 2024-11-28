@@ -8,7 +8,8 @@ const workdata = [
         location: "Fort Worth, Texas",
         description: [
             "Manage and improve homework performance of about 30 students in Mathematics classes.",
-            "Developed detailed study guides for math and computer science courses and aided a robust understanding of key concepts."
+            "Developed detailed study guides for math and computer science courses and aided a robust understanding of key concepts.", 
+            "Classess graded: MATH 20123: Discrete Mathematics I, MATH 30123: Discrete Mathematics II  (Dr. Herzig)."
         ], 
         skills: [
             "Mathematics"
@@ -31,12 +32,48 @@ const workdata = [
         ]
     },
     {
+        imageLink: "/works/codepath.jpg",
+        alt: "CodePath",
+        role: "Student Fullstacks Developer",
+        company: "CodePath",
+        time: "Sept 2024-Nov 2024",
+        location: "Fort Worth, Texas (Remote)",
+        description: [
+            "Completed the CodePath courses: WEB 103: Advanced Web Development; TIP 103: Advanced Technical Interview Prep.", 
+            "Building three full-stack projects and a final capstone focused on appointment management.",
+            "Collaborated with 2 other students in final capstone project to build BOOKEZ - a capstone project for managing appointments for salons.",
+            "Gained hands-on experience in designing and implementing robust full-stack applications using the PERN stack and Railway.",
+            "Strengthened skills in building efficient APIs, database management, and front-end user experiences.",
+            "Developed expertise in deploying and optimizing full-stack solutions to handle real-world use cases."
+        ],
+        skills: [
+            "React.js", "JavaScript", "PostgreSQL", "Git/Github", "MongoDB", "Node.js", "Express.js"
+        ]
+    }, 
+    {
+        imageLink: "/works/headstarterai.jpg",
+        alt: "Headstarter AI",
+        role: "Software Engineering Fellowship",
+        company: "Headstarter AI",
+        time: "July 2024-Aug 2024",
+        location: "Fort Worth, Texas (Remote)",
+        description: [
+            "Built and deployed five AI-powered web applications at Headstarter AI, showcasing expertise in integrating machine learning models into scalable web solutions.", 
+            "Designed user-friendly interfaces and seamless experiences by leveraging modern frameworks and libraries.",
+            "Collaborated with cross-functional teams to optimize AI models for real-time performance and accuracy.",
+            "Implemented robust APIs and database architectures to support AI-driven functionalities across applications."
+        ],
+        skills: [
+            "React.js", "JavaScript", "Git/Github", "MongoDB", "Node.js", "Express.js"
+        ]
+    }, 
+    {
         imageLink: "/works/ThankUPet.jpeg",
         alt: "ThankUPet",
         role: "Full-stack Developer Internship",
         company: "ThankUPet",
         time: "May 2024-August 2024",
-        location: "Hai Phong, Vietnam",
+        location: "Fort Worth, Texas (Remote)",
         description: [
             "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 
             "Generated thorough documentation for 21 APIs supporting a robust back-end solution in the pet-caring management system, resulting in increased user engagement and improved operational efficiency for the scheduling process.",

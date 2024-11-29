@@ -137,7 +137,7 @@
   .main-page {
     height: max-content;
     flex-direction: column-reverse;
-    padding: 10vh 0 0 0;
+    padding: 15vh 0 0 0;
   }
 
   .profile-wrapper {

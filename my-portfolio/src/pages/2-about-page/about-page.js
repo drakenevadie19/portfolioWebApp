@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <>
             <div className="page-body-about" id="about-block">
-                <div className="main-home-page">
+                <div className="main-home-page-about">
                     <div className="images">
                         <div className="blue-bg-outer">
                             <div className="white-bg">

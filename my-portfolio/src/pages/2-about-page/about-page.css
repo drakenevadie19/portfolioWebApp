@@ -19,19 +19,19 @@
     /* background-color: yellow; */
 }
 
-.main-home-page {
+.main-home-page-about {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     flex-direction: row;
-    margin-top: 5rem;
+    flex-wrap: wrap;
+    gap: 3%;
 }
 
 /* Images Profile*/
 .images {
     /* width: 30em; */
     /* height: 30em; */
-    width: 35%;
+    width: 37%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     display: flex;
     justify-content: flex-end;
@@ -39,37 +39,19 @@
 
 .blue-bg-outer {
     /* width: 28em; */
-    height: 28em;
+    width: 100%;
+    /* height: 28em; */
     aspect-ratio: 1/1;
     border-radius: 50%;
-    /* animation: frameColor 7s linear infinite; */
-    /* backdrop-filter: brightness(50%); */
     background-color: var(--text-color);
     display: grid;
     place-items: center;
 }
 
-@keyframes frameColor {
-    0% {
-        background-color: #EEEEEE;
-    }
-    25% {
-        background-color: #32E0C4;
-    }
-    50% {
-        background-color: #0D7377;
-    }
-    75% {
-        background-color: green;
-    }
-    100% {
-        background-color: #212121;
-    }
-}
-
 .white-bg {
     /* width: 27em; */
-    height: 27em;
+    /* height: 27em; */
+    width: 93%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: var(--background-color);
@@ -79,7 +61,8 @@
 
 .blue-bg {
     /* width: 26em; */
-    height: 26em;
+    /* height: 26em; */
+    width: 93%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: black;
@@ -87,8 +70,9 @@
 
 .blue-bg img {
     position: relative;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -177,6 +161,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
     font-family: "Fira Code", monospace;
@@ -224,76 +209,45 @@
     transform: scale(1.25); 
 }
 
-/* Scroll-down: Education */
-#edu-block {
-display: flex;
-flex-direction: row;
-width: 100%;
-gap: 15px;
-}
+@media only screen and (max-width: 600px) {
+    .page-body-about {
+        width: 100%;
+        height: max-content;
+        padding-top: 8vh;
+    }
 
-#edu-block-inf {
-width: 50%;
-padding: 3rem 0;
-}
-
-#edu-block-img-frame {
-width: 50%;
-}
-
-.edu-block-image {
-width: 100%;
-aspect-ratio: 4/3;
-border-radius: 20px;
+    .main-home-page-about {
+        width: 100%;
+        height: max-content;
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 3%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .main-home-page {
+    .page-body-about {
         width: 100%;
+        height: max-content;
+        padding-top: 8vh;
+    }
 
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+    .main-home-page-about {
+        width: 100%;
+        height: max-content;
+        flex-direction: column-reverse;
         padding: 0;
-        gap: 5%;
+        gap: 20px;
     }
 
     .images {
-        aspect-ratio: 1/1;
         width: 100%;
-        height: 100%;
-
-        padding: 5% 5% 5% 5%;
-        margin: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blue-bg-outer {
-        aspect-ratio: 1/1;
-        width: 90%;
-        height: 90%;
-    }
-
-    .white-bg {
-        aspect-ratio: 1/1;
-        width: 90%;
-        height: 90%;
-    }
-
-    .blue-bg {
-        aspect-ratio: 1/1;
-        width: 90%;
-        height: 90%;
     }
 
     .information {
         width: 100%;
-
-        display: flex;
         flex-direction: column;
+
         justify-items: center;
         align-items: center;
     }
@@ -307,15 +261,7 @@ border-radius: 20px;
         margin-left: 0;
     }
 
-    #edu-block {
-        flex-direction: column-reverse;
-    }
-
-    #edu-block-inf {
-        width: 100%;
-    }
-
-    #edu-block-img-frame {
-        width: 100%;
+    .otherLink {
+        flex-direction: column;
     }
 }

@@ -53,7 +53,7 @@ function StartPage() {
         </button>
       </div>
 
-      <div className='main-page-image'>
+      <div className='main-page-image-start'>
         <GalleryCarousel imagesDB={startGalleryDB} />
       </div>
     </div>

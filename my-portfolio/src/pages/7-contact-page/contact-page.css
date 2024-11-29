@@ -55,6 +55,10 @@
 .contact-info-detail span {
     color: var(--text-color-highlight);
 }
+
+.contact-via-cloud-mail {
+  cursor: pointer;
+}
   
 .contact-label {
     color: var(--text-color);

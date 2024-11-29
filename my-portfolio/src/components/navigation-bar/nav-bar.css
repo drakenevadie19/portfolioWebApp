@@ -59,13 +59,13 @@ nav ul li:last-child {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   nav {
     width: 100vw;
     height: max-content;
     padding: 0 0 0 1%;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .topnav li:not(:last-child), .unique>h4 {

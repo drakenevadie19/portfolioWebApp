@@ -17,9 +17,13 @@
 
 /*----------------------------------------------------------------------------------------*/
 /* Responsive */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 600px) {
   html {
       font-size: 100%;
+  }
+
+  .main {
+    padding: 0;
   }
 }
 

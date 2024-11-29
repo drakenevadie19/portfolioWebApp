@@ -104,15 +104,4 @@
       justify-content: center;
       align-items: center;
     }
-
-    /* .carousel-inner, .carousel-item {
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-    } */
-
-    #carouselExampleControls {
-        width: 80%;
-        height: 40%;
-    }
 }

@@ -55,7 +55,7 @@
 }
 
 /* My image carousel */
-.main-page-image {
+.main-page-image-start {
   /* width: 45%; */
   width: 50%;
   height: 100%;
@@ -113,32 +113,48 @@
   transform: scale(1.25); 
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .main-page {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    height: max-content;
+    flex-direction: column-reverse;
+    padding-top: 8vh;
   }
 
   .profile-wrapper {
-    top: 30%;
-    left: 5px;
+    width: 100%;
+    align-items: center;
+  }
 
-    display: flex;
-    text-align: start;
+  .main-page-image-start {
+    width: 100%;
+    height: 40vh;
+    object-fit: fill;
+    padding: 1.5% 1.5% 8% 1.5%;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-page {
+    flex-direction: column-reverse;
+    height: max-content;
+  }
+
+  .profile-wrapper {
+    display: flex;
+    text-align: start;
+    align-items: center;
+  }
+}
+
+
 @media screen and (max-width: 1100px) {
-  /* .carousel-inner, .carousel-item {
+  .main-page {
+    height: max-content;
+  }
+
+  .carousel-inner, .carousel-item {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-  } */
-
-  #carouselExampleControls {
-    width: 80%;
-    height: 40%;
   }
 }

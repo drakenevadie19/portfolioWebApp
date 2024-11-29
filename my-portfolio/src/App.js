@@ -21,8 +21,15 @@ import ContactMe from './pages/7-contact-page/contact-me';
 
 import { ThemeProvider } from './ThemeContext';
 import HomePage from './pages/structure-page/home-page';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    localStorage.removeItem('theme'); // Remove 'theme' when the app loads
+    // console.log('Token removed on app reload');
+  }, []);
+
   return (
     <ThemeProvider>
       <BrowserRouter>

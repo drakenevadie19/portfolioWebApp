@@ -122,6 +122,7 @@ const Navbar = () => {
                 sx={{ m: 1 }} 
                 onChange={changeBackground}
                 defaultChecked={changedTheme} 
+                checked={changedTheme}
               />}
               label={theme === "light-theme" ? "Light mode" : "Dark mode"}
             />

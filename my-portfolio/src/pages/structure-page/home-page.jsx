@@ -18,6 +18,9 @@ import ProjectPage from "../6-project-page/project-page";
 import projectData from "../6-project-page/project-data";
 import "../6-project-page/project-page.css"
 
+import ContactMe from "../7-contact-page/contact-me";
+import "../7-contact-page/contact-page.css";
+
 const HomePage = () => {
 
     return (
@@ -28,6 +31,7 @@ const HomePage = () => {
             <SkillPage />
             <WorksPage />
             <ProjectPage projects={projectData} />
+            <ContactMe />
         </>
     )
 }

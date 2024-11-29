@@ -1,151 +1,56 @@
-import React, { useState } from 'react';
 
-const ProjectPage = ({projects}) => {
-    const [visibility, setVisibility] = useState(true);
-    
-    const toggleVisibility = () => {
-        setVisibility(!visibility);
-    };
+{/* <div className="dm-or-scrolldown">
+    <div className="main-home-page-dm-tell">
+        <p>Click to DM me</p>
+    </div>
+    <div className="dm-or-scrolldown-frame">
+        <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen"><img src="/dm.png" alt="DM" /></a>
+    </div>
+</div> */}
 
-    return (
-        <> 
-            <div id="page-body">
-                <div className="project-wrap">
-                    {projects.map((project, index) => (
-                        <div className="card" key={index}>
-                            <img src={project.src} className="card-img-top" alt={project.name} />
-                            <div className="card-body inside-card">
-                                <h5 className="card-title">{project.name}</h5>
+/* Dm jumping button */
+/* .dm-or-scrolldown {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 
-                                {visibility ? (
-                                    <>
-                                        <p className="card-text">{project.description.substring(0, 100)}...</p>
-                                        <button type="button" className="btn btn-success more" onClick={toggleVisibility}>
-                                            View more 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-double-down" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                            </svg>
-                                        </button>
-                                    </>
-                                ) : (
-                                    <>
-                                        <p className="card-text">{project.description}</p>
-                                        <button type="button" className="btn btn-success less" onClick={toggleVisibility}>
-                                            View less 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-double-up" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
-                                                <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-                                            </svg>
-                                        </button>
-                                    </>
-                                )}
-                                
-                                <a href={project.link} className="btn btn-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </>
-    )
+    animation: dmJump 1s linear infinite;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
-export default ProjectPage;
-
-
-const projectData = [
-    {
-        name: "Blog-app", 
-        link: "https://github.com/drakenevadie19/BlogApp.git",
-        src: "/project-bio-image/BlogApp.jpg",
-        description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
-        workTime: "12/2023 - present",
-        participants: "Drake Do",
-    },
-    {
-        name: "Two Tree Ecommerce App",
-        link: "https://github.com/drakenevadie19/TwoTreeEcommerceApp.git",
-        src: "/project-bio-image/ecommerceApp.png",
-        description: "Designed an fullstack interface with MEVN-stack for shopping demands of users with fully necessary functions for a shopping page. I am still working on this page to develop more.",
-        workTime: "1/2024 - present",
-        participants: "Drake Do",
-    },
-    {
-        name: "Contact Interface",
-        link: "https://github.com/drakenevadie19/ContactInterface.git",
-        src: "/project-bio-image/contactInterface.png",
-        description: "Designed an fullstack interface using React and Spring Boot to store and manage contacts",
-        workTime: "11/2023 - 12/2023",
-        participants: "Drake Do",
-    },
-    {
-        name: "Hogwart-artifact-online",
-        link: "https://github.com/drakenevadie19/hogwart-artifact-online",
-        src: "/project-bio-image/hogwart.jpg",
-        description: "Developed a fully-fledged RESTful API server to manage wizard object entity and artifact object entity using SpringBoot, Spring MVC, Spring Data JPA and H2 database.",
-        workTime: "3/2023 - 4/2023",
-        participants: "Drake Do",
-    },
-    {
-        name: "sudokuGame",
-        link: "https://github.com/drakenevadie19/sudokuGame",
-        src: "/project-bio-image/sudokuGame.jpg",
-        description: "Inspired by traditional sudoku game, I design a web page for users to solve their maze, and also play Sudoku there. I created a responsive design website, using Angular framework, with Material UI.",
-        workTime: "7/2023 - 8/2023",
-        participants: "Drake Do",
-    },
-    {
-        name: "SuperFrog Scheduler",
-        link: "https://github.com/drakenevadie19/SuperFrogSchedulerFrontEnd",
-        src: "/project-bio-image/superFrog.jpg",
-        description: "Increased website traffic 20% by designing a responsive Vue.js-based front-end for TCU Recreational Center's customer-facing scheduling system, allowing bookings of mascot appearances.",
-        workTime: "4/2023 - 5/2023",
-        participants: "Drake Do",
-    },
-    {
-        name: "Book Manager Database",
-        link: "https://github.com/drakenevadie19/BookManager",
-        src: "/project-bio-image/books.jpg",
-        description: "Guided Dr. Sarka in TCU, I developed a database system for managing new books coming for TCU, using Python and MySQL. This database can also handle queries such as searching a book/books, changing books' information, deleting books. For IDE, I used Pycharm for Python and Datagrip, with Docker to monitor database.",
-        workTime: "10/2023 - 11/2023",
-        participants: "Drake Do",
-    },
-]
-
-export default projectData;
-
-
-.card {
-  display: inline;
-  float: left;
-  width: 22rem;
-  margin: 1rem;
+@keyframes dmJump {
+    0% { bottom: 20px;}
+    25% { bottom: 25px;}
+    50% { bottom: 30px;}
+    75% { bottom: 25px;}
+    100% { bottom: 20px;}
 }
 
-.copyright {
-  /* position: static; */
-  color: #00D7FF;
-  display: flex;
-  flex-direction: row;
-  gap: 1%;
-  justify-content: center;
-  align-items: center;
+.dm-or-scrolldown-frame {
+    width: 64px;
+    height: 64px;
+
+    color: #8200FF;
 }
 
-.copyright p {
-  margin: 0;
+.main-home-page-dm-tell {
+    display: none;
+    border: 1px solid #0096FF;
+    background-color: #0096FF;
+    height: max-content;
+    border-radius: 20px;
+    padding: 0 5px;
 }
 
-.inside-card {
-  display: flex;
-  flex-direction: column;
+.main-home-page-dm-tell>p {
+    margin: 0;
 }
 
-.more, .less {
-  margin: 10px;
-}
-
-.card-img-top {
-  aspect-ratio: 16/9;
-}
+.dm-or-scrolldown:hover {
+    .main-home-page-dm-tell {
+        display: block;
+    }  
+} */

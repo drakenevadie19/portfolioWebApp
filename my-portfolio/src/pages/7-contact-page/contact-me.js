@@ -74,7 +74,7 @@ const ContactMe = () => {
                 <b>(682)-374-8227</b>
               </p>
 
-              <p className="contact-info-detail">
+              <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen" className="contact-info-detail contact-via-cloud-mail">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-envelope-arrow-up" viewBox="0 0 16 16">
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
@@ -82,7 +82,7 @@ const ContactMe = () => {
                   </svg>
                 </span>
                 <b>thanhnguyen14.gers@gmail.com</b>
-              </p>
+              </a>
             </div>
 
             <div className="form-manage">

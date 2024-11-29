@@ -21,6 +21,10 @@
   html {
       font-size: 100%;
   }
+
+  .main {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {

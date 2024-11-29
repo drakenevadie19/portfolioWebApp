@@ -7,7 +7,7 @@ const projectData = [
         workTime: "11/2024 - Present",
         techStack: ["React.js", "JavaScript", "PostgreSQL", "Express.js", "Node.kjs", "Railway", "Material UI", "Postman", "SweetAlert 2"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
-        liveDemo: ["no"],
+        liveDemo: ["yes", "https://bookez.vercel.app/"],
         participants: "Drake Do",
     },
     {

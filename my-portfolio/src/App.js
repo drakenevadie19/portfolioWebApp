@@ -17,7 +17,7 @@ import WorkExperienceDetailPage from './pages/5-works-page/work-experience-detai
 import ProjectPage from './pages/6-project-page/project-page';
 import projectData from './pages/6-project-page/project-data';
 
-import ContactMe from './pages/contact-page/contact-me';
+import ContactMe from './pages/7-contact-page/contact-me';
 
 import { ThemeProvider } from './ThemeContext';
 import HomePage from './pages/structure-page/home-page';

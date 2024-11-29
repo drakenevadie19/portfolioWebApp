@@ -68,10 +68,6 @@ const AboutPage = () => {
                     </div>
                 </div> */}
             </div>
-
-            {/* <div className="page-body" id="contact-block">
-                <ContactMe />
-            </div> */}
         </>
     );
 }

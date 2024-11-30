@@ -228,7 +228,8 @@
 
 @media screen and (max-width: 768px) {
     .page-body-about {
-        width: 100%;
+        /* width: 100%; */
+        width: 100vw;
         height: max-content;
         padding-top: 15vh;
     }

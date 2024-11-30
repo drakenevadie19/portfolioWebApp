@@ -73,7 +73,7 @@ nav ul li:last-child {
   }
 
   nav {
-    width: 100%;
+    width: 100vw;
     height: max-content;
     padding: 0 0 0 1%;
   }

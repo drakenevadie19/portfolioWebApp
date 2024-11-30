@@ -129,6 +129,10 @@
   }
   
   @media screen and (max-width: 768px) {
+    .page-body-contact {
+      width: 100vw;
+    }
+
     .contact-info {
       display: flex;
       flex-direction: column;

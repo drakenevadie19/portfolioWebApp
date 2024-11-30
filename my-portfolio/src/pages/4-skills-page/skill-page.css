@@ -85,6 +85,10 @@
       display: flex;
       justify-content: center;
     }
+
+    .skill-set-components {
+        width: 100%;
+    }
   
     .skills-block {
       display: grid;

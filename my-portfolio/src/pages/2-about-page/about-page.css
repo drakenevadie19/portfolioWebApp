@@ -237,7 +237,7 @@
     .main-home-page-about {
         width: 100%;
         height: max-content;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0;
         gap: 20px;
     }

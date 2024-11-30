@@ -36,6 +36,12 @@
 
 .infoWorks h1 {
   margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.professional-work-title {
+  display: flex;
+  justify-content: center;
 }
 
 .internship {
@@ -68,13 +74,6 @@
   align-items: flex-end;
 }
 
-.experience-description {
-  border: 1px solid #18134c;
-  border-radius: 20px;
-  margin: 10px 0;
-  padding: 10px;
-}
-
 .bio-box {
   width: 4em;
   height: 4em;
@@ -82,6 +81,14 @@
 }
 
 /* Timeline ---------------*/
+.work-experience-timeline {
+  width: 100%;
+}
+
+.timeline {
+  width: 100%;
+}
+
 .timeline li {
   display: flex;
 }
@@ -205,31 +212,7 @@
 
 /*--------------------------------------------------*/
 
-@media screen and (max-width: 768px) {
-  .page-body-works { 
-    width: 100vw;
-  }
-  
-  .company-position {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .imageWorks {
-    display: none;
-  }
-
-  .infoWorks {
-    width: 100%;
-    color: #18134c;
-  }
-}
 
 /*----------------------------------------------------------------------------------------*/
 /* Work Details Page */
@@ -295,7 +278,43 @@
   text-align: left;
 }
 
+
+/*----------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+  .page-body-works { 
+    width: 100vw;
+  }
+
+  .company-position {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .imageWorks {
+    display: none;
+  }
+
+  .infoWorks {
+    width: 100%;
+    color: #18134c;
+  }
+
+  /*----------------------------------------------*/
+  .timeline {
+    padding: 0;
+    margin: 0;
+  }
+  .w-e-time {
+    padding: 0;
+  }
+
+  /*----------------------------------------------*/
   .w-d-job-details {
     padding: 0;
   }
@@ -304,4 +323,3 @@
     padding: 0;
   }
 }
-/*----------------------------------------------------------------------------------------*/

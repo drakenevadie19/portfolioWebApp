@@ -34,7 +34,7 @@ const WorksPage = () => {
             <div className="page-body-works" id="work-block">
                 <div className="work-page">
                     <div className="infoWorks">
-                        <div className="placeholder-Image">
+                        <div className="professional-work-title">
                             {/* <img src="/internship.png" alt="Programmer"/> */}
                             <h1><b>Professional Experiences</b></h1>
                         </div>

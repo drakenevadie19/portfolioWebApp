@@ -1,3 +1,4 @@
+
 .page-body-projects {
   /* height: 90vh; */
   /* height: 100%; */
@@ -210,6 +211,10 @@
   }
   
   @media screen and (max-width: 768px) {
+    .page-body-projects {
+      width: 100vw;
+    }
+
     .project-wrap{
       width: 100%;
       display: flex;

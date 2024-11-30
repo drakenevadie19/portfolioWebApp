@@ -139,7 +139,7 @@ const ProjectPage = ({projects}) => {
                 </div>
                 <div className="project-wrap">
                 {/* Rendering list of technologies to filter */}
-                    <div className='filter'>
+                    {/* <div className='filter'>
                         {
                             techInProject.map((techIn, index) => {
                                 return (
@@ -152,7 +152,7 @@ const ProjectPage = ({projects}) => {
                         <button type="button" className="btn btn-danger" onClick={searchNow}>
                             Search
                         </button>
-                    </div>
+                    </div> */}
 
                     <div className="project-list-tab">
                         <div className='filter-button'>

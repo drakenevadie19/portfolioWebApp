@@ -146,11 +146,11 @@
     }  
 
     .copyright-drake {
-      left: 20%;
-      color: #18134C;
-      
       display: flex;
       align-items: center;
       flex-direction: row;
+    }
+    .copyright-drake h5 {
+      font-size: 1em;
     }
   }

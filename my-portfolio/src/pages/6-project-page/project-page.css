@@ -15,11 +15,6 @@
 
 /*----------------------------------------------------------------------------------------*/
 /* Project Page */
-
-.projects-portion-title {
-    font-weight: bold;
-}
-
 /* Filter */
 .filter {
     /* display: flex;
@@ -79,16 +74,22 @@
   
   /* End of filter area */
   
+  .projects-portion-title {
+    font-weight: bold;
+  }
+
   .project-wrap {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    padding: 2% 4%;
+    gap: 5%;
   }
   
   .project-list-tab {
     width: 32%;
   
     padding: 5%;
-    margin-top: 2%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -143,7 +144,6 @@
   
   .project-render-wrap {
     width: 68%;
-    padding: 2% 5%;
   
     display: flex;
     flex-direction: column;
@@ -247,6 +247,7 @@
       width: 100%;
       height: max-content;
     }
+
     .project-render-first-block {
       flex-direction: column-reverse;
       gap: 5%;

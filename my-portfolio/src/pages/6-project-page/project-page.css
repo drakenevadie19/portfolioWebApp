@@ -108,6 +108,10 @@
     font-weight: 700;
     font-style: italic;
   }
+
+  .project-list-tab-list-of-projects-onSmallDevice {
+    display: none;
+  }
   
   .project-list-tab:hover {
     /* border: 4px #8200FF solid; */
@@ -214,6 +218,7 @@
     .page-body-projects {
       width: 100vw;
       height: max-content;
+      gap: 20px;
     }
 
     .project-wrap{
@@ -228,6 +233,14 @@
   
     .project-list-tab { 
       width: 100%;
+    }
+
+    .project-list-tab-list-of-projects {
+      background-color: var(--background-color);
+    }
+
+    .project-list-tab-list-of-projects-onSmallDevice {
+      display: block;
     }
   
     .project-render-wrap {

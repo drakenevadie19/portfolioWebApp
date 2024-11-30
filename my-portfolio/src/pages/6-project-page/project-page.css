@@ -213,6 +213,7 @@
   @media screen and (max-width: 768px) {
     .page-body-projects {
       width: 100vw;
+      height: max-content;
     }
 
     .project-wrap{
@@ -231,6 +232,7 @@
   
     .project-render-wrap {
       width: 100%;
+      height: max-content;
     }
     .project-render-first-block {
       flex-direction: column-reverse;

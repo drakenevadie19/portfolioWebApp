@@ -27,7 +27,6 @@ const ProjectPage = ({projects}) => {
     // Array to hold states of each button
     const [buttonStates, setButtonStates] = useState(new Array(100).fill(false));
 
-
     const changeProjectToRender = (newProject, index) => {
         setCurrentProject(newProject);
         // console.log(newProject);
@@ -108,6 +107,28 @@ const ProjectPage = ({projects}) => {
         setToRenderProjects(filteredProjects);
         setNumberOfToRenderProjects(filteredProjects.length);
     }
+    // Open Box of projects
+    const [toOpenBox, setToOpenBox] = useState(false);
+    // const [scrollY, setScrollY] = useState(0); // Store current scroll position
+
+     // Lock the page's scroll position when the popup is displayed
+    //  useEffect(() => {
+    //     if (toOpenBox) {
+    //         document.body.style.position = "fixed";
+    //         // document.body.style.top = `-${scrollY}px`; // Keep the view locked
+    //         window.scrollTo(0, 0); // Restore scroll position
+    //     } else {
+    //         document.body.style.position = "";
+    //         document.body.style.top = ""; // Reset styles
+    //         window.scrollTo(0, scrollY); // Restore scroll position
+    //     }
+    // }, [toOpenBox, scrollY]);
+
+    const openToChooseProjects = () => {
+        // setScrollY(window.scrollY); // Capture current scroll position
+        setToOpenBox(true);
+    }
+
     return (
         <> 
             <div className="page-body-projects" id="project-block">
@@ -152,11 +173,29 @@ const ProjectPage = ({projects}) => {
                             }
                         </div>
 
-                        <h3 className="project-list-tab-header">My projects ({numberOfToRenderProjects}):</h3>
-                        {toRenderProjects.map((project, index) => (
-                            // Adding a class so that when that project is rendering, its background in project is being rendered
-                            <p key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying ? "project-clicked" : ""}>{project.name}</p>
-                        ))}
+                        <h3 className="project-list-tab-header">
+                            My projects ({numberOfToRenderProjects})
+                        </h3>
+                        <div className='project-list-tab-list-of-projects-onSmallDevice'>
+                            <button type="button" className="btn btn-success" onClick={openToChooseProjects}>
+                                Choose a project to view
+                            </button>
+                        </div>
+
+                        <div className={toOpenBox ? "we-to-display-work" : "not-we-to-display-work"}>
+                            <div className="work-box-close-button" onClick={() => setToOpenBox(false)}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-x-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </div>
+                            <div className='project-list-tab-list-of-projects'>
+                                {toRenderProjects.map((project, index) => (
+                                    // Adding a class so that when that project is rendering, its background in project is being rendered
+                                    <p key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying ? "project-clicked" : ""}>{project.name}</p>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                     <ProjectRender project = {currentProject} />
                 </div>

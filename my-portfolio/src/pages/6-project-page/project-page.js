@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ProjectRender from './project-render';
 
+import "./project-page.css";
+
 const ProjectPage = ({projects}) => {
     const [usingFilter, setUsingFilter] = useState(false);
     const [currentIndexOfProjectDisplaying, setCurrentIndexOfProjectDisplaying] = useState(0);
@@ -181,7 +183,7 @@ const ProjectPage = ({projects}) => {
                                 Choose a project to view
                             </button>
                         </div>
-
+                        
                         <div className={toOpenBox ? "we-to-display-work" : "not-we-to-display-work"}>
                             <div className="work-box-close-button" onClick={() => setToOpenBox(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-x-square" viewBox="0 0 16 16">
@@ -196,6 +198,14 @@ const ProjectPage = ({projects}) => {
                                 ))}
                             </div>
                         </div>
+                        {!toOpenBox &&
+                            <div className='project-list-tab-list-of-projects'>
+                                {toRenderProjects.map((project, index) => (
+                                    // Adding a class so that when that project is rendering, its background in project is being rendered
+                                    <p key={index} onClick={() => changeProjectToRender(project, index)} className={index === currentIndexOfProjectDisplaying ? "project-clicked" : ""}>{project.name}</p>
+                                ))}
+                            </div>
+                        }
                     </div>
                     <ProjectRender project = {currentProject} />
                 </div>

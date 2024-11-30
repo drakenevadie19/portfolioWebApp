@@ -74,6 +74,10 @@
   
   /* End of filter area */
   
+  .projects-portion-title-frame {
+    height: max-content;
+  }
+
   .projects-portion-title {
     font-weight: bold;
   }
@@ -98,6 +102,7 @@
     /* border: 4px #0096FF solid; */
     border-radius: 20px;
     backdrop-filter: hue-rotate(30deg);
+    border: 0.5px var(--button-text-color) solid;
   }
   
   .project-clicked {
@@ -184,6 +189,7 @@
   
     padding: 5%;
     backdrop-filter: hue-rotate(30deg);
+    border: 0.5px var(--button-text-color) solid;
   }
   
   .project-name h4 {
@@ -206,6 +212,8 @@
     padding: 2%;
   
     backdrop-filter: hue-rotate(30deg);
+
+    border: 0.5px var(--button-text-color) solid;
   }
   
   .go-Live-Buttons {
@@ -222,13 +230,7 @@
     }
 
     .project-wrap{
-      width: 100%;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      gap: 5%;
     }
   
     .project-list-tab { 

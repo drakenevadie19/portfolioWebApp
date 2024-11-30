@@ -134,7 +134,7 @@ const ProjectPage = ({projects}) => {
     return (
         <> 
             <div className="page-body-projects" id="project-block">
-                <div>
+                <div className='projects-portion-title-frame'>
                     <h1 className='projects-portion-title'>Capstone projects</h1>
                 </div>
                 <div className="project-wrap">

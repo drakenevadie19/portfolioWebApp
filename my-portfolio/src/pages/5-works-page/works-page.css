@@ -290,11 +290,11 @@
     flex-direction: column;
   }
 
-  .right {
+  /* .right {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
+  } */
 
   .imageWorks {
     display: none;
@@ -305,21 +305,42 @@
     color: #18134c;
   }
 
+  .professional-work-title h1 {
+    font-size: 1.65em;
+  }
+
   /*----------------------------------------------*/
   .timeline {
     padding: 0;
     margin: 0;
   }
   .w-e-time {
-    padding: 0;
+    padding: 0 10px;
+  }
+
+  .w-e-time h4 {
+    font-size: 1em;
+    font-weight:600;
   }
 
   /*----------------------------------------------*/
   .w-d-job-details {
-    padding: 0;
+    padding: 2%;
   }
 
   .w-d-job-details-description {
     padding: 0;
+  }
+
+  .work-box {
+    width: 90%;
+    height: 88%;
+  }
+
+  .w-d-job-details-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-bottom: 3em;
   }
 }

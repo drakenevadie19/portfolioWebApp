@@ -230,8 +230,8 @@ const ProjectPage = ({ projects }) => {
                   onClick={() => changeProjectToRender(project, index)}
                   className={
                     index === currentIndexOfProjectDisplaying
-                      ? "project-clicked"
-                      : ""
+                      ? "project-clicked project-on-toDisplay"
+                      : "project-on-toDisplay"
                   }
                 >
                   {project.name}
@@ -264,23 +264,24 @@ const ProjectPage = ({ projects }) => {
               </svg>
             </div>
             <div className="project-list-tab-list-of-projects project-box">
-              {toRenderProjects.map((project, index) => (
-                // Adding a class so that when that project is rendering, its background in project is being rendered
-                <p
-                  key={index}
-                  onClick={() => {
-                    changeProjectToRender(project, index);
-                    setToOpenBox(false);
-                  }}
-                  className={
-                    index === currentIndexOfProjectDisplaying
-                      ? "project-clicked"
-                      : ""
-                  }
-                >
-                  {project.name}
-                </p>
-              ))}
+                <h1>Choose a project to display</h1>
+                {toRenderProjects.map((project, index) => (
+                    // Adding a class so that when that project is rendering, its background in project is being rendered
+                    <p
+                    key={index}
+                    onClick={() => {
+                        changeProjectToRender(project, index);
+                        setToOpenBox(false);
+                    }}
+                    className={
+                        index === currentIndexOfProjectDisplaying
+                        ? "project-clicked project-on-toDisplay"
+                        : "project-on-toDisplay"
+                    }
+                    >
+                    {project.name}
+                    </p>
+                ))}
             </div>
           </div>
           <ProjectRender project={currentProject} />

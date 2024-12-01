@@ -118,6 +118,61 @@
   .project-list-tab-list-of-projects-onSmallDevice {
     display: none;
   }
+
+  /*--------------------------------------------------*/
+.projectbox-to-display-work {
+  display: block;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  animation: fadeIn 0.3s ease-in-out;
+
+  /* Prevent popup from scrolling */
+  /* overflow: hidden;  */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.not-projectbox-to-display-work {
+  display: none;
+}
+
+.work-box-close-button {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  justify-self: flex-end;
+}
+
+.work-box {
+  /* width: 90%;
+  height: 90vh; */
+  background-color: black;
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/*--------------------------------------------------*/
   
   .project-list-tab:hover {
     /* border: 4px #8200FF solid; */
@@ -237,12 +292,16 @@
       width: 100%;
     }
 
-    .project-list-tab-list-of-projects {
+    /* .project-list-tab-list-of-projects {
       background-color: var(--background-color);
-    }
+    } */
 
     .project-list-tab-list-of-projects-onSmallDevice {
       display: block;
+    }
+
+    .project-list-tab-list-of-projects-onLargeDevice {
+      display: none;
     }
   
     .project-render-wrap {

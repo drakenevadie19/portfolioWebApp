@@ -55,27 +55,24 @@ nav li {
   cursor: pointer;
 }
 
-nav ul li:last-child {
+.topnav li:last-child {
   display: none;
 }
 
-/* @media only screen and (max-width: 600px) {
-  nav {
-    width: 100vw;
-    height: max-content;
-    padding: 0 0 0 1%;
-  }
-} */
+.nav-bar-menu-opened {
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
-  .topnav li:not(:last-child), .unique>h4 {
+  .topnav li:not(:last-child) {
     display: none;
   }
 
   nav {
     width: 100vw;
     height: max-content;
-    padding: 0 0 0 1%;
+    padding: 0 0 0 5%;
   }
 
   .topnav li:last-child {
@@ -87,23 +84,77 @@ nav ul li:last-child {
     color: var(--text-color);
   } 
 
-  .topnav:not(.responsive) li:not(:last-child) {
-    display: none;
-  }
-
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
   .topnav.responsive li {
     float: none;
     display: inline-block;
     text-align: left;
   }
+
+  .nav-bar-menu-opened {
+    z-index: 11;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .nav-bar-menu-sidetab {
+    background-color: black;
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 11;
+    border: 0.5px var(--button-text-color) solid;
+  
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .nav-bar-text-on-sidetab {
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .nav-bar-text-on-sidetab:hover {
+    color: var(--text-color-on-hover);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .nav-bar-menu-sidetab li {
+    padding-left: 15%;
+    text-align: left;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  .close-button-area {
+    width: 20%;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
 }

@@ -172,6 +172,14 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 11;
+  border: 0.5px var(--button-text-color) solid;
+}
+
+.project-list-tab-list-of-projects {
+  padding: 4% 7% 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
 }
 
 /*--------------------------------------------------*/
@@ -182,7 +190,7 @@
   backdrop-filter: hue-rotate(30deg);
 }
   
-.project-list-tab p {
+.project-on-toDisplay {
   /* color: var(--text-color); */
   color: var(--button-text-color);
   /* background-color: var(--button-color); */
@@ -196,7 +204,7 @@
   height:fit-content;
 }
   
-.project-list-tab p:hover {
+.project-on-toDisplay:hover {
   color: var(--button-text-color-hover);
   background-color: var(--button-color-hover);
   border: 3px var(--text-color) solid;

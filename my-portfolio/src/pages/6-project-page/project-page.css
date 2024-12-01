@@ -86,8 +86,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 2% 4%;
-    gap: 5%;
+    padding: 2% 0;
+    gap: 2%;
   }
   
   .project-list-tab {
@@ -235,7 +235,7 @@
 .project-render-src {
   width: 69%;
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .project-render-src-here {
@@ -300,6 +300,7 @@
 
   .project-wrap{
     flex-direction: column;
+    padding: 2%;
   }
 
   .project-list-tab { 
@@ -333,6 +334,12 @@
 
   .project-render-src {
     width: 100%;
+    height: 30vh;
+  }
+
+  .project-render-src-here {
+    width: 100%;
+    height: 100%;
   }
 }
   

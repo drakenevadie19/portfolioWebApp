@@ -157,15 +157,30 @@
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 991px) {
   .main-page {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    flex-direction: column-reverse;
+    padding: 15vh 0 0 0;
   }
 
   .main-page-image-star, #carouselExampleControls, .carousel-inner, .carousel-item {
     width: 100%;
     height: 100%;
+  }
+
+
+  .profile-wrapper {
+    width: 100%;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .main-page-image-start {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    padding: 1.5% 1.5% 8% 1.5%;
   }
 }

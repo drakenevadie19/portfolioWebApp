@@ -1,5 +1,5 @@
 //Navbar
-// import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "./nav-bar.css";
@@ -35,6 +35,8 @@ const Navbar = () => {
       window.history.replaceState(null, "", window.location.pathname); // Clear the # from the URL
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -90,6 +92,16 @@ const Navbar = () => {
             >
               Projects
             </a>
+          </li>
+          <li>
+            <Link to="/main/certificate" className="nav-bar-text">Certificates</Link>
+            {/* <a
+              href="#contact-block"
+              onClick={() => handleLinkClick("contact-block")}
+              className="nav-bar-text"
+            >
+              Certificates
+            </a> */}
           </li>
           <li>
             {/* <Link to="/main/contact" className="nav-bar-text">Contact Me</Link> */}

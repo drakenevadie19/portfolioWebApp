@@ -19,7 +19,10 @@ import projectData from './pages/6-project-page/project-data';
 
 import ContactMe from './pages/7-contact-page/contact-me';
 
+import CertificatePage from './pages/8-certificate-page/certificate-page';
+
 import { ThemeProvider } from './ThemeContext';
+
 import HomePage from './pages/structure-page/home-page';
 import { useEffect } from 'react';
 
@@ -45,6 +48,7 @@ function App() {
                 <Route path="/main/works/:id" element={<WorkExperienceDetailPage/> }/>
                 <Route path="/main/projects" element={<ProjectPage projects={projectData} />} />
                 <Route path="/main/contact" element={<ContactMe />} />
+                <Route path='/main/certificate' element={<CertificatePage />} />
               </Route>
             </Routes>
         </div>

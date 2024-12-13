@@ -1,0 +1,14 @@
+
+.page-body-certificates {
+    /* height: 90vh; */
+    /* height: 100%; */
+    height: max-content;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 4% 5% 4%;
+    /* background-color: red; */
+}

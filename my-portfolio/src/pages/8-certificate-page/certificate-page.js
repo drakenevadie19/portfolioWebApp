@@ -22,7 +22,7 @@ const CertificatePage = () => {
   };
 
   return (
-    <div>
+    <div className="page-body-certificates">
       <Grid container spacing={2}>
         {certificates.map((cert) => (
           <Grid item xs={12} sm={6} md={4} key={cert.id}>

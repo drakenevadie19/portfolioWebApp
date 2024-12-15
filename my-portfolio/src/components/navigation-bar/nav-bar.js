@@ -93,16 +93,16 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-          <li>
+          {/* <li>
             <Link to="/main/certificate" className="nav-bar-text">Certificates</Link>
-            {/* <a
+            <a
               href="#contact-block"
               onClick={() => handleLinkClick("contact-block")}
               className="nav-bar-text"
             >
               Certificates
-            </a> */}
-          </li>
+            </a>
+          </li> */}
           <li>
             {/* <Link to="/main/contact" className="nav-bar-text">Contact Me</Link> */}
             <a

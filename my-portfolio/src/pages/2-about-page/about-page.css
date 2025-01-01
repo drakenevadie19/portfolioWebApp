@@ -213,7 +213,7 @@
     transform: scale(1.25); 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .page-body-about {
         /* width: 100%; */
         width: 100vw;

@@ -95,7 +95,7 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .page-body-edu {
         /* height: 90vh; */
         height: max-content;

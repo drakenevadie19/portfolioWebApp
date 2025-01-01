@@ -9,7 +9,7 @@ const skillsData = [
     }, 
     {
         name: "Back-end",
-        skills: ["spring", "express",  "nodejs", "postgres", "mongodb", "mysql", "git", "github", "graphql", "postman", "firebase", "docker", "linux", "npm"]
+        skills: ["spring", "express",  "nodejs", "postgres", "mongodb", "mysql", "git", "github", "graphql", "postman", "firebase", "aws", "docker", "kubernetes", "linux", "npm"]
     }, 
     {
         name: "Programming Tools",
@@ -21,7 +21,7 @@ const skillsData = [
     }, 
     {
         name: "Incoming...",
-        skills: ["aws", "azure", "dynamodb", "fastapi", "kafka", "kubernetes", "php", "redis", "tailwind"]
+        skills: ["azure", "dynamodb", "fastapi", "kafka", "php", "redis", "tailwind"]
     }
 ]
 

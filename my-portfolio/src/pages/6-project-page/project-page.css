@@ -334,7 +334,7 @@
 
   .project-render-src {
     width: 100%;
-    height: 30vh;
+    height: max-content;
   }
 
   .project-render-src-here {

@@ -19,7 +19,7 @@ const EducationPage = ({ educationList }) => (
                                 <li><span className="edu-details">Major:</span> {schools.major}</li>
                                 { schools.minor !== "N/A" && <li><span className="edu-details">Minor:</span> {schools.minor}</li> }
                                 <li><span className="edu-details">GPA:</span> {schools.gpa}</li>
-                                { schools.honor !== "N/A" && <li><span className="edu-details">Honor Society && Organizations:</span> <b><i>{schools.honor}</i></b></li> }
+                                { schools.honor !== "N/A" && <li><span className="edu-details">Honor Society & Organizations:</span> <b><i>{schools.honor}</i></b></li> }
                             </ul>
                         </div>
                     ))}

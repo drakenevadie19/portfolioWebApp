@@ -7,9 +7,9 @@ const skillsData = [
         name: "Front-end",
         skills: ["html", "css", "react", "nextjs", "redux", "angular", "reactivex", "vue", "vite", "apollo", "bootstrap", "materialui", "tailwind", "figma"]
     }, 
-    {
+    { // "kafka", "rabbitmq",
         name: "Back-end",
-        skills: ["spring", "kafka", "rabbitmq", "hibernate", "express",  "nodejs", "postgres", "mongodb", "mysql", "graphql", "postman", "firebase", "linux", "npm"]
+        skills: ["spring", "hibernate", "express",  "nodejs", "postgres", "mongodb", "mysql", "graphql", "postman", "firebase", "linux", "npm"]
     }, 
     {
         name: "DevOps",

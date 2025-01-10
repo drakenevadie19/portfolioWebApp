@@ -150,7 +150,7 @@ const ProjectPage = ({ projects }) => {
         </div>
         <div className="project-wrap">
           {/* Rendering list of technologies to filter */}
-          <div className="filter">
+          {/* <div className="filter">
             {techInProject.map((techIn, index) => {
               return (
                 <p
@@ -169,10 +169,10 @@ const ProjectPage = ({ projects }) => {
             >
               Search
             </button>
-          </div>
+          </div> */}
 
           <div className="project-list-tab">
-            <div className="filter-button">
+            {/* <div className="filter-button">
               {usingFilter === false ? (
                 // <a className='tech-stack-element-filter-button'>
                 <button
@@ -211,7 +211,7 @@ const ProjectPage = ({ projects }) => {
                   Reset filter
                 </button>
               )}
-            </div>
+            </div> */}
 
             <h3 className="project-list-tab-header">
               My projects ({numberOfToRenderProjects})

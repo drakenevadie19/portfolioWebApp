@@ -82,6 +82,26 @@
     font-weight: bold;
   }
 
+  .project-blog-box {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    gap: 7px;
+
+    /* border: 4px #0096FF solid; */
+    border-radius: 20px;
+    backdrop-filter: hue-rotate(30deg);
+    border: 0.5px var(--button-text-color) solid;
+    z-index: 1;
+  }
+
+  .project-blog-box>p {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
   .project-wrap {
     width: 100%;
     display: flex;

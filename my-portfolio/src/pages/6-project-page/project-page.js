@@ -144,6 +144,10 @@ const ProjectPage = ({ projects }) => {
         <div className="projects-portion-title-frame">
           <h1 className="projects-portion-title">Capstone projects</h1>
         </div>
+        <div className="project-blog-box">
+          <p>To understand more about how I brainstorm projects, please view in my blog</p>
+          <a href="https://drakedo-projects-explaining.blogspot.com/" target="_blank" rel="noreferrer">here</a>
+        </div>
         <div className="project-wrap">
           {/* Rendering list of technologies to filter */}
           <div className="filter">

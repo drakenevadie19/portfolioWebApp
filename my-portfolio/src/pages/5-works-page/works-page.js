@@ -41,30 +41,16 @@ const WorksPage = () => {
 
                         <div className="work-experience-timeline">
                             <ul className="timeline">
-                                <li>
+                                {workdata.map((work, index) => (
+                                    <li>
+                                        <div className="w-e-time"><h4>{work.time}</h4></div>
+                                        <div className="w-e-job" onClick={() => openBox(index)}><WorkExperience works={work} index={index} /></div>
+                                    </li>
+                                ))}
+                                {/* <li>
                                     <div className="w-e-time"><h4>{workdata[0].time}</h4></div>
                                     <div className="w-e-job" onClick={() => openBox(0)}><WorkExperience works={workdata[0]} index={0} /></div>
-                                </li>
-                                <li>
-                                    <div className="w-e-time"><h4>{workdata[1].time}</h4></div>
-                                    <div className="w-e-job" onClick={() => openBox(1)}><WorkExperience works={workdata[1]} index={1} /></div>
-                                </li>
-                                <li>
-                                    <div className="w-e-time"><h4>{workdata[2].time}</h4></div>
-                                    <div className="w-e-job" onClick={() => openBox(2)}><WorkExperience works={workdata[2]} index={2} /></div>
-                                </li>
-                                <li>
-                                    <div className="w-e-time"><h4>{workdata[3].time}</h4></div>
-                                    <div className="w-e-job" onClick={() => openBox(3)}><WorkExperience works={workdata[3]} index={3} /></div>
-                                </li>
-                                <li>
-                                    <div className="w-e-time"><h4>{workdata[4].time}</h4></div>
-                                    <div className="w-e-job" onClick={() => openBox(4)}><WorkExperience works={workdata[4]} index={4} /></div>
-                                </li>
-                                <li>
-                                    <div className="w-e-time"><h4>{workdata[5].time}</h4></div>
-                                    <div className="w-e-job" onClick={() => openBox(5)}><WorkExperience works={workdata[5]} index={5} /></div>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

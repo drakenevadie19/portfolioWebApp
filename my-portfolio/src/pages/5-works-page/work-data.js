@@ -1,36 +1,21 @@
 const workdata = [
     {
-        imageLink: "/works/texaschristianuniversity.png",
-        alt: "TCU",
-        role: "Mathematics Teaching Assistant",
-        company: "Department of Mathematics",
-        time: "January 2024-Present",
+        imageLink: "/works/unthsc.png",
+        alt: "UNT-HSC",
+        role: "Mobile and FullStack Engineer Internship",
+        company: "UNT Health Science Center",
+        time: "August 2024-Present",
         location: "Fort Worth, Texas",
         description: [
-            "Manage and improve homework performance of about 30 students in Mathematics classes.",
-            "Developed detailed study guides for math and computer science courses and aided a robust understanding of key concepts.", 
-            "Classess graded: MATH 20123: Discrete Mathematics I, MATH 30123: Discrete Mathematics II  (Dr. Herzig)."
+            "Developed a health-tracking application in a team of 6, managing 1000+ user records using React Native and SpringBoot.",
+            "Implemented API integration, improving 30% of data flow between front-end and back-end.", 
+            "Designed scalable, high-performance database by implementing the storage layer using PostgreSQL to store structured metadata and MongoDB to store flexible health data, standardizing constraints, and unifying related fields to ensure efficient querying and improve data integrity across multiple tables.",
+            "Led a team of 5 teammates in an Agile workflow, allocating tasks, tracking progress, and ensuring the on-time delivery of project milestones with 100% adherence to deadlines."
         ], 
         skills: [
-            "Mathematics"
+            "JavaScript", "Java", "React Native", "SpringBoot", "REST API", "PostgreSQL", "MongoDB", "GitHub Actions", "Agile"
         ]
     }, 
-    {
-        imageLink: "/works/texaschristianuniversity.png",
-        alt: "TCU",
-        role: "Undergraduate Computer Science Teacher Assistant",
-        company: "Department of Computer Science",
-        time: "August 2023-Present",
-        location: "Fort Worth, Texas",
-        description: [
-            "Assist over 50 students with lab projects in Computer Science courses: Data Structures, Techniques in Programming, Python for Data Analytics, and Introduction to Programming.",
-            "Improve students' programming proficiency and exam performance by 35% through tailored teaching methods customized for each student's learning style and skill level.",
-            "Host weekly 4-hour Computer Science Help Desk session."
-        ], 
-        skills: [
-            "Java, Java Swing", "Data Structure && Algorithms",
-        ]
-    },
     {
         imageLink: "/works/codepath.jpg",
         alt: "CodePath",
@@ -83,6 +68,38 @@ const workdata = [
             "Next.js", "TypeScript", "PlanetScale", "Supabase", "Node.js", "Express.js"
         ]
     }, 
+    {
+        imageLink: "/works/texaschristianuniversity.png",
+        alt: "TCU",
+        role: "Mathematics Teaching Assistant",
+        company: "Department of Mathematics",
+        time: "January 2024-Present",
+        location: "Fort Worth, Texas",
+        description: [
+            "Manage and improve homework performance of about 30 students in Mathematics classes.",
+            "Developed detailed study guides for math and computer science courses and aided a robust understanding of key concepts.", 
+            "Classess graded: MATH 20123: Discrete Mathematics I, MATH 30123: Discrete Mathematics II  (Dr. Herzig)."
+        ], 
+        skills: [
+            "Mathematics"
+        ]
+    }, 
+    {
+        imageLink: "/works/texaschristianuniversity.png",
+        alt: "TCU",
+        role: "Computer Science Teacher Assistant",
+        company: "Department of Computer Science",
+        time: "August 2023-Present",
+        location: "Fort Worth, Texas",
+        description: [
+            "Assist over 50 students with lab projects in Computer Science courses: Data Structures, Techniques in Programming, Python for Data Analytics, and Introduction to Programming.",
+            "Improve students' programming proficiency and exam performance by 35% through tailored teaching methods customized for each student's learning style and skill level.",
+            "Host weekly 4-hour Computer Science Help Desk session."
+        ], 
+        skills: [
+            "Java, Java Swing", "Data Structure && Algorithms",
+        ]
+    },
     {
         imageLink: "/works/texaschristianuniversity.png",
         alt: "TCU",

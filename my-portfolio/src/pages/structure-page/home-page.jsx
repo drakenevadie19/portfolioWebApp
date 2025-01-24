@@ -16,10 +16,13 @@ import "../5-works-page/works-page.css";
 
 import ProjectPage from "../6-project-page/project-page";
 import projectData from "../6-project-page/project-data";
-import "../6-project-page/project-page.css"
+import "../6-project-page/project-page.css";
 
 import ContactMe from "../7-contact-page/contact-me";
 import "../7-contact-page/contact-page.css";
+
+import CertificatePage from "../8-certificate-page/certificate-page";
+import "../8-certificate-page/certificate-page.css";
 
 const HomePage = () => {
 
@@ -28,9 +31,10 @@ const HomePage = () => {
             <StartPage />
             <AboutPage />
             <EducationPage educationList={schoolsList} />
-            <SkillPage />
             <WorksPage />
             <ProjectPage projects={projectData} />
+            <SkillPage />
+            <CertificatePage />
             <ContactMe />
         </>
     )

@@ -64,16 +64,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/skills" className="nav-bar-text">Skills</Link> */}
-            <a
-              href="#skill-block"
-              onClick={() => handleLinkClick("skill-block")}
-              className="nav-bar-text"
-            >
-              Skills
-            </a>
-          </li>
-          <li>
             {/* <Link to="/main/works" className="nav-bar-text">Works</Link> */}
             <a
               href="#work-block"
@@ -94,14 +84,24 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <Link to="/main/certificate" className="nav-bar-text">Certificates</Link>
-            {/* <a
-              href="#contact-block"
-              onClick={() => handleLinkClick("contact-block")}
+            {/* <Link to="/main/skills" className="nav-bar-text">Skills</Link> */}
+            <a
+              href="#skill-block"
+              onClick={() => handleLinkClick("skill-block")}
+              className="nav-bar-text"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            {/* <Link to="/main/certificate" className="nav-bar-text">Certificates</Link> */}
+            <a
+              href="#certificates-block"
+              onClick={() => handleLinkClick("certificates-block")}
               className="nav-bar-text"
             >
               Certificates
-            </a> */}
+            </a>
           </li>
           <li>
             {/* <Link to="/main/contact" className="nav-bar-text">Contact Me</Link> */}

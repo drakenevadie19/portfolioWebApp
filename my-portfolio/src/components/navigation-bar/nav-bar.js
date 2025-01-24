@@ -1,5 +1,5 @@
 //Navbar
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "./nav-bar.css";
@@ -36,7 +36,7 @@ const Navbar = () => {
     }
   };
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <>

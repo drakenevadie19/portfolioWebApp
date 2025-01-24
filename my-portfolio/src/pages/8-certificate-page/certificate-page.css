@@ -1,4 +1,3 @@
-
 .page-body-certificates {
     /* height: 90vh; */
     /* height: 100%; */
@@ -11,4 +10,8 @@
     align-items: center;
     padding: 10vh 4% 5% 4%;
     /* background-color: red; */
+}
+
+.certificate-introduction, .certificates-showing {
+    width: 100%;
 }

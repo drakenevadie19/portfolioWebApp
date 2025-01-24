@@ -21,10 +21,11 @@ const AboutPage = () => {
                         <div className="animated_text">
                             <h1 className="title">Software Engineer</h1>
                         </div>
-                        <p className="aboutme-description">I am from Hai Phong, Vietnam, currently in Fort Worth, Texas. 
-                            I'm a full-stack web developer, currently with experiences in <b className="tech-stack-animation"> Java, JavaScript, TypeScript, MERN  & MEAN  & MEVN Stacks, Spring Boot, Bootstrap 5, Material UI, GraphQL, Apollo Client, Firebase</b>. 
-                            Now I am sharpening my skills with Front-end frameworks and libraries such as <strong>Next.js, Angular.js, React.js, Vue.js</strong>, and also Back-end development with <strong>Spring Boot, Express.js and Node.js</strong>. 
-                            <b className="tech-stack-animation"> My goal is to be a full-time Software Engineer</b>. </p>
+                        <p className="aboutme-description">I am currently in Fort Worth, Texas. I am a technology enthusiastic.
+                            I am actively looking for a full-time position in United States.
+                            I have a strong background with many experiences in Fullstack development utilizing technologies: <b className="tech-stack-animation"> Spring Boot, Kafka, Hibernate ORM, MERN & MEAN & MEVN Stacks, GraphQL, Apollo Client, Bootstrap 5, Material UI</b>. 
+                            Now I keep sharpening my skills with Fullstack development, and broaden my horizon about distributed system. 
+                            <strong className="tech-stack-animation"><i> My goal is to conquer Software Engineer career and keep exploring more about technologies. </i></strong></p>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">

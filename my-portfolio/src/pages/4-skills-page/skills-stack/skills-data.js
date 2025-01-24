@@ -1,27 +1,27 @@
 const skillsData = [
     {
         name: "Programming Languages",
-        skills: ["java", "js", "ts", "py", "scala", "c"]
+        skills: ["java", "js", "ts", "py", "scala", "html", "css", "c"]
     }, 
     {
         name: "Front-end",
-        skills: ["html", "css", "react", "nextjs", "redux", "angular", "reactivex", "vue", "vite", "apollo", "bootstrap", "materialui", "tailwind", "figma"]
+        skills: ["react", "nextjs", "redux", "angular", "reactivex", "vue", "vite", "apollo", "bootstrap", "materialui", "tailwind", "figma"]
     }, 
     { // "kafka", "rabbitmq",
         name: "Back-end",
-        skills: ["spring", "kafka", "hibernate", "express",  "nodejs", "postgres", "mongodb", "mysql", "graphql", "postman", "firebase", "linux", "aws", "npm"]
+        skills: ["spring", "kafka", "hibernate", "express",  "nodejs", "graphql", "postman", "firebase", "linux", "npm"]
     }, 
     {
-        name: "DevOps",
-        skills: ["git", "github", "aws", "docker", "kubernetes", "jenkins"]
+        name: "DevOps & hosting",
+        skills: ["git", "github", "aws", "docker", "kubernetes", "jenkins", "heroku", "gcp", "vercel"]
     }, 
     {
-        name: "Web hosting",
-        skills: ["heroku", "gcp", "aws", "vercel"]
+        name: "Database design and management",
+        skills: ["postgres", "mongodb", "mysql"]
     },
     {
-        name: "Programming Tools",
-        skills: ["idea", "vscode", "pycharm", "phpstorm", "webstorm", "anaconda", "eclipse", "visualstudio"]
+        name: "Programming IDEs",
+        skills: ["idea", "vscode", "pycharm", "phpstorm", "webstorm", "anaconda", "visualstudio"]
     }
 ]
 

@@ -19,7 +19,7 @@ const workdata = [
     {
         imageLink: "/works/codepath.jpg",
         alt: "CodePath",
-        role: "Student Fullstacks Developer",
+        role: "Student FullStack Developer",
         company: "CodePath",
         time: "Sept 2024-Nov 2024",
         location: "Fort Worth, Texas (Remote)",

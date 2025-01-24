@@ -55,7 +55,7 @@ const workdata = [
     {
         imageLink: "/works/ThankUPet.jpeg",
         alt: "ThankUPet",
-        role: "Full-stack Developer Internship",
+        role: "FullStack Developer Internship",
         company: "ThankUPet",
         time: "May 2024-August 2024",
         location: "Fort Worth, Texas (Remote)",

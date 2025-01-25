@@ -42,7 +42,7 @@ const WorksPage = () => {
                         <div className="work-experience-timeline">
                             <ul className="timeline">
                                 {workdata.map((work, index) => (
-                                    <li>
+                                    <li key={index}>
                                         <div className="w-e-time"><h4>{work.time}</h4></div>
                                         <div className="w-e-job" onClick={() => openBox(index)}><WorkExperience works={work} index={index} /></div>
                                     </li>

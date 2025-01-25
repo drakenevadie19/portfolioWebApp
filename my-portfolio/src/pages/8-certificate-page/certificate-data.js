@@ -11,14 +11,14 @@ const certificates = [
         imageLink: "/certificates-avatar/codepath.png",
         name: "Advanced Web Development",
         source: "CodePath",
-        links: null
+        links: "/certificates/WEB103.pdf"
     },
     {
         type: "codepathW",
         imageLink: "/certificates-avatar/codepath.png",
         name: "Advanced Technical Interview Prep",
         source: "CodePath",
-        links: null
+        links: "/certificates/TIP103.pdf"
     },
     {
         type: "forage",

@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ProjectRender from "./project-render";
-import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Slide, Checkbox, FormControlLabel } from '@mui/material';
 import "./project-page.css";
-import technologies from "./project-technologies";
+// import technologies from "./project-technologies";
 
 const ProjectPage = ({ projects }) => {
-  const [usingFilter, setUsingFilter] = useState(false);
-  const [currentIndexOfProjectDisplaying, setCurrentIndexOfProjectDisplaying] =
-    useState(0);
+  // const [usingFilter, setUsingFilter] = useState(false);
+  const [currentIndexOfProjectDisplaying, setCurrentIndexOfProjectDisplaying] = useState(0);
 
   // Number of to-render projects
   const [numberOfToRenderProjects, setNumberOfToRenderProjects] = useState(projects.length);
@@ -19,90 +17,23 @@ const ProjectPage = ({ projects }) => {
   // Since method is to click to render project => this hold to render project
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
-  // List of all techs exists => These are critique use to filter corresponding projects
-  // const [techInProject, setTechInProject] = useState([]);
-
-  // List of picked technologies by users
-  const [pickedTechnologies, setPickedTechnologies] = useState([]);
-
-  // Corresponding projects
-  const [filteredProjects, setFilteredProjects] = useState([]);
-
-  // Array to hold states of each button
-  // const [buttonStates, setButtonStates] = useState(new Array(100).fill(false));
-
-  // Open the filtering technologies or not?
-  const [open, setOpen] = useState(false);
-
   const changeProjectToRender = (newProject, index) => {
     setCurrentProject(newProject);
     // console.log(newProject);
     setCurrentIndexOfProjectDisplaying(index);
   };
 
+  // let pickedTech = new Map();
+
   // useEffect(() => {
-  //   // Filtering list of technologies from projects
-  //   //  Only filering when the project is loaded
-  //   const allTechs = new Set(); // Use Set for efficient tech collection
-
-  //   projects.forEach((project) => {
-  //     project.techStack.forEach((tech) => {
-  //       allTechs.add(tech); // Add unique techs to the Set
-  //     });
-  //   });
-
-  //   setTechInProject(Array.from(allTechs)); // Convert Set to an array for rendering
-  // }, [projects]); // Re-run on project changes
-
-  // use index as parameter to manage the status of corresponding techStack in techInProject
-  const chooseTech = (event, index) => {
-    setUsingFilter(true);
-    const clickedTech = event.target.textContent;
-    // console.log(clickedTech + `${typeof(choseTech)}`);
-    if (!pickedTechnologies.includes(clickedTech)) {
-      pickedTechnologies.push(clickedTech);
-    } else {
-      pickedTechnologies.pop(clickedTech);
-      if (pickedTechnologies.length === 0) {
-        setUsingFilter(false);
-      }
-    }
-    console.log(pickedTechnologies);
-  };
-
-  const searchNow = () => {
-    setOpen(true);
-    console.log(pickedTechnologies);
-    pickedTechnologies.map((pickedtech) =>
-      projects.map((project) => {
-        if (
-          project.techStack.includes(pickedtech) &&
-          !filteredProjects.includes(project)
-        )
-          filteredProjects.push(project);
-        return 0;
-      })
-    );
-    setToRenderProjects(filteredProjects);
-    setNumberOfToRenderProjects(filteredProjects.length);
-  };
-
-  const resetFilter = () => {
-    setUsingFilter(false);
-    setToRenderProjects(projects);
-    setPickedTechnologies([]);
-    setCurrentProject(projects[0]);
-    setFilteredProjects([]);
-    setNumberOfToRenderProjects(projects.length);
-
-    // Restore the background color of the technologies button if it was chosen
-    // buttonStates.map((element, index) => {
-    //   if (buttonStates[index]) buttonStates[index] = false;
-    //   return 0;
-    // });
-
-    // console.log(techInProject);
-  };
+  //   for (let i=0;i<technologies.length;i++) {
+  //     for (let j=0;j<technologies[i].technologiesList.length;j++) {
+  //       if (!pickedTech.has(technologies[i].technologiesList[j])) {
+  //         pickedTech.set(technologies[i].technologiesList[j], false);
+  //       }
+  //     }
+  //   }
+  // }, [])
 
   // Open project list box in the size of phone
   // Open Box of projects
@@ -127,19 +58,6 @@ const ProjectPage = ({ projects }) => {
     setToOpenBox(true);
   };
 
-  const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="up" ref={ref} {...props} />;
-  });
-
-  const handleOpen = () => {
-    setUsingFilter(true);
-    setOpen(true);
-  }
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <>
       <div className="page-body-projects" id="project-block">
@@ -155,7 +73,7 @@ const ProjectPage = ({ projects }) => {
               My projects ({numberOfToRenderProjects})
             </h3>
 
-            <div className="filter-button">
+            {/* <div className="filter-button">
               {usingFilter === false ? (
                 <button
                   type="button"
@@ -193,7 +111,7 @@ const ProjectPage = ({ projects }) => {
                   Reset filter
                 </button>
               )}
-            </div>
+            </div> */}
 
             <div className="project-list-tab-list-of-projects-onSmallDevice">
               <button
@@ -270,42 +188,6 @@ const ProjectPage = ({ projects }) => {
           <ProjectRender project={currentProject} />
         </div>
       </div>
-
-
-      {/* <Dialog
-        open={open}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
-        <DialogTitle>{"Choose a technology to filter"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText>Select technologies to filter the projects:</DialogContentText>
-          <div>
-            {technologies.map((tech, index) => (
-              <FormControlLabel
-                key={index}
-                control={
-                  <Checkbox
-                    checked={pickedTechnologies.includes(tech)}
-                    onChange={() => chooseTech(tech, index)}
-                  />
-                }
-                label={tech}
-              />
-            ))}
-          </div>
-          <div style={{ marginTop: "20px", display: "flex", justifyContent: "space-between" }}>
-            <Button onClick={searchNow} variant="contained" color="primary">
-              Apply Filters
-            </Button>
-            <Button onClick={handleClose} variant="outlined">
-              Cancel
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog> */}
     </>
   );
 };

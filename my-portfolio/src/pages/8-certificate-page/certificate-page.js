@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Dialog, DialogContent, Button, Grid, Card, CardActionArea, CardMedia } from "@mui/material";
+import { Dialog, DialogContent, Button, CardContent, Typography, Grid, Card, CardActionArea, CardMedia } from "@mui/material";
+import AspectRatio from '@mui/joy/AspectRatio';
 import certificates from "./certificate-data";
+import { maxHeight } from "@mui/system";
 
 const CertificatePage = () => {
   const [open, setOpen] = useState(false);
@@ -27,25 +29,26 @@ const CertificatePage = () => {
         <Grid container spacing={2}>
           {certificates.map((cert) => (
             <Grid item xs={12} sm={6} md={4} key={cert.id}>
-              <Card>
+              <Card sx={{ borderRadius: '12px', padding: "10px" }}>
                 <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="200"
-                    image={cert.image}
-                    alt={cert.title}
-                  />
-                  <div style={{ position: "relative" }}>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      style={{ position: "absolute", bottom: "10px", right: "10px" }}
-                      onClick={() => handleOpen(cert.file)}
-                    >
-                      Review
-                    </Button>
-                  </div>
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image={cert.imageLink}
+                      alt="Company Images"
+                    />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {cert.source}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                      {cert.name}
+                    </Typography>
+                  </CardContent>
                 </CardActionArea>
+                <Button variant="outlined" onClick={handleOpen}>
+                  View Certificate
+                </Button>
               </Card>
             </Grid>
           ))}
@@ -55,7 +58,7 @@ const CertificatePage = () => {
           <DialogContent>
             {selectedFile.endsWith(".pdf") ? (
               <iframe
-                src={selectedFile}
+                src="../../resource/"
                 width="100%"
                 height="600px"
                 title="Certificate Preview"

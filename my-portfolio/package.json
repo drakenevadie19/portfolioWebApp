@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
-    "@mui/material": "^6.1.9",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/joy": "^5.0.0-beta.51",
+    "@mui/material": "^6.4.1",
+    "@mui/styled-engine-sc": "^6.4.0",
+    "@mui/system": "^6.4.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.14",
     "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"
   },

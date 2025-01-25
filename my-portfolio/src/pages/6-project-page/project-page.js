@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectRender from "./project-render";
-
+import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Slide } from '@mui/material/Button';
 import "./project-page.css";
 
 const ProjectPage = ({ projects }) => {
@@ -9,9 +9,7 @@ const ProjectPage = ({ projects }) => {
     useState(0);
 
   // Number of to-render projects
-  const [numberOfToRenderProjects, setNumberOfToRenderProjects] = useState(
-    projects.length
-  );
+  const [numberOfToRenderProjects, setNumberOfToRenderProjects] = useState(projects.length);
 
   // Hold all project displaying in the project list tab
   const [toRenderProjects, setToRenderProjects] = useState(projects);
@@ -31,6 +29,9 @@ const ProjectPage = ({ projects }) => {
 
   // Array to hold states of each button
   const [buttonStates, setButtonStates] = useState(new Array(100).fill(false));
+
+  // Open the filtering technologies or not?
+  const [open, setOpen] = useState(false);
 
   const changeProjectToRender = (newProject, index) => {
     setCurrentProject(newProject);
@@ -53,35 +54,52 @@ const ProjectPage = ({ projects }) => {
   }, [projects]); // Re-run on project changes
 
   // use index as parameter to manage the status of corresponding techStack in techInProject
-  const chooseTech = (event, index) => {
-    setUsingFilter(true);
-    const clickedTech = event.target.textContent;
-    // console.log(clickedTech + `${typeof(choseTech)}`);
-    if (!pickedTechnologies.includes(clickedTech)) {
-      // This is to change the status of the current button (clicked or not)
-      // Create a copy of the button states array
-      const newButtonStates = [...buttonStates];
-      // Toggle the state of the clicked button
-      newButtonStates[index] = !newButtonStates[index];
-      // Update the state with the new array
-      setButtonStates(newButtonStates);
+  // const chooseTech = (event, index) => {
+  //   setUsingFilter(true);
+  //   const clickedTech = event.target.textContent;
+  //   // console.log(clickedTech + `${typeof(choseTech)}`);
+  //   if (!pickedTechnologies.includes(clickedTech)) {
+  //     // This is to change the status of the current button (clicked or not)
+  //     // Create a copy of the button states array
+  //     const newButtonStates = [...buttonStates];
+  //     // Toggle the state of the clicked button
+  //     newButtonStates[index] = !newButtonStates[index];
+  //     // Update the state with the new array
+  //     setButtonStates(newButtonStates);
 
-      pickedTechnologies.push(clickedTech);
-    } else {
-      // This is to change the status of the current button (clicked or not)
-      // Create a copy of the button states array
-      const newButtonStates = [...buttonStates];
-      // Toggle the state of the clicked button
-      newButtonStates[index] = !newButtonStates[index];
-      // Update the state with the new array
-      setButtonStates(newButtonStates);
+  //     pickedTechnologies.push(clickedTech);
+  //   } else {
+  //     // This is to change the status of the current button (clicked or not)
+  //     // Create a copy of the button states array
+  //     const newButtonStates = [...buttonStates];
+  //     // Toggle the state of the clicked button
+  //     newButtonStates[index] = !newButtonStates[index];
+  //     // Update the state with the new array
+  //     setButtonStates(newButtonStates);
 
-      pickedTechnologies.pop(clickedTech);
-      if (pickedTechnologies.length === 0) {
-        setUsingFilter(false);
-      }
-    }
+  //     pickedTechnologies.pop(clickedTech);
+  //     if (pickedTechnologies.length === 0) {
+  //       setUsingFilter(false);
+  //     }
+  //   }
+  //   console.log(pickedTechnologies);
+  // };
+
+  const searchNow = () => {
+    setOpen(true);
     console.log(pickedTechnologies);
+    pickedTechnologies.map((pickedtech) =>
+      projects.map((project) => {
+        if (
+          project.techStack.includes(pickedtech) &&
+          !filteredProjects.includes(project)
+        )
+          filteredProjects.push(project);
+        return 0;
+      })
+    );
+    setToRenderProjects(filteredProjects);
+    setNumberOfToRenderProjects(filteredProjects.length);
   };
 
   const resetFilter = () => {
@@ -101,21 +119,7 @@ const ProjectPage = ({ projects }) => {
     console.log(techInProject);
   };
 
-  const searchNow = () => {
-    console.log(pickedTechnologies);
-    pickedTechnologies.map((pickedtech) =>
-      projects.map((project) => {
-        if (
-          project.techStack.includes(pickedtech) &&
-          !filteredProjects.includes(project)
-        )
-          filteredProjects.push(project);
-        return 0;
-      })
-    );
-    setToRenderProjects(filteredProjects);
-    setNumberOfToRenderProjects(filteredProjects.length);
-  };
+  // Open project list box in the size of phone
   // Open Box of projects
   const [toOpenBox, setToOpenBox] = useState(false);
   const [scrollY, setScrollY] = useState(0); // Store current scroll position
@@ -138,6 +142,14 @@ const ProjectPage = ({ projects }) => {
     setToOpenBox(true);
   };
 
+  const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  });
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <div className="page-body-projects" id="project-block">
@@ -148,37 +160,17 @@ const ProjectPage = ({ projects }) => {
           <p>To understand more about how I brainstorm projects, please view in my blog <span><a href="https://drakedo-projects-explaining.blogspot.com/" target="_blank" rel="noreferrer">here</a></span></p>
         </div>
         <div className="project-wrap">
-          {/* Rendering list of technologies to filter */}
-          {/* <div className="filter">
-            {techInProject.map((techIn, index) => {
-              return (
-                <p
-                  key={index}
-                  className={`${buttonStates[index]} ? "tech-stack-element tech-stack-element-clicked" : "tech-stack-element tech-stack-element-not-clicked "`}
-                  onClick={(event) => chooseTech(event, index)}
-                >
-                  {techIn}
-                </p>
-              );
-            })}
-            <button
-              type="button"
-              className="btn btn-danger"
-              onClick={searchNow}
-            >
-              Search
-            </button>
-          </div> */}
-
           <div className="project-list-tab">
             <h3 className="project-list-tab-header">
               My projects ({numberOfToRenderProjects})
             </h3>
+
             <div className="filter-button">
               {usingFilter === false ? (
                 <button
                   type="button"
                   className="btn btn-outline-primary tech-stack-element-filter-button"
+                  onClick={searchNow}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +185,6 @@ const ProjectPage = ({ projects }) => {
                   Filter projects
                 </button>
               ) : (
-                // <a className='tech-stack-element' onClick={resetFilter}>
                 <button
                   type="button"
                   className="btn btn-outline-danger tech-stack-element-filter-button"
@@ -213,7 +204,7 @@ const ProjectPage = ({ projects }) => {
                 </button>
               )}
             </div>
-            
+
             <div className="project-list-tab-list-of-projects-onSmallDevice">
               <button
                 type="button"
@@ -289,6 +280,42 @@ const ProjectPage = ({ projects }) => {
           <ProjectRender project={currentProject} />
         </div>
       </div>
+
+
+      <Dialog
+              open={open}
+              TransitionComponent={Transition}
+              keepMounted
+              onClose={handleClose}
+              aria-describedby="alert-dialog-slide-description"
+            >
+              <DialogTitle>{"Choose a technology to filter"}</DialogTitle>
+              <DialogContent>
+                <DialogContentText>Select technologies to filter the projects:</DialogContentText>
+                <div>
+                  {techInProject.map((tech, index) => (
+                    <FormControlLabel
+                      key={index}
+                      control={
+                        <Checkbox
+                          checked={pickedTechnologies.includes(tech)}
+                          onChange={() => toggleTech(tech)}
+                        />
+                      }
+                      label={tech}
+                    />
+                  ))}
+                </div>
+                <div style={{ marginTop: "20px", display: "flex", justifyContent: "space-between" }}>
+                  <Button onClick={handleFilterProjects} variant="contained" color="primary">
+                    Apply Filters
+                  </Button>
+                  <Button onClick={handleClose} variant="outlined">
+                    Cancel
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
     </>
   );
 };

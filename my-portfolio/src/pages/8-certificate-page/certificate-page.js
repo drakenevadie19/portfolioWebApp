@@ -40,10 +40,10 @@ const CertificatePage = () => {
                       alt="Company Images"
                     />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: "bold" }}>
                       {cert.source}
                     </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    <Typography variant="body2" sx={{ color: "text.secondary", fontWeight: "500" }}>
                       {cert.name}
                     </Typography>
                   </CardContent>

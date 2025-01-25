@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectRender from "./project-render";
-import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Slide, Checkbox, FormControlLabel } from '@mui/material/Button';
+import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Slide, Checkbox, FormControlLabel } from '@mui/material';
 import "./project-page.css";
 import technologies from "./project-technologies";
 
@@ -272,7 +272,7 @@ const ProjectPage = ({ projects }) => {
       </div>
 
 
-      <Dialog
+      {/* <Dialog
         open={open}
         TransitionComponent={Transition}
         keepMounted
@@ -305,7 +305,7 @@ const ProjectPage = ({ projects }) => {
             </Button>
           </div>
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </>
   );
 };

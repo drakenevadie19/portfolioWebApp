@@ -1,5 +1,4 @@
 //Navbar
-// import { Link, useNavigate } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "./nav-bar.css";
@@ -54,7 +53,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/education" className="nav-bar-text">Education</Link> */}
             <a
               href="#edu-block"
               onClick={() => handleLinkClick("edu-block")}
@@ -64,7 +62,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/works" className="nav-bar-text">Works</Link> */}
             <a
               href="#work-block"
               onClick={() => handleLinkClick("work-block")}
@@ -74,7 +71,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/projects" className="nav-bar-text">Projects</Link> */}
             <a
               href="#project-block"
               onClick={() => handleLinkClick("projet-block")}
@@ -84,7 +80,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/skills" className="nav-bar-text">Skills</Link> */}
             <a
               href="#skill-block"
               onClick={() => handleLinkClick("skill-block")}
@@ -94,7 +89,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/certificate" className="nav-bar-text">Certificates</Link> */}
             <a
               href="#certificates-block"
               onClick={() => handleLinkClick("certificates-block")}
@@ -104,7 +98,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            {/* <Link to="/main/contact" className="nav-bar-text">Contact Me</Link> */}
             <a
               href="#contact-block"
               onClick={() => handleLinkClick("contact-block")}
@@ -135,7 +128,6 @@ const Navbar = () => {
         {isMenuOpen &&
           <div className="nav-bar-menu-opened">
             <ul className="nav-bar-menu-sidetab">
-            {/* <ul> */}
               <li>
                 <a
                   href="#about-block"
@@ -203,7 +195,7 @@ const Navbar = () => {
         }
 
         <div className={`${isMenuOpen ? "" : "unique"}`}>
-           <FormGroup>
+          <FormGroup>
             <FormControlLabel
               control={
               <ThemeSwitch 
@@ -214,7 +206,7 @@ const Navbar = () => {
               />}
               label={theme === "light-theme" ? "Light mode" : "Dark mode"}
             />
-        </FormGroup>
+          </FormGroup>
         </div>
       </nav>
     </>

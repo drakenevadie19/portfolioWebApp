@@ -114,7 +114,7 @@
 .project-list-tab {
   width: 32%;
 
-  padding: 5%;
+  padding: 3% 3.5%;
   display: flex;
   flex-direction: column;
   gap: 10px;

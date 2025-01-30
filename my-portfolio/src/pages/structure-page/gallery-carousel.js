@@ -8,7 +8,7 @@ const GalleryCarousel = ({ imagesDB }) =>  (
                 {(imagesDB && imagesDB.length !== 0) &&
                     imagesDB.map((image, index) => (
                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                            <img src={image.src} className="d-block w-100" alt={image.alt} id="presentative-image" />
+                            <img src={image.src} className="d-block w-100" alt="Texas Software Engineer in Austin, Dallas, and Houston" id="presentative-image" />
                         </div>
                     ))
                 }

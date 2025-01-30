@@ -15,13 +15,13 @@
 /*----------------------------------------------------------------------------------------*/
 /* Contact Page */
 .contact-page {
-    width: 100%;
-    height: 100%;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
 .contact-form-frame {
   display: flex;
@@ -36,7 +36,7 @@
     justify-content: center;
 }
   
-.contact-info-detail {
+/* .contact-info-detail {
     border: 2px var(--text-color) solid;
     padding: 10px;
     border-radius: 20px;
@@ -54,11 +54,7 @@
   
 .contact-info-detail span {
     color: var(--text-color-highlight);
-}
-
-.contact-via-cloud-mail {
-  cursor: pointer;
-}
+} */
   
 .contact-label {
     color: var(--text-color);
@@ -70,87 +66,116 @@
     color: var(--button-text-color);
 }
   
-  .placeholder-Image {
-    width: 100%;
-  
+.placeholder-Image {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.form-manage-title {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.inbox-form {
+  margin: 15px 0;
+}
+
+.form-manage {
+  border: 2px var(--text-color) solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.start-cv-btn-contact {
+  margin-top: 1.5rem;
+  padding: 0.7em 2.5em;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+
+  background-color: var(--background-color);
+  color: var(--text-color-highlight);
+  border: 2px var(--text-color-highlight) solid;
+  cursor: pointer;
+}
+
+.start-cv-btn-contact:hover {
+  /* background-color: #72FFFF; */
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
+  box-shadow: 0 0 10px #72FFFF;
+  border: 2px var(--button-text-color-hover) solid;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+  transform: scale(1.25); 
+}
+
+.links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: inline-flex;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: red; */
+  color: var(--text-color);
+
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 8.5px;
+}
+
+.copyright-drake {
+  gap: 10px;
+  color: var(--text-color);
+  width: 100%;
+  height: fit-content;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.copyright-drake h5 {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .page-body-contact {
+    width: 100vw;
+    height: max-content;
+  }
+
+  .contact-info {
     display: flex;
-    justify-content: center;
-    margin-bottom: 32px;
-  }
-  
-  .form-manage {
-    border: 2px var(--text-color) solid;
-    border-radius: 20px;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
-  .start-cv-btn-contact {
-    margin-top: 1.5rem;
-    padding: 0.7em 2.5em;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 0;
-  
-    background-color: var(--background-color);
-    color: var(--text-color-highlight);
-    border: 2px var(--text-color-highlight) solid;
-    cursor: pointer;
-  }
-  
-  .start-cv-btn-contact:hover {
-    /* background-color: #72FFFF; */
-    background-color: var(--button-color-hover);
-    color: var(--button-text-color-hover);
-    box-shadow: 0 0 10px #72FFFF;
-    border: 2px var(--button-text-color-hover) solid;
-    transition: all .3s ease-in-out;
-    font-weight: bold;
-    transform: scale(1.25); 
-  }
-
-  .contact-links {
-    color: var(--text-color);
-  }
+  .contact-info p {
+    width: auto;
+  }  
 
   .copyright-drake {
-    gap: 10px;
-    color: var(--text-color);
-    width: 100%;
-    height: fit-content;  
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
   }
-
   .copyright-drake h5 {
-    margin: 0;
+    font-size: 1em;
   }
-  
-  @media screen and (max-width: 768px) {
-    .page-body-contact {
-      width: 100vw;
-      height: max-content;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
-  
-    .contact-info p {
-      width: auto;
-    }  
-
-    .copyright-drake {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-    }
-    .copyright-drake h5 {
-      font-size: 1em;
-    }
-  }
+}

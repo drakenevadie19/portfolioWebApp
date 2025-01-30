@@ -64,7 +64,13 @@ const ContactMe = () => {
           </div>
 
           <div className="contact-form-frame">
-            <div className="contact-info">
+          <section>
+            <h2>Looking for Entry-Level Software Engineer Roles in Texas</h2>
+            <p>As a incoming new grad and aspiring software engineer, I am actively seeking entry-level opportunities in Austin, Dallas, and Houston. I have hands-on experience with full-stack development, especially in MERN stacks, MEAN stacks, SpringBoot, CI/CD, deployments through my projects and internships. I am eager to bring my skills to a forward-thinking company and contribute to impactful projects. If you're hiring, let's connect!</p>
+          </section>
+
+
+            {/* <div className="contact-info">
               <a href="mailto:thanhnguyen14.gers@gmail.com?subject=Message%20to%20Thanh%20Nguyen" className="contact-info-detail contact-via-cloud-mail">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-envelope-arrow-up" viewBox="0 0 16 16">
@@ -74,10 +80,11 @@ const ContactMe = () => {
                 </span>
                 <b>thanhnguyen14.gers@gmail.com</b>
               </a>
-            </div>
+            </div> */}
 
             <div className="form-manage">
-              <form ref={form} onSubmit={handleSubmit}>
+              <h2 className="form-manage-title"><strong>Send me a message!</strong></h2>
+              <form className="inbox-form" ref={form} onSubmit={handleSubmit}>
                 <div className="row p-4 name-email-box">
                   {/* value={formData.name}  */}
                   <div className="w-50 name">
@@ -97,12 +104,14 @@ const ContactMe = () => {
 
                 <button type="submit" className="start-cv-btn-contact">Send</button>
               </form>
+              <h5><i>If this feature not working, please email me directly to thanhnguyen14.gers@gmail.com</i></h5>
               {/* {submitError && <div className="error-message">{submitError}</div>} */}
             </div>
 
-            <Footer />
-
-            <CopyRight />
+            <div>
+              <Footer />
+              <CopyRight />
+            </div>
           </div>
           
         </div>

@@ -1,7 +1,7 @@
 const skillsData = [
     {
         name: "Programming Languages",
-        skills: ["java", "js", "ts", "py", "scala", "html", "css", "c"]
+        skills: ["java", "js", "ts", "html", "css", "py", "scala", "c"]
     }, 
     {
         name: "Front-end",

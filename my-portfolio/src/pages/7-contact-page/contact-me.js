@@ -65,7 +65,7 @@ const ContactMe = () => {
 
           <div className="contact-form-frame">
           <section>
-            <h2>Looking for Entry-Level Software Engineer Roles in Texas</h2>
+            <h2>Looking for New Grad/Entry-Level Software Engineer Roles in Texas</h2>
             <p>As a incoming new grad and aspiring software engineer, I am actively seeking entry-level opportunities in Austin, Dallas, and Houston. I have hands-on experience with full-stack development, especially in MERN stacks, MEAN stacks, SpringBoot, CI/CD, deployments through my projects and internships. I am eager to bring my skills to a forward-thinking company and contribute to impactful projects. If you're hiring, let's connect!</p>
           </section>
 

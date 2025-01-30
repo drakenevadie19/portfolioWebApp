@@ -138,6 +138,10 @@
   padding: 8.5px;
 }
 
+.footer-links:hover {
+  background-color: var(--button-color);
+}
+
 .copyright-drake {
   gap: 10px;
   color: var(--text-color);

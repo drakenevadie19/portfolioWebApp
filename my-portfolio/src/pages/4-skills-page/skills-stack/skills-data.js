@@ -13,7 +13,7 @@ const skillsData = [
     }, 
     {
         name: "DevOps & hosting",
-        skills: ["git", "github", "aws", "docker", "kubernetes", "jenkins", "heroku", "gcp", "vercel"]
+        skills: ["git", "github", "githubactions", "aws", "docker", "kubernetes", "jenkins", "heroku", "gcp", "vercel"]
     }, 
     {
         name: "Database design and management",

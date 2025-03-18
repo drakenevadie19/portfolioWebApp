@@ -25,7 +25,8 @@ const AboutPage = () => {
                             I am actively looking for a full-time position in United States.
                             I have a strong background with many experiences in Fullstack development utilizing technologies: <b className="tech-stack-animation"> Spring Boot, Kafka, Hibernate ORM, MERN & MEAN & MEVN Stacks, GraphQL, Apollo Client, Bootstrap 5, Material UI</b>. 
                             Now I keep sharpening my skills with Fullstack development, and broaden my horizon about distributed system. 
-                            <strong className="tech-stack-animation"><i> My goal is to conquer Software Engineer career and keep exploring more about technologies. </i></strong></p>
+                        </p>
+                        <p className="aboutme-description"><b className="tech-stack-animation"><i> My goal is to conquer Software Engineer career and keep exploring more about technologies. </i></b></p>
 
                         <div className="otherLink">
                             <a href="https://www.facebook.com/profile.php?id=100071543132965" target="_blank" rel="noreferrer">

@@ -64,10 +64,10 @@ const projectData = [
         participants: "Drake Do",
     },
     {
-        name: "Movie channels",
-        link: "https://github.com/drakenevadie19/movie-channel.git",
+        name: "CineMatch",
+        link: "https://github.com/drakenevadie19/CineMatch.git",
         src: "/project-bio-image/movie-review.png",
-        description: "An interface to display movie lists, comprising poster, reviews and comments for each movie.",
+        description: "CineMatch is a smart movie discovery app that recommends films based on your watch history and preferences. It offers a personalized experience, making it easy to explore and find movies tailored to your taste. Whether you're looking for a blockbuster hit or a hidden gem, CineMatch ensures you always have the perfect movie to watch.",
         workTime: "2/2024 - 3/2024",
         techStack: ["React.js", "Redux", "Node.js", "Express.js", "GraphQL", "Apollo client", "MongoDB", "Mongoose", "MongoDB Atlas"],
         liveDemo: ['no'],

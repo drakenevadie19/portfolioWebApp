@@ -110,7 +110,7 @@ nav li {
   }
   
   .nav-bar-menu-sidetab {
-    background-color: black;
+    background-color: var(--background-color);
     overflow-y: auto; /* Enable vertical scrolling */
     width: 80%;
     height: 100%;
@@ -126,7 +126,8 @@ nav li {
 
   .nav-bar-text-on-sidetab {
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
     padding: 0;
   }

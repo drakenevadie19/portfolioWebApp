@@ -96,22 +96,34 @@
 .w-e-time {
   position: relative;
   padding: 0 1.5em;
-  width: 25%;
+  width: 30%;
   text-align: right;
   font-weight: 500;
   color: var(--text-color);
-  border-right: 1px var(--text-color) solid;
-}
-.w-e-job {
-    width: 75%;
-    padding: 0.25em 1.5em 1.5em 1.5em;
-    position: relative;
-    cursor: pointer;
+
+  /* border-right: 2px var(--text-color) solid; */
+
+  /* background-color: red; */
 }
 
-.timeline .w-e-job:hover {
-  border: 1px var(--text-color) solid;
-  border-radius: 10px;
+.w-e-job {
+  width: 70%;
+  padding: 0.25em 1.5em 1.5em 1.5em;
+  position: relative;
+  cursor: pointer;
+
+  border-left: 2.5px var(--text-color) solid;
+  z-index: 1;
+  /* background-color: blue; */
+}
+
+.w-e-job:hover {
+  /* border: 1px var(--text-color) solid;
+  border-radius: 10px; */
+  /* background-color: gray; */
+  /* filter: grayscale(80%); */
+
+  border-left: 2.5px red solid;
 }
 
 .w-e-time::after {
@@ -119,12 +131,17 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateX(50%);
+  translate: 57% -5%;
+  /* transform: translateX(57%); */
+  /* transform: translateY(-10%); */
   border-radius: 50%;
   background: var(--text-color);
   border: 1px #ccc solid;
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.85em;
+  aspect-ratio: 1/1;
+  /* height: 0.8em; */
+
+  z-index: 2;
 }
 
 .timeline li:last-child > .w-e-time ::after {
@@ -132,24 +149,29 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateX(50%);
+  translate: 57% 5%;
+  /* transform: translateX(57%); */
+  /* transform: translateY(-10%); */
   border-radius: 50%;
   background: var(--text-color);
   border: 1px #ccc solid;
   width: 0.55em;
-  height: 0.55em;
+  aspect-ratio: 1/1;
+  /* height: 0.8em; */
+
+  z-index: 2;
 }
 
 
 .left h3 {
-    color: var(--text-color);
-    font-weight: 500;
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 .left h5 {
-    color: var(--text-color-highlight);
-    font-weight: 600;
-    font-style: italic;
+  color: var(--text-color-highlight);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .timeline .w-e-job::before {
@@ -192,12 +214,12 @@
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 .not-we-to-display-work {
@@ -217,7 +239,8 @@
     background-color: black;
     overflow-y: auto; /* Enable vertical scrolling */
     width: 80%;
-    height: 80%;
+    height: 80vh;
+
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -232,17 +255,20 @@
 .work-detail-main-page {
   position: relative;
   width: 100%;
-  /* height: 100%; */
+
+  height: max-content;
+  min-height: 100%;
+  
+  background-color: var(--background-color);
 }
 
 .w-d-job-details {
   width: 100%;
-  height: 100%;
+  height: 100;
   padding: 3% 7%;
 
-  max-height: max-content;
+  /* max-height: 80vh; */
 
-  background-color: var(--background-color);
 }
 
 .w-d-job-details-heading {
@@ -350,7 +376,7 @@
 
   /*----------------------------------------------*/
   .w-d-job-details {
-    padding: 2%;
+    padding: 3%;
   }
 
   .w-d-job-details-description {
@@ -359,7 +385,7 @@
 
   .work-box {
     width: 90%;
-    height: 88%;
+    height: 83%;
   }
 
   .w-d-job-details-heading {

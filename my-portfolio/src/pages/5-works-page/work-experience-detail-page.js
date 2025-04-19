@@ -28,6 +28,7 @@ const WorkExperienceDetailPage = ({ id }) => {
               </h3>
             </div>
           </div>
+          
           <div className="w-d-job-details-description">
             <h3>
               <i>

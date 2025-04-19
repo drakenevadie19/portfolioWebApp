@@ -127,6 +127,19 @@
   height: 0.8em;
 }
 
+.timeline li:last-child > .w-e-time ::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(50%);
+  border-radius: 50%;
+  background: var(--text-color);
+  border: 1px #ccc solid;
+  width: 0.55em;
+  height: 0.55em;
+}
+
 
 .left h3 {
     color: var(--text-color);
@@ -219,13 +232,17 @@
 .work-detail-main-page {
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .w-d-job-details {
   width: 100%;
   height: 100%;
   padding: 3% 7%;
+
+  max-height: max-content;
+
+  background-color: var(--background-color);
 }
 
 .w-d-job-details-heading {
@@ -273,11 +290,19 @@
   /* padding: 2em 0; */
 }
 
+.w-d-job-details-description-bulletpoin {
+  background-color: var(--background-color);
+}
+
 .w-d-job-details-description-bulletpoint ul,
 .w-d-job-details-description-bulletpoint h3 {
   text-align: left;
 }
 
+.w-d-job-details-description-bulletpoint ul li {
+  font-size: 18px;
+  font-weight: 500;
+}
 
 /*----------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {

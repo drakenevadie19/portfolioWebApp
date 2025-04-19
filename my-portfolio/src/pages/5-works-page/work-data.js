@@ -2,9 +2,9 @@ const workdata = [
     {
         imageLink: "/works/unthsc.png",
         alt: "UNT-HSC",
-        role: "FullStack Engineer Internship Co-op",
+        role: "FullStack Software Engineer Co-op",
         company: "UNT Health Science Center",
-        time: "August 2024-Present",
+        time: "August 2024 - May 2025",
         location: "Fort Worth, Texas",
         description: [
             "Developed a health-tracking application in a team of 6, managing 1000+ user records using React Native and SpringBoot.",

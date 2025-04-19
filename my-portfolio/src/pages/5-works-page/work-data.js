@@ -22,7 +22,7 @@ const workdata = [
         alt: "CodePath",
         role: "Student FullStack Developer",
         company: "CodePath",
-        time: "Sept 2024-Nov 2024",
+        time: "Sept 2024 - Nov 2024",
         location: "Fort Worth, Texas (Remote)",
         description: [
             "Completed the CodePath courses: WEB 103: Advanced Web Development; TIP 103: Advanced Technical Interview Prep.", 
@@ -41,7 +41,7 @@ const workdata = [
         alt: "Headstarter AI",
         role: "Software Engineering Fellowship",
         company: "Headstarter AI",
-        time: "July 2024-Aug 2024",
+        time: "July 2024 - Aug 2024",
         location: "Fort Worth, Texas (Remote)",
         description: [
             "Built and deployed five AI-powered web applications at Headstarter AI, showcasing expertise in integrating machine learning models into scalable web solutions.", 
@@ -58,7 +58,7 @@ const workdata = [
         alt: "ThankUPet",
         role: "FullStack Developer Internship",
         company: "ThankUPet",
-        time: "May 2024-August 2024",
+        time: "May 2024 - August 2024",
         location: "Fort Worth, Texas (Remote)",
         description: [
             "Engineered a scalable CRM platform for 100+ pets and owners, and used Next.js with Figma designs, resulting in a 40% increase in user engagement and streamlined pet management.", 
@@ -74,7 +74,7 @@ const workdata = [
         alt: "TCU",
         role: "Mathematics Teaching Assistant",
         company: "Department of Mathematics",
-        time: "January 2024-Present",
+        time: "January 2024 - Present",
         location: "Fort Worth, Texas",
         description: [
             "Manage and improve homework performance of about 30 students in Mathematics classes.",
@@ -90,7 +90,7 @@ const workdata = [
         alt: "TCU",
         role: "Computer Science Teacher Assistant",
         company: "Department of Computer Science",
-        time: "August 2023-Present",
+        time: "August 2023 - Present",
         location: "Fort Worth, Texas",
         description: [
             "Assist over 50 students with lab projects in Computer Science courses: Data Structures, Techniques in Programming, Python for Data Analytics, and Introduction to Programming.",
@@ -106,7 +106,7 @@ const workdata = [
         alt: "TCU",
         role: "Math Clinic Tutor",
         company: "Department of Mathematics",
-        time: "August 2023-January 2024",
+        time: "August 2023 - January 2024",
         location: "Fort Worth, Texas",
         description: [
             "Hosted weekly tutoring sessions for students, who take Mathematics classes in a semester.",
@@ -121,7 +121,7 @@ const workdata = [
         alt: "FPT Software",
         role: "Software Engineer Internship",
         company: "FPT Software",
-        time: "June 2023-August 2023",
+        time: "June 2023 - August 2023",
         location: "Hai Phong, Vietnam",
         description: [
             "Build a CRM website with Angular for over 100,000 users to manage the rental housing and apartment industry.",
@@ -139,7 +139,7 @@ const workdata = [
         alt: "TCU",
         role: "Information Common Desk Assistant",
         company: "Mary Couts Burnett Library",
-        time: "September 2022-Present",
+        time: "September 2022 - Present",
         location: "Fort Worth, Texas",
         description: [
             "Deals with the students' demands of studying devices."

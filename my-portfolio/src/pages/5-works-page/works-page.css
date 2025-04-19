@@ -96,7 +96,7 @@
 .w-e-time {
   position: relative;
   padding: 0 1.5em;
-  width: 30%;
+  width: 33%;
   text-align: right;
   font-weight: 500;
   color: var(--text-color);
@@ -107,7 +107,7 @@
 }
 
 .w-e-job {
-  width: 70%;
+  width: 67%;
   padding: 0.25em 1.5em 1.5em 1.5em;
   position: relative;
   cursor: pointer;

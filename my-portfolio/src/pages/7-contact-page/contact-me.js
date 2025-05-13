@@ -34,7 +34,7 @@ const ContactMe = () => {
     try {
       setSubmitButtonText("Loading...");
 
-      console.log("Body", emailBody);
+      // console.log("Body", emailBody);
 
       const response = await fetch("https://portfolio-contact-ujon.onrender.com/api/contact", {
         method: "POST",
@@ -45,7 +45,7 @@ const ContactMe = () => {
       });
 
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
 
       if (result.code === 200) {
         swal({
@@ -53,12 +53,16 @@ const ContactMe = () => {
             title: "Thank you so much. I receive your email!",
             timer: 2000
           });
+        
+        setConfirmText("Sent email successfully");
       } else {
-          swal({
+        swal({
             icon: "fail",
             title: "There might be some problem here! Please try again",
             timer: 2000
         });
+
+        setConfirmText(null);
       }
     } catch (e) {
       swal({
@@ -68,7 +72,6 @@ const ContactMe = () => {
       });
     } finally {
       setSubmitButtonText("Send");
-      setConfirmText("Sent email successfully");
     }
   };
 

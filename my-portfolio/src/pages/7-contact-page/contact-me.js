@@ -134,7 +134,7 @@ const ContactMe = () => {
                 
               </form>
 
-              <h6><i>If this feature not working, please email me directly to thanhnguyen14.gers@gmail.com</i></h6>
+              <h6><i>If this feature is temporarily not working, please Click on Mail icon below to email me directly.</i></h6>
               {/* {submitError && <div className="error-message">{submitError}</div>} */}
             </div>
 

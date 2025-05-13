@@ -114,6 +114,29 @@
   transform: scale(1.25); 
 }
 
+.confirm-text-box {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+  margin-top: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-text-icon {
+  color: green;
+  margin: 0;
+}
+
+.confirm-text {
+  font-size: 1rem;
+  color: green;
+  font-weight: 500;
+  margin: 0;
+}
+
 .links-list {
   display: flex;
   flex-direction: row;

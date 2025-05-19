@@ -14,7 +14,7 @@ const ProjectPage = ({ projects }) => {
 
   //  => when filter, add project having that skills to the list
   // Since method is to click to render project => this hold to render project
-  const [currentProject, setCurrentProject] = useState(projects[0]);
+  const [currentProject, setCurrentProject] = useState(toRenderProjects[0]);
 
   // let usingFilter = false;
 
@@ -202,6 +202,7 @@ const ProjectPage = ({ projects }) => {
             setUsingFilter={setUsingFilter}
             setToRenderProjects={setToRenderProjects} 
             setNumberOfToRenderProjects={setNumberOfToRenderProjects} 
+            setCurrentProject={setCurrentProject}
           />
         }
     </>

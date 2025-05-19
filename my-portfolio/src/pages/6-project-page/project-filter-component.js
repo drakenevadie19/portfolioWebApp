@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./css/project-filter.css";
 import technologies from "./data/project-technologies";
 
-const ProjectFilter = ({ projects, setUsingFilter, setToRenderProjects, setNumberOfToRenderProjects, filterTech, setFilterTech }) => {
+const ProjectFilter = ({ projects, setUsingFilter, setToRenderProjects, setNumberOfToRenderProjects, filterTech, setFilterTech, setCurrentProject }) => {
     // useEffect(() => {
     //     console.log("Openning dialog");
     // }, []);
@@ -60,6 +60,7 @@ const ProjectFilter = ({ projects, setUsingFilter, setToRenderProjects, setNumbe
         // Apply to the main view
         setToRenderProjects(filteredProjects);
         setNumberOfToRenderProjects(filteredProjects.length);
+        setCurrentProject(filteredProjects[0]);
         setUsingFilter(false); // close the filter dialog
     };
 

@@ -104,7 +104,7 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
   
     animation: fadeIn 0.3s ease-in-out;
   }

@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+// import { useState } from "react";
 import "./css/project-filter.css";
 import technologies from "./data/project-technologies";
 
@@ -9,7 +9,7 @@ const ProjectFilter = ({ projects, setUsingFilter, setToRenderProjects, setNumbe
     // }, []);
 
     // const [filterTech, setFilterTech] = useState([]);
-    const [participants, setParticipants] = useState([]);
+    // const [participants, setParticipants] = useState([]);
 
     const addTechToFilterList = (tech) => {
         const trimmedTech = tech.trim();

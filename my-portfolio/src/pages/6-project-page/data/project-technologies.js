@@ -5,11 +5,11 @@ const technologies = [
     },
     {
         type: "Front-ent Technologies",
-        technologiesList: ["Next.js", "React.js", "React Hooks", "Redux", "Angular", "Ngrx", "RxJS", "Vue.js", "Boostrap 5", "Material UI", "SweetAlert 2", "Apollo client"]
+        technologiesList: ["React Native", "Expo", "Next.js", "React.js", "React Hooks", "Redux", "Angular", "Ngrx", "RxJS", "Vue.js", "Boostrap 5", "Material UI", "SweetAlert", "Apollo client"]
     },
     {
         type: "Back-ent Technologies",
-        technologiesList: ["SpringBoot", "Spring Data", "Spring JPA", "JWT", "Spring Security", "Express.js", "Node.js", "GraphQL", "RESTful API", "Postman", "Axios", "Firebase"]
+        technologiesList: ["SpringBoot", "Spring Data", "Spring JPA", "JWT", "Spring Security", "Hibernate", "Express.js", "Node.js", "GraphQL", "RESTful API", "Postman", "Axios", "Firebase"]
     },
     {
         type: "Database Design and Management",

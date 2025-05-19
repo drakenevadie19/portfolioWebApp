@@ -1,0 +1,100 @@
+.filter-component {
+    display: block;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.filter-center-component {
+    width: 85%;
+    height: 85%;
+    background-color: azure;
+
+    padding: 2%;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.technologies-element {
+  border: 2px var(--button-text-color) solid;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
+
+  text-decoration: none;
+
+  /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
+  white-space: nowrap;
+}
+
+.technologies-element.selected {
+  background-color: magenta;
+  color: white;
+  font-weight: bold;
+}
+
+
+.filter-center-component h3 {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.filter-center-component-techs, .filter-center-component-techs-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.filter-center-component-techs-box > h4 {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.filter-center-component-techs-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-component-footer {
+    width: 100%;
+    padding-left: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2%;
+}
+
+.reset-button, .filter-button  {
+    font-weight: bold;
+}

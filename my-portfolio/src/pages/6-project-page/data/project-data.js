@@ -1,5 +1,16 @@
 const projectData = [
     {
+        name: "MotivateMe", 
+        link: null,
+        src: "/project-bio-image/Bookez.png",
+        description: "Motivate Me is a health tracking app that helps users build consistent wellness habits through personalized motivation and smart tracking. It supports physical, mental, and emotional health goals by offering intuitive progress tracking, AI-generated quotes, and intelligent unit suggestions—all designed to make self-care simple and sustainable.",
+        workTime: "09/2024 - 05/2025",
+        techStack: ["Java", "JavaScript", "React Native", "Node.js", "Expo", "Spring Boot", "Hibernate", "Railway", "PostgreSQL", "Material UI", "Postman", "SweetAlert"],
+        // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
+        liveDemo: ["yes", "https://bookez.vercel.app/"],
+        participants: "Drake Do, Mary Beth Wash, Kien Pham, Carolina Heredia, JC Guardian, Jailyn Ruffin",
+    },
+    {
         name: "BOOKEZ", 
         link: "https://github.com/Web103-BookEZ/web103_finalproject.git",
         src: "/project-bio-image/Bookez.png",
@@ -32,7 +43,7 @@ const projectData = [
         participants: "Drake Do, Kien Pham, Joey Herzog, Taylor Griffin, Eric Guyette, Tommy Truong",
     },
     {
-        name: "Blog app", 
+        name: "Blog App", 
         link: "https://github.com/drakenevadie19/BlogApp.git",
         src: "/project-bio-image/BlogApp.jpg",
         description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",

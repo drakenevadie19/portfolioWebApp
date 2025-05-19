@@ -127,6 +127,14 @@
   z-index: 1;
 }
 
+.project-list-tab-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .project-clicked {
   background-color: var(--button-color);
   color: var(--button-text-color);
@@ -160,7 +168,8 @@
 .project-list-tab-header {
   color: var(--text-color);
   font-weight: 700;
-  font-style: italic;
+  margin: 0;
+  /* font-style: italic; */
 }
 
 .project-list-tab-list-of-projects-onSmallDevice {

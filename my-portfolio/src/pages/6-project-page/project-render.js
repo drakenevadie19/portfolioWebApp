@@ -1,5 +1,5 @@
 import ProjectStack from './project-techStack-list';
-import "./project-page.css";
+import "./css/project-page.css";
 
 const ProjectRender =({project}) => {
     return (

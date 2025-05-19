@@ -9,11 +9,11 @@ const technologies = [
     },
     {
         type: "Back-ent Technologies",
-        technologiesList: ["SpringBoot", "Spring Data", "Spring JPA", "JWT", "Spring Security", "Hibernate", "Express.js", "Node.js", "GraphQL", "RESTful API", "Postman", "Axios", "Firebase"]
+        technologiesList: ["Spring Boot", "Spring Data", "Spring JPA", "JWT", "Spring Security", "Hibernate", "Express.js", "Node.js", "GraphQL", "RESTful API", "Postman", "Axios", "Firebase"]
     },
     {
         type: "Database Design and Management",
-        technologiesList: ["MySQL", "PostgreSQL", "MongoDB", "Mongoose", "MongoDB Atlas", "MongoDB Compass"]
+        technologiesList: ["MySQL", "PostgreSQL", "H2 Database", "MongoDB", "Mongoose", "MongoDB Atlas", "MongoDB Compass"]
     },
     {
         type: "DevOps",
@@ -21,7 +21,7 @@ const technologies = [
     },
     {
         type: "Web Hosting",
-        technologiesList: ["Railway", "Microsoft Azure", "Heroku", "Render web hosting"]
+        technologiesList: ["Railway", "Microsoft Azure", "Heroku", "Render (web hosting)"]
     }
 ];
 export default technologies;

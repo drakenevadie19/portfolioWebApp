@@ -1,5 +1,9 @@
 const startGalleryDB = [
     {
+        src: "/start-images/drake0.jpg",
+        alt: "drake-do"
+    },
+    {
         src: "/start-images/drake1.jpg",
         alt: "drake-do"
     },

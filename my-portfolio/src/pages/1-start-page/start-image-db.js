@@ -18,6 +18,10 @@ const startGalleryDB = [
     {
         src: "/start-images/drake4.jpg",
         alt: "drake-do"
+    },
+    {
+        src: "/start-images/drake5.jpg",
+        alt: "drake-do"
     }
 ]
 

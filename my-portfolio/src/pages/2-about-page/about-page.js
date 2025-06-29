@@ -10,7 +10,7 @@ const AboutPage = () => {
                         <div className="blue-bg-outer">
                             <div className="white-bg">
                                 <div className="blue-bg">
-                                    <img src="/bio-image/Drake.jpg" alt="Bio" />  
+                                    <img src="/bio-image/Drake1.jpeg" alt="Bio" />  
                                 </div>
                             </div>
                         </div>

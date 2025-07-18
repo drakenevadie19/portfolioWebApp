@@ -5,10 +5,12 @@ const projectData = [
         src: "/project-bio-image/Bookez.png",
         description: "Motivate Me is a health tracking app that helps users build consistent wellness habits through personalized motivation and smart tracking. It supports physical, mental, and emotional health goals by offering intuitive progress tracking, AI-generated quotes, and intelligent unit suggestions—all designed to make self-care simple and sustainable.",
         workTime: "09/2024 - 05/2025",
-        techStack: ["Java", "JavaScript", "React Native", "Node.js", "Expo", "Spring Boot", "Hibernate", "Railway", "PostgreSQL", "H2 Database", "Material UI", "Postman", "SweetAlert", "Docker", "Render (web hosting)"],
+        techStack: ["Java", "JavaScript", "React Native", "Node.js", "Expo", "Spring Boot", "Hibernate ORM", "Railway", "MongoDB", "PostgreSQL", "H2 Database", "Material UI", "Postman", "SweetAlert", "Docker", "GitHub Actions", "Render (web hosting)"],
         // techstacks: ["js", "react", "html", "css", "bootstrap", "nodejs", "express", "firebase", "postman", "mongodb", "vscode", "git", "github", "gcp"],
         liveDemo: ["yes", "https://motivateme2025.my.canva.site/"],
         participants: "Drake Do, Mary Beth Wash, Kien Pham, Carolina Heredia, JC Guardian, Jailyn Ruffin",
+        posterLink: "/project-bio-image/SRS Poster Motivate Me.pdf",
+        demoLink: "https://www.youtube.com/embed/lgMbaNo4RUY"
     },
     {
         name: "BOOKEZ", 

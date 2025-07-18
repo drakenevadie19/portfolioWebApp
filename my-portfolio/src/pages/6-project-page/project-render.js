@@ -1,7 +1,23 @@
+import React, { useState } from "react";
 import ProjectStack from './project-techStack-list';
+import { Dialog, DialogContent } from "@mui/material";
 import "./css/project-page.css";
 
 const ProjectRender =({project}) => {
+  const [open, setOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState("");
+
+  const handleOpen = (links) => {
+    // console.log("Selected file:", links);
+    setSelectedFile(links);
+    // console.log("Selected file:", links.endsWith(".pdf"));
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedFile("");
+  };
     return (
         <>
             <div className="project-render-wrap">
@@ -17,7 +33,19 @@ const ProjectRender =({project}) => {
                     </div>
 
                     <div className="project-render-src">
+                        {project.demoLink 
+                        ?
+                        <iframe 
+                            className="project-render-src-here"
+                            src={project.demoLink}
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            controls="" type="video/mp4" 
+                            allowFullScreen>
+                        </iframe>
+                        :                        
                         <img src={project.src} alt="Project" className="project-render-src-here" />
+                        }
                     </div>
                 </div>
                 
@@ -32,8 +60,26 @@ const ProjectRender =({project}) => {
                 
                 <div className='go-Live-Buttons'>
                     {project.liveDemo[0] === "yes" && <a href={project.liveDemo[1]} className="btn btn-danger" target="_blank" rel="noreferrer">View Project</a>}
-                    {project.link && <a href={project.link} className="btn btn-outline-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>}
+                    {project.link && <a href={project.link} className="btn btn-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>}
+                    {project.posterLink && <button className="btn btn-warning" onClick={() => handleOpen(project.posterLink)}>View Poster</button>}
+                        
+
+                    <Dialog open={open} onClose={handleClose} maxWidth="lg" fullWidth>
+                        <DialogContent>
+                        {selectedFile.endsWith(".pdf") && (
+                            <iframe
+                                src={`${selectedFile}#zoom=10`}
+                                width="100%"
+                                height="700px"
+                                title="Poster Preview"
+                                allowFullScreen
+                                style={{ border: "none" }}
+                            />
+                        )}
+                        </DialogContent>
+                    </Dialog>
                 </div>
+
             </div>
         </>
     );

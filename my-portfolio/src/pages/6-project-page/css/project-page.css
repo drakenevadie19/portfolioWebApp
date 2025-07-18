@@ -42,7 +42,7 @@
   display: flex;
   /* use flex-wrap here to auto pushing overflowed element to new line */
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
 }
 
 .tech-stack-element-filter-button {
@@ -70,6 +70,8 @@
 
   /* Making text rendering to 1 line only, will not break to new line => revent text wrapping */
   white-space: nowrap;
+
+  margin: 0;
 }
 
 /* End of filter area */
@@ -299,7 +301,7 @@
 .project-tech-stack  {
   width: 100%;
   border-radius: 20px;
-  padding: 2%;
+  /* padding: 2%; */
 }
 
 .project-description {

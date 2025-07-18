@@ -85,6 +85,7 @@ const projectData = [
         techStack: ["React.js", "JavaScript", "Axios", "Bootstrap"],
         liveDemo: ['yes', "https://dev-lookup-iq5l.vercel.app/"],
         participants: "Drake Do",
+        demoLink: "https://www.youtube.com/embed/8KVjj3oeEWI"
     },
     {
         name: "CineMatch",

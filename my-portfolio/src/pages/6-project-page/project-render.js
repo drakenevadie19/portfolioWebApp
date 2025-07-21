@@ -59,7 +59,7 @@ const ProjectRender =({project}) => {
                 </div>
                 
                 <div className='go-Live-Buttons'>
-                    {project.liveDemo[0] === "yes" && <a href={project.liveDemo[1]} className="btn btn-danger" target="_blank" rel="noreferrer">View Project</a>}
+                    {project.liveDemo[0] === "yes" && <a href={project.liveDemo[1]} className="btn btn-danger" target="_blank" rel="noreferrer">Live Demo</a>}
                     {project.link && <a href={project.link} className="btn btn-primary" target="_blank" rel="noreferrer">Explore more on my Github Repository</a>}
                     {project.posterLink && <button className="btn btn-warning" onClick={() => handleOpen(project.posterLink)}>View Poster</button>}
                         

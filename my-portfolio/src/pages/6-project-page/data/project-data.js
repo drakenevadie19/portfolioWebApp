@@ -45,8 +45,8 @@ const projectData = [
         participants: "Drake Do, Kien Pham, Joey Herzog, Taylor Griffin, Eric Guyette, Tommy Truong",
     },
     {
-        name: "ShareSphere", 
-        link: "https://github.com/drakenevadie19/ShareSphere.git",
+        name: "MindBloom", 
+        link: "https://github.com/drakenevadie19/MindBloom.git",
         src: "/project-bio-image/BlogApp.jpg",
         description: "Architectured a fullstack website blog application with MERN-stack allowing users to save memories and articles.",
         workTime: "12/2023 - 4/2024",

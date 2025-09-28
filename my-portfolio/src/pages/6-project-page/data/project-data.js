@@ -24,8 +24,8 @@ const projectData = [
         participants: "Drake Do",
     },
     {
-        name: "idraiske restaurant app", 
-        link: "https://github.com/drakenevadie19/idraiske-delivery-application.git",
+        name: "Foodeli", 
+        link: "https://github.com/drakenevadie19/Foodeli.git",
         src: "/project-bio-image/mobile-app-for-restaurant.jpg",
         description: "A responsive and intuitive restaurant web application allowing users to view restaurants details and order foods.",
         workTime: "7/2024 - Present",
